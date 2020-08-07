@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fbff00;
   margin: auto;
   line-height: 1;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 992px) {
@@ -174,12 +174,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .text1 {
     font-size: medium;
+    letter-spacing: 2px;
   }
   .text2 {
     font-size: x-small;
-  }
-  .mr2 {
-    margin-top: 0;
+    letter-spacing: 2px;
   }
 }
 
