@@ -269,6 +269,7 @@ font-style: normal;
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
+  margin-top: 24vw;
   position: fixed;
   right: 15px;
   top: 15px;
