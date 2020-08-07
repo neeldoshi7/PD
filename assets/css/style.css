@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #ffc56e;
+  color: #fbff00;
   text-decoration: none;
 }
 
@@ -68,9 +68,9 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-#topbar.topbar-transparent {
+/* #topbar.topbar-transparent {
   background: transparent;
-}
+} */
 
 #topbar.topbar-scrolled {
   top: -50px;
@@ -88,17 +88,17 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
-  height: 70px;
+  top: 0;
+  height: 100px;
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
   background: rgba(26, 24, 22, 0.85);
 }
 
-#header.header-transparent {
+/* #header.header-transparent {
   background: transparent;
-}
+} */
 
 #header.header-scrolled {
   top: 0;
@@ -107,13 +107,23 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo h1 {
   font-family: cooper-black-std,serif;
-font-weight: 400;
-font-style: normal;
-  font-size: 2vw;;
-  margin-bottom:;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  /* margin-bottom:; */
   line-height: 1;
   letter-spacing: 3px;
 
+}
+
+#header .logo h2 {
+  font-family: cooper-black-std,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  /* margin-bottom:; */
+  line-height: 1;
+  letter-spacing: 3px;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -127,25 +137,58 @@ font-style: normal;
   max-height: 40px;
 }
 
+.text1 {
+  font-family: cooper-black-std,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  color: #fbff00;
+  margin: auto;
+  line-height: 1;
+  letter-spacing: 3px;
+  ;
+}
+
+.text2 {
+  font-family: cooper-black-std,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3vw;
+  color: #fbff00;
+  margin: auto;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
 @media (max-width: 992px) {
   #header {
     top: 0;
+    height: 12vw;
     background: rgba(26, 24, 22, 0.85);
   }
   #header .logo h1 {
-    font-size: 6vw;;
+    font-size: 8vw;;
     margin: 0;
     line-height: 1;
     letter-spacing: 3px;
+  }
+  .text1 {
+    font-size: medium;
+  }
+  .text2 {
+    font-size: x-small;
   }
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+
+
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
   padding: 0;
   list-style: none;
 }
@@ -269,7 +312,6 @@ font-style: normal;
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
-  margin-top: 24vw;
   position: fixed;
   right: 15px;
   top: 15px;
@@ -901,7 +943,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
+  content: "......................................................................"
+ "...................................................................."
+ "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
