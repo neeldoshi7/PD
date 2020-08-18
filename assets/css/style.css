@@ -959,11 +959,11 @@ section {
 
 .menu .menu-content a {
   padding-right: 10px;
-  background: #fff;
+  background: #fbff00;
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: #ff9b08;
+  color: black;
 }
 
 .menu .menu-content  {
