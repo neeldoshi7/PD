@@ -937,7 +937,7 @@ section {
 }
 
 .menu .menu-content {
-  margin-top: 30px;
+  margin-top: 40vw;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -967,7 +967,6 @@ section {
 }
 
 .menu .menu-content  {
-  margin-top: 10vw;
   background: #fbff00;
   position: relative;
   z-index: 3;
