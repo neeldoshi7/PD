@@ -1244,6 +1244,7 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
+  margin-top: 5vw;
   padding-bottom: 0;
 }
 
