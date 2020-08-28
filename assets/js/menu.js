@@ -29,7 +29,7 @@ const populateCatButtons = (category) => {
 }
 
 const populateSubCatButtons = (sub) => {
-    sub.forEach(el => {
+    sub.forEach((el, value) => {
         const markup1 = `<li class="filter-active">${el}</li>`;
         const markup2 = `<li>${el}</li>`;
         let cat = document.getElementById('menu-flters-sub');
