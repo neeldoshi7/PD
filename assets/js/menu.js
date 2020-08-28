@@ -43,13 +43,10 @@ $(window).on('load', function() {
         $(this).addClass('filter-active');
         $("#menu-flters-sub").empty();
         let name = $(this).html();
-        console.log(name);
         let val = category.get(name);
         if (subCategory.has(val)) {
             let sub = subCategory.get(val);
-            console.log(sub);
             let subarr = sub.split(",");
-            console.log(subarr);
             populateSubCatButtons(subarr);
         } else {
 
@@ -58,7 +55,9 @@ $(window).on('load', function() {
 });
 
 $(window).on('load', function() {
+    console.log("loaded");
     $('#menu-flters-sub li').on('click', function() {
+        console.log("clicked");
         $("#menu-flters-sub li").removeClass('filter-active');
         $(this).addClass('filter-active');
         let name = $(this).html();
