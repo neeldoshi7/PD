@@ -2,9 +2,7 @@ let data;
 const category = new Map();
 const subCategory = new Map();
 function getData(json) {
-    console.log(json);
     data = json.feed.entry;
-    console.log(data);
     populateDS(data);
 }
 const cat = document.getElementById('menu-flters');
@@ -12,7 +10,6 @@ const subcat = document.getElementById('menu-flters-sub');
 console.log(cat);
 console.log(subcat);
 const populateDS = data => {
-    console.log(data);
     data.forEach(el => {
         if (el.gs$cell.row != 1) {
             if (el.gs$cell.col == 1) 
@@ -21,8 +18,6 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    console.log(category);
-    console.log(subCategory);
     populateButtons(category, cat);
 }
 const populateButtons = (category, cat) => {
