@@ -197,11 +197,20 @@
     </section> -->
 
     <script>
-      var data;
+      let data;
+      let category = new Map();
       function getData(json) {
         console.log(json);
         data = json.feed.entry;
         console.log(data);
+        populateDS(data);
+      }
+      const populateDS = data => {
+        data.array.forEach(el => {
+          console.log(el.gs$cell.row);
+          console.log(el.gs$cell.col);
+          console.log(el.gs$cell.$t);
+        });
       }
     </script>
 
