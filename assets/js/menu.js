@@ -55,3 +55,12 @@ $(window).on('load', function() {
         }
     });
 });
+
+$(window).on('load', function() {
+    $('#menu-flters-sub li').on('click', function() {
+        $("#menu-flters-sub li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+        let name = $(this).html();
+        console.log(name);
+    });
+});
