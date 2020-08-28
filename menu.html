@@ -222,7 +222,7 @@
       }
       const populateButtons = category => {
         category.forEach(el => {
-          const markup = `<li class="filter-active">${el}</li>`;
+          const markup = `<li class="filter-active">${el.key}</li>`;
           let button = document.querySelector('.menu-fltrs');
           button.insertAdjacentHTML('beforeend', markup);
         })
