@@ -42,4 +42,4 @@ const populateButtons = category => {
             console.log($(this).data());
         });
     });
-})
+});
