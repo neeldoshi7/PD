@@ -205,7 +205,7 @@
     </script>
 
     <script>
-      console.log("Lets do this a different way and another");
+      console.log("Lets do this a different way and another and one more");
       // console.log(Papa.parse(url, {
       //   download: true,
       //   header: {
@@ -216,7 +216,7 @@
         const response = await fetch(url, {
           method: 'GET',
           headers: {
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+            'Access-Control-Allow-Headers': 'Authorization, Content-Type, Content-Range, Content-Disposition, Content-Description,Origin, X-Requested-With, sessionId',
             'Access-Control-Allow-Methods': 'GET',
             'Access-Control-Allow-Origin': 'https://musing-wiles-e52aa3.netlify.app',
           }
