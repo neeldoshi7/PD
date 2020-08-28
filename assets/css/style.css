@@ -908,7 +908,7 @@ section {
   margin-top: 5vw;
 }
 
-.menu #menu-flters {
+.menu #menu-flters #menu-flters-sub{
   padding: 0;
   margin: 0 auto 0 auto;
   list-style: none;
@@ -916,7 +916,7 @@ section {
   border-radius: 50px;
 }
 
-.menu #menu-flters li {
+.menu #menu-flters li, .menu #menu-flters-sub li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -936,7 +936,16 @@ section {
   background: #ffb03b;
 }
 
+.menu #menu-flters-sub li:hover, .menu #menu-flters-sub li.filter-active {
+  color: #fff;
+  background: #ffb03b;
+}
+
 .menu #menu-flters li:last-child {
+  margin-right: 0;
+}
+
+.menu #menu-flters-sub li:last-child {
   margin-right: 0;
 }
 

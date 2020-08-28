@@ -1,6 +1,8 @@
 let data;
 const category = new Map();
 const subCategory = new Map();
+let cat = document.getElementById('menu-flters');
+let subcat = document.getElementById('menu-flters-sub');
 function getData(json) {
     console.log(json);
     data = json.feed.entry;
@@ -19,14 +21,13 @@ const populateDS = data => {
     });
     console.log(category);
     console.log(subCategory);
-    populateButtons(category);
+    populateButtons(category, cat);
 }
-const populateButtons = category => {
+const populateButtons = (category, cat) => {
     category.forEach((value, key) => {
         const markup1 = `<li class="filter-active">${key}</li>`;
         const markup2 = `<li>${key}</li>`;
-        let button = document.getElementById('menu-flters');
-        button.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
+        cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
     })
 }
 
@@ -42,6 +43,9 @@ $(window).on('load', function() {
             console.log(sub);
             let subarr = sub.split(",");
             console.log(subarr);
+            populateButtons(subarr, subcat);
+        } else {
+
         }
     });
 });
