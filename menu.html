@@ -218,6 +218,7 @@
         });
         console.log(category);
         console.log(subCategory);
+        populateButtons(category);
       }
     </script>
 
@@ -244,6 +245,16 @@
 
       </div>
     </section>
+    
+    <script>
+      const populateButtons = category => {
+        category.forEach(el => {
+          const markup = `<li class="filter-active">${el.gs$cell.$t}</li>`;
+          let button = document.querySelector('.menu-fltrs');
+          button.insertAdjacentHTML('beforeend', markup);
+        })
+      }
+    </script>
 
   </main><!-- End #main -->
 
