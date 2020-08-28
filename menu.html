@@ -198,7 +198,9 @@
 
     <script>
       url = 'https://spreadsheets.google.com/feeds/cells/1mgvvnNLtP-V4m4rpFq7kiD2gPNXFJGz2FNFlPXrRUGk/1/public/values?alt=json-in-script';
-      var jsondata = fetch(url);
+      var jsondata = fetch(url).then(data => {
+        console.log(data);
+      });
       console.log(jsondata);
     </script>
 
