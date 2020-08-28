@@ -205,12 +205,23 @@
     </script>
 
     <script>
-      console.log(Papa.parse(url, {
-        download: true,
-        header: {
-          'Access-Control-Allow-Origin' : 'https://musing-wiles-e52aa3.netlify.app',
-        }
-      }));
+      // console.log(Papa.parse(url, {
+      //   download: true,
+      //   header: {
+      //     'Access-Control-Allow-Origin': 'https://musing-wiles-e52aa3.netlify.app',
+      //   }
+      // }));
+      async function getData(url) {
+        const response = await fetch(url, {
+          method: 'GET',
+
+        });
+        return response.json();
+      }
+
+      getData(url).then(data => {
+        console.log(data);
+      })
     </script>
 
     <section id="menu" class="menu">
