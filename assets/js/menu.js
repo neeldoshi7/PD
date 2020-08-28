@@ -18,12 +18,13 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    populateButtons(category, cat);
+    populateButtons(category);
 }
-const populateButtons = (category, cat) => {
+const populateButtons = (category) => {
     category.forEach((value, key) => {
         const markup1 = `<li class="filter-active">${key}</li>`;
         const markup2 = `<li>${key}</li>`;
+        let cat = document.getElementById('menu-flters');
         cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
     })
 }
@@ -40,7 +41,7 @@ $(window).on('load', function() {
             console.log(sub);
             let subarr = sub.split(",");
             console.log(subarr);
-            populateButtons(subarr, subcat);
+            populateButtons(subarr);
         } else {
 
         }
