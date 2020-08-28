@@ -41,7 +41,7 @@ $(window).on('load', function() {
     $('#menu-flters li').on('click', function() {
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
-        $("#menu-filters-sub").empty();
+        $("#menu-flters-sub").empty();
         let name = $(this).html();
         console.log(name);
         let val = category.get(name);
