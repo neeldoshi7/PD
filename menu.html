@@ -207,6 +207,9 @@
     <script>
       console.log(Papa.parse(url, {
         download: true,
+        header: {
+          'Access-Control-Allow-Origin' : 'https://musing-wiles-e52aa3.netlify.app',
+        }
       }));
     </script>
 
