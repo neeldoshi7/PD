@@ -37,8 +37,6 @@
 
 <body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
-
   <!-- ======= Top Bar ======= -->
   <!-- <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
     <div class="container text-right">
@@ -218,42 +216,7 @@
       </div>
     </section>
 
-    <script>
-      let data;
-      const category = new Map();
-      const subCategory = new Map();
-      function getData(json) {
-        console.log(json);
-        data = json.feed.entry;
-        console.log(data);
-        populateDS(data);
-      }
-      const populateDS = data => {
-        console.log(data);
-        data.forEach(el => {
-          if (el.gs$cell.row != 1) {
-            if (el.gs$cell.col == 1) 
-              category.set(el.gs$cell.$t, el.gs$cell.row - 1);
-            else 
-              subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
-          }
-        });
-        console.log(category);
-        console.log(subCategory);
-        populateButtons(category);
-      }
-      const populateButtons = category => {
-        category.forEach((value, key) => {
-          const markup1 = `<li class="filter-active">${key}</li>`;
-          const markup2 = `<li>${key}</li>`;
-          let button = document.getElementById('menu-flters');
-          button.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
-        })
-      }
-    </script>
-
     <script src="https://spreadsheets.google.com/feeds/cells/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/1/public/values?alt=json-in-script&callback=getData"></script>
-
 
   </main><!-- End #main -->
 
@@ -296,6 +259,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
 
 </body>
 
