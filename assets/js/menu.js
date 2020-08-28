@@ -30,16 +30,10 @@ const populateButtons = category => {
     })
 }
 
-// !(function($) {
-//     "use strict";
-    console.log("jquery");
-    $(window).on('load', function() {
-        console.log("Loaded");
-        $('#menu-flters li').on('click', function() {
-            console.log("clicked");
-            $("#menu-flters li").removeClass('filter-active');
-            $(this).addClass('filter-active');
-            console.log($(this).data());
-        });
+$(window).on('load', function() {
+    $('#menu-flters li').on('click', function() {
+        $("#menu-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+        console.log($(this));
     });
-// });
+});
