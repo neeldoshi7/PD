@@ -209,8 +209,6 @@
       const populateDS = data => {
         console.log(data);
         data.forEach(el => {
-          if (el.gs$cell.row == 1) 
-            continue;
           if (el.gs$cell.col == 1) 
             category.set(el.gs$cell.$t, el.gs$cell.row - 1);
           else 
