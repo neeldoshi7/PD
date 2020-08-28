@@ -33,7 +33,7 @@ const populateSubCatButtons = (sub) => {
         const markup1 = `<li class="filter-active">${el}</li>`;
         const markup2 = `<li>${el}</li>`;
         let cat = document.getElementById('menu-flters-sub');
-        cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
+        cat.insertAdjacentHTML('beforeend', (value == 0)? markup1: markup2);
     })
 }
 
