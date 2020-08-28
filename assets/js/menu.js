@@ -5,8 +5,8 @@ function getData(json) {
     data = json.feed.entry;
     populateDS(data);
 }
-const cat = document.getElementById('menu-flters');
-const subcat = document.getElementById('menu-flters-sub');
+const cat = document.getElementById('.menu-flters');
+const subcat = document.getElementById('.menu-flters-sub');
 console.log(cat);
 console.log(subcat);
 const populateDS = data => {
