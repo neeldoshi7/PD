@@ -36,9 +36,12 @@ $(window).on('load', function() {
         $(this).addClass('filter-active');
         let name = $(this).html();
         console.log(name);
-        let sub = subCategory.get(name);
-        console.log(sub);
-        let subarr = sub.split(",");
-        console.log(subarr);
+        let val = category.get(name);
+        if (subCategory.has(val)) {
+            let sub = subCategory.get(val);
+            console.log(sub);
+            let subarr = sub.split(",");
+            console.log(subarr);
+        }
     });
 });
