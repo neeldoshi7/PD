@@ -209,13 +209,12 @@
       const populateDS = data => {
         console.log(data);
         data.forEach(el => {
-          if (el.gs$cell.col == 1) 
-            category.set(el.gs$cell.$t, el.gs$cell.row - 1);
-          else 
-            subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
-          // console.log(el.gs$cell.row);
-          // console.log(el.gs$cell.col);
-          // console.log(el.gs$cell.$t);
+          if (el.gs$cell.row != 1) {
+            if (el.gs$cell.col == 1) 
+              category.set(el.gs$cell.$t, el.gs$cell.row - 1);
+            else 
+              subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
+          }
         });
         console.log(category);
         console.log(subCategory);
