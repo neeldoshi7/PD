@@ -1,12 +1,12 @@
 let data;
 const category = new Map();
 const subCategory = new Map();
+
 function getData(json) {
     data = json.feed.entry;
     populateDS(data);
 }
-let id = 'menu-flters';
-let subid = 'menu-flters-sub';
+
 const populateDS = data => {
     data.forEach(el => {
         if (el.gs$cell.row != 1) {
@@ -16,13 +16,23 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    populateButtons(category, id);
+    populateCatButtons(category);
 }
-const populateButtons = (category, id) => {
+
+const populateCatButtons = (category) => {
     category.forEach((value, key) => {
         const markup1 = `<li class="filter-active">${key}</li>`;
         const markup2 = `<li>${key}</li>`;
-        let cat = document.getElementById(id);
+        let cat = document.getElementById('menu-flters');
+        cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
+    })
+}
+
+const populateSubCatButtons = (sub) => {
+    sub.forEach(el => {
+        const markup1 = `<li class="filter-active">${el}</li>`;
+        const markup2 = `<li>${el}</li>`;
+        let cat = document.getElementById('menu-flters-sub');
         cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
     })
 }
@@ -39,7 +49,7 @@ $(window).on('load', function() {
             console.log(sub);
             let subarr = sub.split(",");
             console.log(subarr);
-            populateButtons(subarr, subid);
+            populateSubCatButtons(subarr);
         } else {
 
         }
