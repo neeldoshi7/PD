@@ -9,6 +9,8 @@ function getData(json) {
 }
 const cat = document.getElementById('menu-flters');
 const subcat = document.getElementById('menu-flters-sub');
+console.log(cat);
+console.log(subcat);
 const populateDS = data => {
     console.log(data);
     data.forEach(el => {
