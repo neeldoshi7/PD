@@ -35,8 +35,10 @@ $(window).on('load', function() {
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
         let name = $(this).html();
+        console.log(name);
         let sub = subCategory.get(name);
-        sub = sub.split(",");
         console.log(sub);
+        let subarr = sub.split(",");
+        console.log(subarr);
     });
 });
