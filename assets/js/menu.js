@@ -53,11 +53,7 @@ $(window).on('load', function() {
 
         }
     });
-});
 
-$(window).on('load', function() {
-    console.log("loaded");
-    console.log(document.getElementById('menu-flters-sub'));
     $('#menu-flters-sub li').on('click', function() {
         console.log("clicked");
         $("#menu-flters-sub li").removeClass('filter-active');
