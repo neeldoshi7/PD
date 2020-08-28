@@ -1,14 +1,14 @@
 let data;
 const category = new Map();
 const subCategory = new Map();
-let cat = document.getElementById('menu-flters');
-let subcat = document.getElementById('menu-flters-sub');
 function getData(json) {
     console.log(json);
     data = json.feed.entry;
     console.log(data);
     populateDS(data);
 }
+const cat = document.getElementById('menu-flters');
+const subcat = document.getElementById('menu-flters-sub');
 const populateDS = data => {
     console.log(data);
     data.forEach(el => {
