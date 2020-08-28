@@ -30,8 +30,8 @@ const populateButtons = category => {
     })
 }
 
-!(function($) {
-    "use strict";
+// !(function($) {
+//     "use strict";
     console.log("jquery");
     $(window).on('load', function() {
         console.log("Loaded");
@@ -42,4 +42,4 @@ const populateButtons = category => {
             console.log($(this).data());
         });
     });
-});
+// });
