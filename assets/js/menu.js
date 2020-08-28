@@ -32,7 +32,9 @@ const populateButtons = category => {
 
 !(function($) {
     "use strict";
+    console.log("jquery");
     $(window).on('load', function() {
+        console.log("Loaded");
         $('#menu-flters li').on('click', function() {
             console.log("clicked");
             $("#menu-flters li").removeClass('filter-active');
