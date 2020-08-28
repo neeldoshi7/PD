@@ -220,6 +220,13 @@
         console.log(subCategory);
         populateButtons(category);
       }
+      const populateButtons = category => {
+        category.forEach(el => {
+          const markup = `<li class="filter-active">${el.gs$cell.$t}</li>`;
+          let button = document.querySelector('.menu-fltrs');
+          button.insertAdjacentHTML('beforeend', markup);
+        })
+      }
     </script>
 
     <script src="https://spreadsheets.google.com/feeds/cells/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/1/public/values?alt=json-in-script&callback=getData"></script>
@@ -247,13 +254,7 @@
     </section>
     
     <script>
-      const populateButtons = category => {
-        category.forEach(el => {
-          const markup = `<li class="filter-active">${el.gs$cell.$t}</li>`;
-          let button = document.querySelector('.menu-fltrs');
-          button.insertAdjacentHTML('beforeend', markup);
-        })
-      }
+      
     </script>
 
   </main><!-- End #main -->
