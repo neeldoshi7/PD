@@ -205,28 +205,8 @@
     </script>
 
     <script>
-      console.log("Lets do this a different way and another and one more oops");
-      // console.log(Papa.parse(url, {
-      //   download: true,
-      //   header: {
-      //     'Access-Control-Allow-Origin': 'https://musing-wiles-e52aa3.netlify.app',
-      //   }
-      // }));
-      async function getData(url) {
-        const response = await fetch(url, {
-          method: 'GET',
-          headers: {
-            'Access-Control-Allow-Headers': 'Authorization, Content-Type, Content-Range, Content-Disposition, Content-Description, Origin, X-Requested-With, sessionId, Access-Control-Allow-Origin',
-            'Access-Control-Allow-Methods': 'GET',
-            'Access-Control-Allow-Origin': 'https://musing-wiles-e52aa3.netlify.app',
-          }
-        });
-        return response.json();
-      }
-
-      getData(url).then(data => {
-        console.log(data);
-      })
+      var jsondata = 'https://spreadsheets.google.com/feeds/cells/1mgvvnNLtP-V4m4rpFq7kiD2gPNXFJGz2FNFlPXrRUGk/1/public/values?alt=json-in-script';
+      console.log(jsondata);
     </script>
 
     <section id="menu" class="menu">
