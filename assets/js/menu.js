@@ -5,10 +5,8 @@ function getData(json) {
     data = json.feed.entry;
     populateDS(data);
 }
-let cat = document.getElementById('menu-flters');
-const subcat = document.getElementById('menu-flters-sub');
-console.log(cat);
-console.log(subcat);
+let id = 'menu-flters';
+let subid = 'menu-flters-sub';
 const populateDS = data => {
     data.forEach(el => {
         if (el.gs$cell.row != 1) {
@@ -18,13 +16,13 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    populateButtons(category);
+    populateButtons(category, id);
 }
-const populateButtons = (category) => {
+const populateButtons = (category, id) => {
     category.forEach((value, key) => {
         const markup1 = `<li class="filter-active">${key}</li>`;
         const markup2 = `<li>${key}</li>`;
-        let cat = document.getElementById('menu-flters');
+        let cat = document.getElementById(id);
         cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
     })
 }
@@ -41,7 +39,7 @@ $(window).on('load', function() {
             console.log(sub);
             let subarr = sub.split(",");
             console.log(subarr);
-            populateButtons(subarr);
+            populateButtons(subarr, subid);
         } else {
 
         }
