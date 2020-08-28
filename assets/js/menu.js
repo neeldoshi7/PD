@@ -39,6 +39,7 @@ const populateSubCatButtons = (sub) => {
 
 $(window).on('load', function() {
     $('#menu-flters li').on('click', function() {
+        console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
         $("#menu-flters-sub").empty();
