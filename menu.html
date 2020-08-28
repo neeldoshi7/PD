@@ -216,6 +216,7 @@
         const response = await fetch(url, {
           method: 'GET',
           headers: {
+            'Access-Control-Allow-Headers': 'Origin',
             'Access-Control-Allow-Origin': 'https://musing-wiles-e52aa3.netlify.app',
           }
         });
