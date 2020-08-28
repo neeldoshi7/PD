@@ -34,6 +34,9 @@ $(window).on('load', function() {
     $('#menu-flters li').on('click', function() {
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
-        console.log($(this).html());
+        let name = $(this).html();
+        let sub = subCategory.get(name);
+        sub = sub.split(",");
+        console.log(sub);
     });
 });
