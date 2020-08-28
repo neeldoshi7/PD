@@ -34,6 +34,6 @@ $(window).on('load', function() {
     $('#menu-flters li').on('click', function() {
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
-        console.log($(this));
+        console.log($(this).html());
     });
 });
