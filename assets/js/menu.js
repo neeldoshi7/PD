@@ -53,7 +53,9 @@ $(window).on('load', function() {
 
         }
     });
+});
 
+$(window).on('load', function() {
     $('#menu-flters-sub li').on('click', function() {
         console.log("clicked");
         $("#menu-flters-sub li").removeClass('filter-active');
