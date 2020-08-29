@@ -17,8 +17,7 @@ const populateDS = data => {
         }
     });
     populateCatButtons(category);
-    console.log($("#menu-flters:first-child"));
-    console.log($("#menu-flters"));
+    $("#menu-flters:first-child").trigger('click');
 }
 
 const populateCatButtons = (category) => {
