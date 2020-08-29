@@ -17,7 +17,6 @@ const populateDS = data => {
         }
     });
     populateCatButtons(category);
-    // $("#menu-flters:first-child").trigger('click');
 }
 
 const populateCatButtons = (category) => {
@@ -38,41 +37,28 @@ const populateSubCatButtons = (sub) => {
     })
 }
 
-const catClick = () => {
-    $("#menu-flters li").removeClass('filter-active');
-    $(this).addClass('filter-active');
-    $("#menu-flters-sub").empty();
-    let name = $(this).html();
-    let val = category.get(name);
-    if (subCategory.has(val)) {
-        let sub = subCategory.get(val);
-        let subarr = sub.split(",");
-        populateSubCatButtons(subarr);
-        // $("#menu-flters-sub:first-child").trigger('click');
-    } else {
-
-    }
-}
-
 $(window).on('load', function() {
-    $('#menu-flters li').on('click', catClick);
+    $('#menu-flters li').on('click', function() {
+        console.log(document.getElementById('menu-flters-sub'));
+        $("#menu-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+        $("#menu-flters-sub").empty();
+        let name = $(this).html();
+        let val = category.get(name);
+        if (subCategory.has(val)) {
+            let sub = subCategory.get(val);
+            let subarr = sub.split(",");
+            populateSubCatButtons(subarr);
+        } else {
+
+        }
+    });
 });
 
-const subCatClick = () => {
+$(document).on('click', '#menu-flters-sub li', function() {
+    console.log("clicked");
     $("#menu-flters-sub li").removeClass('filter-active');
     $(this).addClass('filter-active');
     let name = $(this).html();
     console.log(name);
-}
-
-$(document).on('click', '#menu-flters-sub li', subCatClick);
-
-// $(window).on('load', function() {
-//     $('#menu-flters-sub li').on('click', function() {
-//         console.log("clicked");
-//         $("#menu-flters-sub li").removeClass('filter-active');
-//         $(this).addClass('filter-active');
-//         let name = $(this).html();
-//         console.log(name);
-//     });
-// });
+});
