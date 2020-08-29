@@ -21,7 +21,8 @@ const populateDS = data => {
     console.log($('#menu-flters li.filter-active').click());
     const active = document.querySelector('#menu-flters li.filter-active');
     console.log(active);
-    active.click();
+    console.log(active.click());
+    active.trigger('click');
 }
 
 const populateCatButtons = (category) => {
