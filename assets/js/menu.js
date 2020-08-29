@@ -37,7 +37,7 @@ const populateSubCatButtons = (sub) => {
     })
 }
 
-// $(window).on('load', function() {
+$(window).on('load', function() {
     $('#menu-flters li').on('click', function() {
         console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
@@ -61,4 +61,4 @@ const populateSubCatButtons = (sub) => {
         let name = $(this).html();
         console.log(name);
     });
-// });
+});
