@@ -18,6 +18,7 @@ const populateDS = data => {
     });
     populateCatButtons(category);
     console.log($("#menu-flter:first-child"));
+    console.log($("#menu-flter"));
 }
 
 const populateCatButtons = (category) => {
