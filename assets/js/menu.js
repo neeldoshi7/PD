@@ -47,7 +47,7 @@ const populateSubCatButtons = (sub) => {
 }
 
 $(window).on('load', function() {
-    $('#menu-flters li').on('click', function() {
+    $('#menu-flters li').onclick(function() {
         console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
@@ -64,7 +64,7 @@ $(window).on('load', function() {
     });
 });
 
-$(document).on('click', '#menu-flters-sub li', function() {
+$(document).onclick('#menu-flters-sub li', function() {
     console.log("clicked");
     $("#menu-flters-sub li").removeClass('filter-active');
     $(this).addClass('filter-active');
