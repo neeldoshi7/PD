@@ -20,7 +20,7 @@ const populateDS = data => {
     $("#menu-flters li.filter-active").click();
     console.log($('#menu-flters li.filter-active').click());
     const active = document.querySelector('#menu-flters li.filter-active');
-    console.log(active);
+    console.log(active[0]);
     active.click( function() {
         console.log("kjdbvs");
     });
