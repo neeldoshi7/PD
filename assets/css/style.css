@@ -908,7 +908,7 @@ section {
   margin-top: 5vw;
 }
 
-.menu #menu-flters #menu-flters-sub{
+.menu #menu-flters, .menu #menu-flters-sub{
   padding: 0;
   margin: 0 auto 0 auto;
   list-style: none;
