@@ -19,7 +19,7 @@ const populateDS = data => {
     populateCatButtons(category);
     $("#menu-flters li.filter-active").click();
     console.log($('#menu-flters li.filter-active').click());
-    $._data( $("#menu-flters li.filter-active")[0], "events" );
+    console.log($._data( $("#menu-flters li.filter-active")[0], "events" ));
 }
 
 const populateCatButtons = (category) => {
