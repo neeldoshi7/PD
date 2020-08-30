@@ -1,3 +1,9 @@
 .buttonOrder{
-    border: 1px black solid; 
+    border: 1px black solid;
+}
+
+.itemSection{
+  height: 20vh;
+  width: 100%;
+  background-color: red;
 }
