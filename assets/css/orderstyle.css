@@ -15,3 +15,9 @@
 .itemCard{
   background-color: green;
 }
+
+@media (max-width: 768px) {
+  .buttonOrder{
+      margin-top: 5vw;
+  }
+}
