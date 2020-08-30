@@ -1,9 +1,8 @@
-.order{
-  margin-top:20vw;
+#order{
+  margin-top:5vw;
 }
 
 .buttonOrder{
-    margin-top: 5vw;
     border: 1px black solid;
 }
 
@@ -13,11 +12,11 @@
 }
 
 .itemCard{
-  background-color: green;
+  
 }
 
 @media (max-width: 768px) {
-  .buttonOrder{
-      margin-top: 5vw;
+  #order{
+    margin-top:10vw;
   }
 }
