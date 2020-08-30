@@ -5,5 +5,8 @@
 .itemSection{
   height: 20vh;
   width: 100%;
-  background-color: red;
+}
+
+.itemCard{
+  background-color: green;
 }
