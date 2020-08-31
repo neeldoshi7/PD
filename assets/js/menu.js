@@ -24,8 +24,7 @@ const populateDS = data => {
     active.click( function() {
         console.log("kjdbvs");
     });
-    // setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
-    active.trigger('click');
+    setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
 }
 
 const populateCatButtons = (category) => {
