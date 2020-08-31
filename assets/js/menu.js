@@ -2,30 +2,30 @@ let data;
 const category = new Map();
 const subCategory = new Map();
 
-// $(window).on('load', function() {
-    $(document).on('click', '#menu-flters li', function() {
-        console.log(document.getElementById('menu-flters-sub'));
-        $("#menu-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        $("#menu-flters-sub").empty();
-        let name = $(this).html();
-        let val = category.get(name);
-        if (subCategory.has(val)) {
-            let sub = subCategory.get(val);
-            let subarr = sub.split(",");
-            populateSubCatButtons(subarr);
-        } else {
+$(document).on('click', '#menu-flters li', function() {
+    console.log(document.getElementById('menu-flters-sub'));
+    $('#menu-flters li').removeClass('filter-active');
+    $(this).addClass('filter-active');
+    $('#menu-flters-sub').empty();
+    let name = $(this).html();
+    let val = category.get(name);
+    if (subCategory.has(val)) {
+        let sub = subCategory.get(val);
+        let subarr = sub.split(",");
+        populateSubCatButtons(subarr);
+        $('#menu-flters-sub li.filter-active').click();
+    } else {
 
-        }
-    });
-// });
+    }
+});
 
 $(document).on('click', '#menu-flters-sub li', function() {
     console.log("clicked");
-    $("#menu-flters-sub li").removeClass('filter-active');
+    $('#menu-flters-sub li').removeClass('filter-active');
     $(this).addClass('filter-active');
     let name = $(this).html();
     console.log(name);
+
 });
 
 function getData(json) {
@@ -44,13 +44,6 @@ const populateDS = data => {
     });
     populateCatButtons(category);
     $("#menu-flters li.filter-active").click();
-    // console.log($('#menu-flters li.filter-active').click());
-    // const active = document.querySelector('#menu-flters li.filter-active');
-    // console.log(active);
-    // active.click( function() {
-    //     console.log("kjdbvs");
-    // });
-    // setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
 }
 
 const populateCatButtons = (category) => {
