@@ -17,7 +17,7 @@ const populateDS = data => {
         }
     });
     populateCatButtons(category);
-    // $("#menu-flters li.filter-active").click();
+    $("#menu-flters li.filter-active").click();
     // console.log($('#menu-flters li.filter-active').click());
     // const active = document.querySelector('#menu-flters li.filter-active');
     // console.log(active);
