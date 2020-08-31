@@ -24,8 +24,8 @@ const populateDS = data => {
     active.click( function() {
         console.log("kjdbvs");
     });
-    setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
-    // active.trigger('click');
+    // setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
+    active.trigger('click');
 }
 
 const populateCatButtons = (category) => {
@@ -47,7 +47,7 @@ const populateSubCatButtons = (sub) => {
 }
 
 $(window).on('load', function() {
-    $('#menu-flters li').onclick(function() {
+    $('#menu-flters li').on('click', function() {
         console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
@@ -64,7 +64,7 @@ $(window).on('load', function() {
     });
 });
 
-$(document).onclick('#menu-flters-sub li', function() {
+$(document).on('click', '#menu-flters-sub li', function() {
     console.log("clicked");
     $("#menu-flters-sub li").removeClass('filter-active');
     $(this).addClass('filter-active');
