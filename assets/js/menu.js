@@ -17,14 +17,14 @@ const populateDS = data => {
         }
     });
     populateCatButtons(category);
-    $("#menu-flters li.filter-active").click();
-    console.log($('#menu-flters li.filter-active').click());
-    const active = document.querySelector('#menu-flters li.filter-active');
-    console.log(active);
-    active.click( function() {
-        console.log("kjdbvs");
-    });
-    setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
+    // $("#menu-flters li.filter-active").click();
+    // console.log($('#menu-flters li.filter-active').click());
+    // const active = document.querySelector('#menu-flters li.filter-active');
+    // console.log(active);
+    // active.click( function() {
+    //     console.log("kjdbvs");
+    // });
+    // setTimeout(function(){ $('#menu-flters li.filter-active').click()}, 100);
 }
 
 const populateCatButtons = (category) => {
