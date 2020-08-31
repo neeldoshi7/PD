@@ -2,8 +2,8 @@ let data;
 const category = new Map();
 const subCategory = new Map();
 
-$(window).on('load', function() {
-    $('#menu-flters li').on('click', function() {
+// $(window).on('load', function() {
+    $(document).$('#menu-flters li').on('click', function() {
         console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
@@ -18,7 +18,7 @@ $(window).on('load', function() {
 
         }
     });
-});
+// });
 
 $(document).on('click', '#menu-flters-sub li', function() {
     console.log("clicked");
