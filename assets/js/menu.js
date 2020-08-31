@@ -3,7 +3,7 @@ const category = new Map();
 const subCategory = new Map();
 
 // $(window).on('load', function() {
-    $(document).$('#menu-flters li').on('click', function() {
+    $(document).on('click', '#menu-flters li', function() {
         console.log(document.getElementById('menu-flters-sub'));
         $("#menu-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
