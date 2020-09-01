@@ -7,16 +7,20 @@
 }
 
 .itemSection{
-  
+  margin-top: 2vh;
 }
 
 .itemCard{
   height: 10vw;
-  background-color: red;
+  border: 1px black solid;
 }
 
 @media (max-width: 768px) {
   #order{
     margin-top:10vw;
+  }
+
+  .itemCard{
+    height: 20vh;
   }
 }
