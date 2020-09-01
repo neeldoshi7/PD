@@ -7,16 +7,31 @@
 }
 
 .itemSection{
-  
+  margin: 6vh 1vh;
 }
 
 .itemCard{
-  height: 10vw;
-  background-color: red;
+  height: 32vh;
+  border: 1px black solid;
+}
+
+.itemImage{
+  margin: 2vh 1vw;
+  border: 1px black solid;
+  height: 20vh
 }
 
 @media (max-width: 768px) {
   #order{
     margin-top:10vw;
+  }
+
+  .itemCard{
+    margin: 3vh 2vh;
+    height: 30vh;
+  }
+
+  .itemImage{
+    height: 20vh
   }
 }
