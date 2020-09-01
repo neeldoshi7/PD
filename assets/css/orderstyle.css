@@ -7,12 +7,18 @@
 }
 
 .itemSection{
-  margin-top: 2vh;
+  margin: 1.5vh 1vh;
 }
 
 .itemCard{
-  height: 10vw;
+  height: 32vh;
   border: 1px black solid;
+}
+
+.itemImage{
+  margin: 2vh 1vw;
+  border: 1px black solid;
+  height: 20vh
 }
 
 @media (max-width: 768px) {
@@ -21,6 +27,11 @@
   }
 
   .itemCard{
-    height: 20vh;
+    margin: 1.5vh 1vh;
+    height: 30vh;
+  }
+
+  .itemImage{
+    height: 20vh
   }
 }
