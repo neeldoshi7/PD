@@ -3,10 +3,10 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
-const code = [];
-const title = [];
-const description = [];
-const price = [];
+let code = [];
+let title = [];
+let description = [];
+let price = [];
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
