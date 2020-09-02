@@ -3,7 +3,7 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
-let menu = new Array();
+let menu = new Array(100);
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
