@@ -77,15 +77,6 @@ const populateSubCatButtons = sub => {
 }
 
 const getPageNo = name => {
-    console.log(pageNo);
-    console.log(name);
-    console.log(pageNo.get(name));
-    console.log(pageNo.has("COLD SANDWICH"));
-    console.log(pageNo['FAT SANDWICH']);
-    pageNo.forEach((value, key) => {
-        console.log(value + " " + key);
-        console.log(typeof(key));
-    })
     return pageNo.get(name);
 }
 
