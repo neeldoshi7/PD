@@ -81,7 +81,12 @@ const getPageNo = name => {
     console.log(name);
     console.log(pageNo.get(name));
     console.log(pageNo.has("COLD SANDWICH"));
-    console.log(pageNo['COLD SANDWICH'])
+    console.log(pageNo['COLD SANDWICH']);
+    console.log(typeof("COLD SANDWICH"));
+    Map.forEach((value, key) => {
+        console.log(value + key);
+        console.log(typeof(key));
+    })
     return pageNo.get(name);
 }
 
