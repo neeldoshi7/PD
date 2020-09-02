@@ -84,7 +84,7 @@ const getPageNo = name => {
     console.log(pageNo['COLD SANDWICH']);
     console.log(typeof("COLD SANDWICH"));
     pageNo.forEach((value, key) => {
-        console.log(value + key);
+        console.log(value + " " + key);
         console.log(typeof(key));
     })
     return pageNo.get(name);
