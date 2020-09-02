@@ -1,6 +1,8 @@
 let data;
+let pages;
 const category = new Map();
 const subCategory = new Map();
+const pageNo = new Map();
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -24,7 +26,7 @@ $(document).on('click', '#menu-flters-sub li', function() {
     let name = $(this).html();
 });
 
-function getData(json) {
+const getData = json => {
     data = json.feed.entry;
     populateDS(data);
 }
@@ -42,7 +44,7 @@ const populateDS = data => {
     $("#menu-flters li.filter-active").click();
 }
 
-const populateCatButtons = (category) => {
+const populateCatButtons = category => {
     category.forEach((value, key) => {
         const markup1 = `<li class="filter-active">${key}</li>`;
         const markup2 = `<li>${key}</li>`;
@@ -51,11 +53,22 @@ const populateCatButtons = (category) => {
     })
 }
 
-const populateSubCatButtons = (sub) => {
+const populateSubCatButtons = sub => {
     sub.forEach((el, value) => {
         const markup1 = `<li class="filter-active">${el}</li>`;
         const markup2 = `<li>${el}</li>`;
         let cat = document.getElementById('menu-flters-sub');
         cat.insertAdjacentHTML('beforeend', (value == 0)? markup1: markup2);
     })
+}
+
+const getPages = json => {
+    pages = json.feed.entry;
+    populatePages(pages);
+}
+
+const populatePages = pages => {
+    for (let i = 0; i < pages.length; i++) {
+        console.log(pages[i].gs$cell.$t);
+    }
 }
