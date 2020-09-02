@@ -17,7 +17,7 @@ $(document).on('click', '#menu-flters li', function() {
         $('#menu-flters-sub li.filter-active').click();
     } else {
         let number = getPageNo(name);
-        // addScript(number);
+        addScript(number);
     }
 });
 
@@ -26,7 +26,7 @@ $(document).on('click', '#menu-flters-sub li', function() {
     $(this).addClass('filter-active');
     let name = $(this).html();
     let number = getPageNo(name);
-    // addScript(number);
+    addScript(number);
 });
 
 const getPages = json => {
