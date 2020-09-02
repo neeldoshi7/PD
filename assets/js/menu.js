@@ -4,7 +4,6 @@ const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
 let menu = [[]];
-menu[20][2] = "ayay";
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -98,6 +97,9 @@ const populateData = json => {
         if (el.gs$cell.row == 1) {
             c++;
         } else {
+            if (el.gs$cell.col == 1) {
+                menu[el.gs$cell.row] = [];
+            }
             menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
         }
     })
