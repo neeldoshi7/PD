@@ -77,10 +77,10 @@ const populatePages = pages => {
 }
 
 const getPageNo = name => {
-    console.log(pageNo.entries);
+    console.log(pageNo);
     console.log(name);
     console.log(pageNo.get(name));
-    console.log(pageNo.get("COLD SANDWICH"));
+    console.log(pageNo.has("COLD SANDWICH"));
     return pageNo.get(name);
 }
 
