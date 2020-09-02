@@ -3,7 +3,7 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
-let menu = [[]];
+let menu = new Array();
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -98,7 +98,7 @@ const populateData = json => {
             c++;
         } else {
             if (el.gs$cell.col == 1) {
-                menu[el.gs$cell.row - 2] = [];
+                menu[el.gs$cell.row - 2] = new Array(c);
             }
             menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
         }
