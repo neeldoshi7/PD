@@ -94,6 +94,7 @@ const addScript = number => {
 
 const populateData = json => {
     data = json.feed.entry;
+    console.log(data);
     data.forEach(el => {
         let c = 0;
         if (el.gs$cell.row == 1) {
