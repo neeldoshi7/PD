@@ -97,9 +97,9 @@ const populateData = json => {
         if (el.gs$cell.row == 1) {
             c++;
         } else {
-            if (el.gs$cell.col == 1) {
-                menu[el.gs$cell.row - 2] = new Array(c);
-            }
+            menu.forEach(el => {
+                el = new Array(c);
+            })
             menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
         }
     })
