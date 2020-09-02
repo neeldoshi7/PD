@@ -77,7 +77,7 @@ const populatePages = pages => {
 }
 
 const getPageNo = name => {
-    console.log("COLD SANDWICH" === name;)
+    console.log("COLD SANDWICH" === name);
     console.log(pageNo);
     console.log(name);
     console.log(pageNo.get(name))
