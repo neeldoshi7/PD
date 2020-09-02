@@ -3,10 +3,10 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
-const code = [];
-const title = [];
-const description = [];
-const price = [];
+const code;
+const title;
+const description;
+const price;
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -95,6 +95,10 @@ const addScript = number => {
 const populateData = json => {
     data = json.feed.entry;
     console.log(data);
+    code = [];
+    title = [];
+    description = [];
+    price = [];
     let c = 0;
     data.forEach(el => {
         if (el.gs$cell.row == 1) {
@@ -124,4 +128,30 @@ const populateData = json => {
     console.log(title);
     console.log(description);
     console.log(price);
+    displayData(c);
+}
+
+const displayData = c => {
+    let menulist = document.getElementById('menu-list');
+    if (c === 2) {
+        for (let i = 0; i < title.length; i++) {
+            const markup1 = `<div class="col-lg-6 menu-item filter-starters">
+                                <div class="menu-content">
+                                    <a href="#">${title[i]}</a><span>${price[i]}</span>
+                                </div>
+                            </div>`;
+            menulist.insertAdjacentHTML('beforeend', markup1);
+        }
+    } else if (c === 4) {
+        for (let i = 0; i < title.length; i++) {
+            const markup2 = `<div class="col-lg-6 menu-item filter-starters">
+                                <div class="menu-content">
+                                    <span>${code[i]}</span><a href="#">${title[i]}</a><span>${price[i]}</span>
+                                </div>
+                                <div class="menu-ingredients">${description[i]}</div>
+                            </div>`;
+            menulist.insertAdjacentHTML('beforeend', markup2);
+        }
+    }
+    
 }
