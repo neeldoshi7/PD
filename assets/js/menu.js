@@ -68,7 +68,9 @@ const getPages = json => {
 }
 
 const populatePages = pages => {
-    for (let i = 0; i < pages.length; i++) {
+    for (let i = 0; i < pages.length; i += 2) {
         console.log(pages[i].gs$cell.$t);
+        pageNo.set(pages[i].gs$cell.$t, pages[i + 1].gs$cell.$t);
     }
+    console.log(pageNo);
 }
