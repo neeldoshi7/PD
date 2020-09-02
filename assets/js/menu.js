@@ -80,7 +80,7 @@ const getPageNo = name => {
     console.log(pageNo);
     console.log(name);
     console.log(pageNo.get(name));
-    console.log(pageNo.has("COLD SANDWICH"));
+    console.log(pageNo.has("COLDSANDWICH"));
     return pageNo.get(name);
 }
 
