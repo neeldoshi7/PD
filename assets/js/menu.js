@@ -4,9 +4,12 @@ const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
 let menu = new Array(100);
-menu.forEach(el => {
-    el = new Array(4);
-})
+for (var i = 0; i < 100; i++) {
+    menu[i] = new Array(4);
+}
+// menu.forEach(el => {
+//     el = new Array(4);
+// })
 console.log(menu);
 console.log(menu[0]);
 
