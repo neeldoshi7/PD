@@ -29,6 +29,17 @@ $(document).on('click', '#menu-flters-sub li', function() {
     // addScript(number);
 });
 
+const getPages = json => {
+    pages = json.feed.entry;
+    populatePages(pages);
+}
+
+const populatePages = pages => {
+    for (let i = 0; i < pages.length; i += 2) {
+        pageNo.set(pages[i].gs$cell.$t, pages[i + 1].gs$cell.$t);
+    }
+}
+
 const getData = json => {
     data = json.feed.entry;
     populateDS(data);
@@ -63,17 +74,6 @@ const populateSubCatButtons = sub => {
         let cat = document.getElementById('menu-flters-sub');
         cat.insertAdjacentHTML('beforeend', (value == 0)? markup1: markup2);
     })
-}
-
-const getPages = json => {
-    pages = json.feed.entry;
-    populatePages(pages);
-}
-
-const populatePages = pages => {
-    for (let i = 0; i < pages.length; i += 2) {
-        pageNo.set(pages[i].gs$cell.$t, pages[i + 1].gs$cell.$t);
-    }
 }
 
 const getPageNo = name => {
