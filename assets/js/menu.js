@@ -95,6 +95,8 @@ const addScript = number => {
 const populateData = json => {
     data = json.feed.entry;
     console.log(data);
+    let menulist = document.getElementById('menu-list');
+    menulist.empty();
     code = [];
     title = [];
     description = [];
