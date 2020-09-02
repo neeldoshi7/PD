@@ -4,6 +4,7 @@ const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
 let menu = [[]];
+menu[20] = "ayay";
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
