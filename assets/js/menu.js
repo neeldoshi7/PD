@@ -7,6 +7,7 @@ let menu = new Array(100);
 menu.forEach(el => {
     el = new Array(4);
 })
+console.log(menu);
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
