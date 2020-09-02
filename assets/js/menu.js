@@ -11,7 +11,7 @@ for (var i = 0; i < 100; i++) {
 //     el = new Array(4);
 // })
 console.log(menu);
-console.log(menu[0]);
+console.log(menu[0][2]);
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
