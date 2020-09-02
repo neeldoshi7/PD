@@ -3,15 +3,10 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
-let menu = new Array(100);
-for (var i = 0; i < 100; i++) {
-    menu[i] = new Array(4);
-}
-// menu.forEach(el => {
-//     el = new Array(4);
-// })
-console.log(menu);
-console.log(menu[0][2]);
+const code = new Array(100);
+const title = new Array(100);
+const description = new Array(100);
+const price = new Array(100);
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -99,13 +94,32 @@ const addScript = number => {
 
 const populateData = json => {
     data = json.feed.entry;
-    // console.log(data);
     data.forEach(el => {
-        // let c = 0;
-        // if (el.gs$cell.row == 1) {
-        //     c++;
-        // }
-        menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
+        let c = 0;
+        if (el.gs$cell.row == 1) {
+            c++;
+        } else {
+            if (c === 2) {
+                if (el.gs$cell.col == 1) {
+                    title.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 2) {
+                    price.push(el.gs$cell.$t);
+                }
+            } else if (c === 4) {
+                if (el.gs$cell.col == 1) {
+                    code.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 2) {
+                    title.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 3) {
+                    description.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 4) {
+                    price.push(el.gs$cell.$t);
+                }
+            }
+        }
     })
-    console.log(menu);
+    console.log(code);
+    console.log(title);
+    console.log(description);
+    console.log(price);
 }
