@@ -4,6 +4,9 @@ const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
 let menu = new Array(100);
+menu.forEach(el => {
+    el = new Array(4);
+})
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -97,9 +100,6 @@ const populateData = json => {
         // if (el.gs$cell.row == 1) {
         //     c++;
         // }
-        menu.forEach(el => {
-            el = new Array(4);
-        })
         menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
     })
     console.log(menu);
