@@ -93,15 +93,14 @@ const populateData = json => {
     data = json.feed.entry;
     // console.log(data);
     data.forEach(el => {
-        let c = 0;
-        if (el.gs$cell.row == 1) {
-            c++;
-        } else {
-            menu.forEach(el => {
-                el = new Array(c);
-            })
-            menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
-        }
+        // let c = 0;
+        // if (el.gs$cell.row == 1) {
+        //     c++;
+        // }
+        menu.forEach(el => {
+            el = new Array(4);
+        })
+        menu[el.gs$cell.row - 2][el.gs$cell.col - 1] = el.gs$cell.$t;
     })
     console.log(menu);
 }
