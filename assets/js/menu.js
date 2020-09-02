@@ -16,7 +16,8 @@ $(document).on('click', '#menu-flters li', function() {
         populateSubCatButtons(subarr);
         $('#menu-flters-sub li.filter-active').click();
     } else {
-
+        let number = getPageNo(name);
+        addScript(number);
     }
 });
 
@@ -24,6 +25,8 @@ $(document).on('click', '#menu-flters-sub li', function() {
     $('#menu-flters-sub li').removeClass('filter-active');
     $(this).addClass('filter-active');
     let name = $(this).html();
+    let number = getPageNo(name);
+    addScript(number);
 });
 
 const getData = json => {
@@ -69,8 +72,23 @@ const getPages = json => {
 
 const populatePages = pages => {
     for (let i = 0; i < pages.length; i += 2) {
-        console.log(pages[i].gs$cell.$t);
         pageNo.set(pages[i].gs$cell.$t, pages[i + 1].gs$cell.$t);
     }
-    console.log(pageNo);
+}
+
+const getPageNo = name => {
+    return pageNo.get(name);
+}
+
+const addScript = number => {
+    const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=populateData`;
+    var s = document.createElement('script');
+    s.setAttribute('src', src);
+    document.body.appendChild(s);
+}
+
+const populateData = json => {
+    data = json.feed.entry;
+    console.log(data);
 }
