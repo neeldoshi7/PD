@@ -23,6 +23,12 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face
+{
+    font-family: 'Corsiva';
+    src: url(fonts/MTCORSVA.TFF);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Monotype Corsiva";
 }
