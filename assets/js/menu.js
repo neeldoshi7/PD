@@ -138,7 +138,7 @@ const displayData = c => {
         for (let i = 0; i < title.length; i++) {
             const markup1 = `<div class="col-lg-6 menu-item">
                                 <div class="menu-content">
-                                    <a href="#">${title[i]}</a><span>$${price[i]}</span>
+                                    <a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
                             </div>`;
             menulist.insertAdjacentHTML('beforeend', markup1);

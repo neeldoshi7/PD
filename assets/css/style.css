@@ -980,6 +980,10 @@ section {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 } */
 
+.dots {
+  content: ".";
+}
+
 .menu .menu-content a {
   padding-right: 10px;
   background: #ffff67;
