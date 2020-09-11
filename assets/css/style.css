@@ -967,7 +967,7 @@ section {
   position: relative;
 }
 
-.menu .menu-content::after {
+/* .menu .menu-content::after {
   content: "......................................................................"
  "...................................................................."
  "....................................................................";
@@ -978,7 +978,7 @@ section {
   z-index: 1;
   color: #dad8d4;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+} */
 
 .menu .menu-content a {
   padding-right: 10px;
