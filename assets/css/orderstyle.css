@@ -19,12 +19,13 @@
 }
 
 .itemFirstDiv{
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .itemInfo{
   width: 80vw;
   margin-left: 1vw;
+  padding-right: 1vw;
 }
 
 
@@ -43,6 +44,7 @@
 
 .addToCart{
   margin-top: 1vw;
+  margin-bottom: 1vh;
 }
 
 .buttonAddToCart{
@@ -50,7 +52,7 @@
   color: white;
   float: right;
   margin-right: 2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 @media (max-width: 768px) {
@@ -63,6 +65,10 @@
     margin-top: 4vh;
   }
 
+  .itemInfo{
+    padding: 0px 3vw;
+  }
+
   .itemName{
     font-size: 5vw;
   }
@@ -73,6 +79,7 @@
 
   .itemPrice{
     font-size: 5vw;
+    padding: 0px 2vw;
   }
 
   .buttonAddToCart{
