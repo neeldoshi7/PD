@@ -982,6 +982,8 @@ section {
 
 .dots {
   content: ".";
+  position: absolute;
+  z-index: 1;
 }
 
 .menu .menu-content a {
