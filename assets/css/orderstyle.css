@@ -16,6 +16,7 @@
 
 .itemDiv{
   margin: 1vw 0px;
+  border: 1px solid black;
 }
 
 .itemInfo{
@@ -23,12 +24,18 @@
   margin-left: 1vw;
 }
 
+
+.itemName{
+  font-size: 2vw;
+}
+
 .itemDescription{
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .itemPrice{
   margin-right: 1.5vw;
+  font-size: 3vw;
 }
 
 .addToCart{
@@ -54,11 +61,15 @@
   }
 
   .itemName{
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .itemDescription{
-    font-size: 4vw;
+    font-size: 3vw;
+  }
+
+  .itemPrice{
+    font-size: 5vw;
   }
 
   .buttonAddToCart{
