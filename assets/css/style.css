@@ -981,7 +981,7 @@ section {
 } */
 
 .dots {
-  content: ".";
+  content: "........................";
   position: absolute;
   z-index: 1;
 }
