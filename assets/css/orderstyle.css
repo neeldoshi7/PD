@@ -9,7 +9,7 @@
 }
 
 .itemSection{
-  width: 90vw;
+  width: 100%;
   border: 1px black solid;
   margin-top: 4vh;
 }
@@ -53,8 +53,12 @@
     margin-top: 4vh;
   }
 
+  .itemName{
+    font-size: 6vw;
+  }
+
   .itemDescription{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .buttonAddToCart{
