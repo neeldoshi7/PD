@@ -140,6 +140,7 @@ const displayData = c => {
                                 <div class="menu-content">
                                     <a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
+                                </hr>
                             </div>`;
             menulist.insertAdjacentHTML('beforeend', markup1);
         }
@@ -150,6 +151,7 @@ const displayData = c => {
                                     <span>${code[i]}</span><a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
                                 <div class="menu-ingredients">${description[i]}</div>
+                                </hr>
                             </div>`;
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
