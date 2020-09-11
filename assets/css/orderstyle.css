@@ -80,16 +80,20 @@
   .orderContainer{
     margin-top: 10vh;
     margin-bottom: 10vh;
-    height: 50vh;
+    height: 60vh;
   }
 
   .sidebar{
-    height: 50vh;
+    height: 60vh;
     width: 35vw;
   }
 
   .itemDisplayDiv{
-    height: 50vh;
-    width: 50vw;
+    height: 60vh;
+    width: 55vw;
+  }
+
+  .itemDescription{
+    font-size: 3vw;
   }
 }
