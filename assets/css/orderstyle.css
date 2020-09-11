@@ -19,7 +19,7 @@
 }
 
 .itemFirstDiv{
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .itemInfo{
@@ -50,7 +50,7 @@
   color: white;
   float: right;
   margin-right: 2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 @media (max-width: 768px) {
