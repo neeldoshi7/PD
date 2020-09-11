@@ -18,6 +18,10 @@
   border: 1px solid black;
 }
 
+.itemDiv{
+  margin-top: 1vh;
+}
+
 .itemInfo{
   width: 80vw;
   margin-left: 1vw;
@@ -35,7 +39,6 @@
 .itemPrice{
   margin-right: 1.5vw;
   font-size: 2vw;
-  padding-top: 1vh;
 }
 
 .addToCart{
@@ -65,7 +68,7 @@
   }
 
   .itemDescription{
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .itemPrice{
