@@ -3,22 +3,43 @@
 }
 
 .buttonOrder{
-    border: 1px black solid;
+    /* border: 1px black solid; */
+    background-color: #ffb03b;
+    color: white;
 }
 
 .itemSection{
-  margin: 6vh 1vh;
+  width: 90vw;
+  border: 1px black solid;
+  margin-top: 4vh;
 }
 
-.itemCard{
-  height: 32vh;
-  border: 1px black solid;
+.itemDiv{
+  margin: 1vw 0px;
 }
 
-.itemImage{
-  margin: 2vh 1vw;
-  border: 1px black solid;
-  height: 20vh
+.itemInfo{
+  width: 80vw;
+  margin-left: 1vw;
+}
+
+.itemDescription{
+  font-size: 1vw;
+}
+
+.itemPrice{
+  margin-right: 1.5vw;
+}
+
+.addToCart{
+  margin-top: 1vw;
+}
+
+.buttonAddToCart{
+  background-color: #ffb03b;
+  color: white;
+  float: right;
+  margin-right: 2vw;
 }
 
 @media (max-width: 768px) {
@@ -26,18 +47,23 @@
     margin-top:10vw;
   }
 
-  .itemCard{
-    margin: 3vh 2vh;
-    height: 30vh;
+  .itemSection{
+    width: 90vw;
+    border: 1px black solid;
+    margin-top: 4vh;
   }
 
-  .itemImage{
-    height: 20vh
+  .itemDescription{
+    font-size: 3vw;
+  }
+
+  .buttonAddToCart{
+
   }
 }
 
 /* New Order page */
-
+/*
 .orderContainer{
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -96,4 +122,4 @@
   .itemDescription{
     font-size: 3vw;
   }
-}
+} */
