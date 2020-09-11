@@ -44,6 +44,7 @@
 
 .addToCart{
   margin-top: 1vw;
+  margin-bottom: 1vh;
 }
 
 .buttonAddToCart{
@@ -62,6 +63,10 @@
   .itemSection{
     width: 90vw;
     margin-top: 4vh;
+  }
+
+  .itemInfo{
+    padding: 0px 3vw;
   }
 
   .itemName{
