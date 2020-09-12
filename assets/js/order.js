@@ -35,8 +35,8 @@ const populateDS = data => {
 
 const populateCatDropdown = category => {
     category.forEach((value, key) => {
-        const markup1 = `<a class="dropdown-item" href="#item1" selected>${key}</a>`;
-        const markup2 = `<a class="dropdown-item" href="#item1" >${key}</a>`;
+        const markup1 = `<a selected>${key}</a>`;
+        const markup2 = `<a>${key}</a>`;
         let cat = document.querySelector('.cat');
         cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
     })
