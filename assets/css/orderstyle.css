@@ -4,8 +4,21 @@
 
 .buttonOrder{
     /* border: 1px black solid; */
-    background-color: #ffb03b;
+    /* background-color: #ffb03b; */
     color: white;
+}
+
+.categoriesButton{
+  margin-left: 1vw;
+  background-color: #ffb03b;
+  color: white;
+  padding: 0.8vh 0.3vh;
+  border: none;
+    border-radius: 5px;
+}
+
+.dropdownTitle{
+    font-size: 2.5vw;
 }
 
 .inline {
@@ -67,6 +80,11 @@
   #order{
     margin-top:10vw;
   }
+
+  .dropdownTitle{
+      font-size: 6vw;
+  }
+
 
   .itemSection{
     width: 90vw;
