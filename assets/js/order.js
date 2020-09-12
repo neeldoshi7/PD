@@ -1,3 +1,9 @@
+let data;
+let pages;
+const category = new Map();
+const subCategory = new Map();
+const pageNo = new Map();
+
 const getPages = json => {
     pages = json.feed.entry;
     populatePages(pages);
