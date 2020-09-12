@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/orderstyle.css" rel="stylesheet">
+
+  <script src="assets/js/order.js"></script>
   <!-- =======================================================
   * Template Name: Delicious - v2.1.0
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -81,16 +83,21 @@
             <button class="btn buttonOrder dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
             </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu cat" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#item1">Category 1</a>
                 <a class="dropdown-item" href="#item2">Category 2</a>
                 <a class="dropdown-item" href="#item3">Category 3</a>
               </div>
           </div>
-          <div class="dropdown inline">
+          <div class="dropdown inline" id="hide">
             <button class="btn buttonOrder dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Sub-Categories
             </button>
+            <div class="dropdown-menu sub-cat" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#item1">Category 1</a>
+              <a class="dropdown-item" href="#item2">Category 2</a>
+              <a class="dropdown-item" href="#item3">Category 3</a>
+            </div>
           </div>
         </div>
 
@@ -157,6 +164,9 @@
 
       </div>
     </section>
+    <script src="https://spreadsheets.google.com/feeds/cells/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/2/public/values?alt=json-in-script&callback=getPages"></script>
+    <script src="https://spreadsheets.google.com/feeds/cells/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/1/public/values?alt=json-in-script&callback=getData"></script>
+
 
     <!-- <section id="order">
 
