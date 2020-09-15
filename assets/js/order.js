@@ -27,9 +27,9 @@ const getData = json => {
 const populateDS = data => {
     data.forEach(el => {
         if (el.gs$cell.row != 1) {
-            if (el.gs$cell.col == 1) 
+            if (el.gs$cell.col == 1)
                 category.set(el.gs$cell.$t, el.gs$cell.row - 1);
-            else 
+            else
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
@@ -137,7 +137,7 @@ const displayData = c => {
                                 <div class="itemPrice">${price[i]}</div>
                             </div>
                             <div class="addToCart">
-                                <button class="btn buttonAddToCart">Add</button>
+                                <button class="btn buttonAddToCart myBtn">Add</button>
                             </div>
                         </div>`
             cat1.insertAdjacentHTML('beforeend', markup);
@@ -152,7 +152,7 @@ const displayData = c => {
                                 <div class="itemPrice">${price[i]}</div>
                             </div>
                             <div class="addToCart">
-                                <button class="btn buttonAddToCart">Add</button>
+                                <button class="btn buttonAddToCart myBtn">Add</button>
                             </div>
                         </div>`
             cat1.insertAdjacentHTML('beforeend', markup);
