@@ -130,7 +130,7 @@ const displayData = () => {
         let markup = `<div class="itemDiv d-flex flex-column">
                         <div class="d-flex flex-row itemFirstDiv">
                             <div class="itemInfo">
-                                <div class="itemName"><span>${code[i]}</span>${title[i]}</div>
+                                <div class="itemName"><span>${code[i]}</span>  ${title[i]}</div>
                                 <div class="itemDescription">${description[i]}</div>
                             </div>
                             <div class="itemPrice">${price[i]}</div>
