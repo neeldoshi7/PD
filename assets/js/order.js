@@ -40,7 +40,7 @@ const populateDropdown = (category, subCategory) => {
     let select = document.querySelector('.Categories');
     category.forEach((value, key) => {
         if (subCategory.has(value)) {
-            let sub = subCategory.get(val);
+            let sub = subCategory.get(value);
             let subarr = sub.split(",");
             markup = `<optgroup label="${key}">`;
             subarr.forEach(val => {
