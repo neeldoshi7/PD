@@ -155,4 +155,5 @@ $(document).on('click', '.buttonAddToCart', function() {
     let id = $(this).data('id');
     console.log(title[id]);
     $('.modal-itemName').text(title[id]);
+    $('.modal-itemprice').text(price[id]);
 })
