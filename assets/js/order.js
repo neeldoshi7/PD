@@ -126,7 +126,7 @@ const populateData = json => {
 
 const displayData = c => {
     let cat1 = document.querySelector('#Category1');
-    if (c == 2) {
+    if (c == 4) {
         for (let i = 0; i < title.length; i++) {
             let markup = `<div class="itemDiv d-flex flex-column">
                             <div class="d-flex flex-row itemFirstDiv">
@@ -142,7 +142,7 @@ const displayData = c => {
                         </div>`
             cat1.insertAdjacentHTML('beforeend', markup);
         }
-    } else if (c == 4) {
+    } else if (c == 2) {
         for (let i = 0; i < title.length; i++) {
             let markup = `<div class="itemDiv d-flex flex-column">
                             <div class="d-flex flex-row itemFirstDiv">
