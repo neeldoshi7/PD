@@ -31,29 +31,32 @@ const populateDS = data => {
     });
     console.log(category);
     console.log(subCategory);
-    // populateCatDropdown(category);
-    // $("#menu-flters li.filter-active").click();
     populateDropdown(category, subCategory);
 }
 
 const populateDropdown = (category, subCategory) => {
     let select = document.querySelector('#Categories');
-    console.log(select);
     category.forEach((value, key) => {
         if (subCategory.has(value)) {
             let sub = subCategory.get(value);
             let subarr = sub.split(",");
             markup = `<optgroup label="${key}">`;
             subarr.forEach(val => {
-                markup += `<option>${val}</option>`;
+                markup += `<option value="${val}">${val}</option>`;
             })
             markup += `<optgroup>`;
-            console.log(markup);
         } else {
-            markup = `<option>${key}</option>`
+            markup = `<option value="${key}">${key}</option>`
         }
         select.insertAdjacentHTML('beforeend', markup);
     })
+    populateDisplay();
+}
+
+const populateDisplay = () => {
+    let select = document.querySelector("#Categories");
+    console.log(select);
+    console.log(select.value);
 }
 
 const populateCatDropdown = category => {
