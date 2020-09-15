@@ -3,6 +3,10 @@ let pages;
 const category = new Map();
 const subCategory = new Map();
 const pageNo = new Map();
+let code = [];
+let title = [];
+let description = [];
+let price = [];
 
 const getPages = json => {
     pages = json.feed.entry;
@@ -36,6 +40,7 @@ const populateDS = data => {
 
 const populateDropdown = (category, subCategory) => {
     let select = document.querySelector('#Categories');
+    let markup = "";
     category.forEach((value, key) => {
         if (subCategory.has(value)) {
             let sub = subCategory.get(value);
@@ -57,26 +62,83 @@ const populateDisplay = () => {
     let select = document.querySelector("#Categories");
     console.log(select);
     console.log(select.value);
-}
-
-const populateCatDropdown = category => {
-    category.forEach((value, key) => {
-        const markup1 = `<a class="dropdown-item" selected>${key}</a>`;
-        const markup2 = `<a class="dropdown-item" >${key}</a>`;
-        let cat = document.querySelector('.cat');
-        cat.insertAdjacentHTML('beforeend', (value == 1)? markup1: markup2);
-    })
-}
-
-const populateSubCatButtons = sub => {
-    sub.forEach((el, value) => {
-        const markup1 = `<li class="filter-active">${el}</li>`;
-        const markup2 = `<li>${el}</li>`;
-        let cat = document.getElementById('menu-flters-sub');
-        cat.insertAdjacentHTML('beforeend', (value == 0)? markup1: markup2);
-    })
+    let page = getPageNo(select.value);
+    addScript(page);
 }
 
 const getPageNo = name => {
     return pageNo.get(name);
+}
+
+const addScript = number => {
+    const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=populateData`;
+    var s = document.createElement('script');
+    s.setAttribute('src', src);
+    document.body.appendChild(s);
+}
+
+const getItems = json => {
+    data = json.feed.entry;
+    populateData(data);
+    addHTML(data);
+}
+
+const populateData = json => {
+    data = json.feed.entry;
+    console.log(data);
+    $('#Category1').empty();
+    code = [];
+    title = [];
+    description = [];
+    price = [];
+    let c = 0;
+    data.forEach(el => {
+        if (el.gs$cell.row == 1) {
+            console.log(c);
+            c++;
+        } else {
+            if (c === 2) {
+                if (el.gs$cell.col == 1) {
+                    title.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 2) {
+                    price.push(el.gs$cell.$t);
+                }
+            } else if (c === 4) {
+                if (el.gs$cell.col == 1) {
+                    code.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 2) {
+                    title.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 3) {
+                    description.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 4) {
+                    price.push(el.gs$cell.$t);
+                }
+            }
+        }
+    })
+    console.log(code);
+    console.log(title);
+    console.log(description);
+    console.log(price);
+    displayData();
+}
+
+const displayData = () => {
+    let cat1 = document.querySelector('#Category1');
+    for (let i = 0; i < title.length; i++) {
+        let markup = `<div class="itemDiv d-flex flex-column">
+                        <div class="d-flex flex-row itemFirstDiv">
+                            <div class="itemInfo">
+                                <div class="itemName">${title[i]}</div>
+                                <div class="itemDescription">${description[i]}</div>
+                            </div>
+                            <div class="itemPrice">${price[i]}</div>
+                        </div>
+                        <div class="addToCart">
+                            <button class="btn buttonAddToCart">Add</button>
+                        </div>
+                    </div>`
+        cat1.insertAdjacentHTML('beforeend', markup);
+    }
 }
