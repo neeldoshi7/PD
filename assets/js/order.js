@@ -137,7 +137,7 @@ const displayData = c => {
                                 <div class="itemPrice">${price[i]}</div>
                             </div>
                             <div class="addToCart">
-                                <button class="btn buttonAddToCart"  data-toggle="modal" data-target="#myModal">Add</button>
+                                <button class="btn buttonAddToCart" data-id="${i}"  data-toggle="modal" data-target="#myModal" >Add</button>
                             </div>
                         </div>`
             cat1.insertAdjacentHTML('beforeend', markup);
@@ -152,10 +152,14 @@ const displayData = c => {
                                 <div class="itemPrice">${price[i]}</div>
                             </div>
                             <div class="addToCart">
-                                <button class="btn buttonAddToCart"  data-toggle="modal" data-target="#myModal">Add</button>
+                                <button class="btn buttonAddToCart" data-id="${i}" data-toggle="modal" data-target="#myModal">Add</button>
                             </div>
                         </div>`
             cat1.insertAdjacentHTML('beforeend', markup);
         }
     }
 }
+
+$(document).on('click', '.buttonAddToCart', function() {
+    console.log($(this).data('id'));
+})
