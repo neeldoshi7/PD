@@ -121,24 +121,41 @@ const populateData = json => {
     console.log(title);
     console.log(description);
     console.log(price);
-    displayData();
+    displayData(c);
 }
 
-const displayData = () => {
+const displayData = c => {
     let cat1 = document.querySelector('#Category1');
-    for (let i = 0; i < title.length; i++) {
-        let markup = `<div class="itemDiv d-flex flex-column">
-                        <div class="d-flex flex-row itemFirstDiv">
-                            <div class="itemInfo">
-                                <div class="itemName"><span>${code[i]}</span>  ${title[i]}</div>
-                                <div class="itemDescription">${description[i]}</div>
+    if (c == 2) {
+        for (let i = 0; i < title.length; i++) {
+            let markup = `<div class="itemDiv d-flex flex-column">
+                            <div class="d-flex flex-row itemFirstDiv">
+                                <div class="itemInfo">
+                                    <div class="itemName"><span>${code[i]}</span>  ${title[i]}</div>
+                                    <div class="itemDescription">${description[i]}</div>
+                                </div>
+                                <div class="itemPrice">${price[i]}</div>
                             </div>
-                            <div class="itemPrice">${price[i]}</div>
-                        </div>
-                        <div class="addToCart">
-                            <button class="btn buttonAddToCart">Add</button>
-                        </div>
-                    </div>`
-        cat1.insertAdjacentHTML('beforeend', markup);
+                            <div class="addToCart">
+                                <button class="btn buttonAddToCart">Add</button>
+                            </div>
+                        </div>`
+            cat1.insertAdjacentHTML('beforeend', markup);
+        }
+    } else if (c == 4) {
+        for (let i = 0; i < title.length; i++) {
+            let markup = `<div class="itemDiv d-flex flex-column">
+                            <div class="d-flex flex-row itemFirstDiv">
+                                <div class="itemInfo">
+                                    <div class="itemName">${title[i]}</div>
+                                </div>
+                                <div class="itemPrice">${price[i]}</div>
+                            </div>
+                            <div class="addToCart">
+                                <button class="btn buttonAddToCart">Add</button>
+                            </div>
+                        </div>`
+            cat1.insertAdjacentHTML('beforeend', markup);
+        }
     }
 }
