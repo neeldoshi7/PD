@@ -37,7 +37,7 @@ const populateDS = data => {
 }
 
 const populateDropdown = (category, subCategory) => {
-    let select = document.querySelector('.Categories');
+    let select = document.querySelector('#Categories');
     console.log(select);
     category.forEach((value, key) => {
         if (subCategory.has(value)) {
