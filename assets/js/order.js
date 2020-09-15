@@ -29,7 +29,9 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    populateCatDropdown(category);
+    console.log(category);
+    console.log(subCategory);
+    // populateCatDropdown(category);
     // $("#menu-flters li.filter-active").click();
 }
 
