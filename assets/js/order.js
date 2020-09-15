@@ -90,7 +90,6 @@ const populateData = json => {
     let c = 0;
     data.forEach(el => {
         if (el.gs$cell.row == 1) {
-            console.log(c);
             c++;
         } else {
             if (c === 2) {
