@@ -76,6 +76,21 @@
   margin-bottom: 1vh;
 }
 
+.modal-header{
+    background-color: #ffb03b !important;
+}
+
+.modal-itemName{
+
+}
+
+.modal-addtocart{
+    background-color: #ffb03b;
+}
+
+.modal-Button{
+    background-color: #ffb03b;
+}
 
 @media (max-width: 768px) {
   #order{
@@ -111,6 +126,10 @@
 
   .buttonAddToCart{
 
+  }
+
+  .modal-itemName{
+    font-size: 7vw;
   }
 }
 
