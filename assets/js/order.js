@@ -124,7 +124,7 @@ const displayData = c => {
                                     <div class="itemName"><span>${code[i]}</span>  ${title[i]}</div>
                                     <div class="itemDescription">${description[i]}</div>
                                 </div>
-                                <div class="itemPrice">${price[i]}</div>
+                                <div class="itemPrice">$${price[i]}</div>
                             </div>
                             <div class="addToCart">
                                 <button class="btn buttonAddToCart" data-id="${i}"  data-toggle="modal" data-target="#myModal" >Add</button>
@@ -139,7 +139,7 @@ const displayData = c => {
                                 <div class="itemInfo">
                                     <div class="itemName">${title[i]}</div>
                                 </div>
-                                <div class="itemPrice">${price[i]}</div>
+                                <div class="itemPrice">$${price[i]}</div>
                             </div>
                             <div class="addToCart">
                                 <button class="btn buttonAddToCart" data-id="${i}" data-toggle="modal" data-target="#myModal">Add</button>
