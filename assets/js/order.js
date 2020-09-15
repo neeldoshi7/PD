@@ -33,8 +33,6 @@ const populateDS = data => {
                 subCategory.set(el.gs$cell.row - 1, el.gs$cell.$t);
         }
     });
-    console.log(category);
-    console.log(subCategory);
     populateDropdown(category, subCategory);
 }
 
@@ -60,8 +58,6 @@ const populateDropdown = (category, subCategory) => {
 
 const populateDisplay = () => {
     let select = document.querySelector("#Categories");
-    console.log(select);
-    console.log(select.value);
     let page = getPageNo(select.value);
     addScript(page);
 }
@@ -86,7 +82,6 @@ const getItems = json => {
 
 const populateData = json => {
     data = json.feed.entry;
-    console.log(data);
     $('#Category1').empty();
     code = [];
     title = [];
@@ -117,10 +112,6 @@ const populateData = json => {
             }
         }
     })
-    console.log(code);
-    console.log(title);
-    console.log(description);
-    console.log(price);
     displayData(c);
 }
 
