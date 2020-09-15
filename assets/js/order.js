@@ -33,6 +33,18 @@ const populateDS = data => {
     console.log(subCategory);
     // populateCatDropdown(category);
     // $("#menu-flters li.filter-active").click();
+    populateDropdown(category, subCategory);
+}
+
+const populateDropdown = (category, subCategory) => {
+    let select = document.querySelector('.Categories');
+    category.forEach((value, key) => {
+        if (subCategory.has(value)) {
+            markup = `<optgroup label="${key}">`;
+            markup += `<optgroup>`;
+            console.log(markup);
+        }
+    })
 }
 
 const populateCatDropdown = category => {
