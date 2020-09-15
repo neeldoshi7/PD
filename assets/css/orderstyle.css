@@ -78,15 +78,30 @@
 
 .modal-header{
     background-color: #ffb03b !important;
-    height: 6vh !important;
+    height: 7vh !important;
+    text-align: center;
+}
+
+.modal-title{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-itemName{
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .modal-itemprice{
-  padding-left: 2vw;
+  float: right;
+}
+
+.modal-addtocartdiv{
+  width: 100%;
+}
+
+.modal-addtocartdiv2{
+  margin: 0 auto;
 }
 
 .modal-addtocart{
@@ -94,11 +109,19 @@
 }
 
 .modal-extraitemprice{
-  padding-left: 2vw;
+    float: right;
+}
+
+.modal-instructions{
+  width: 100%;
 }
 
 .modal-finalcost{
   font-size: 2.2vw;
+}
+
+.modal-totalcost{
+  float: right;
 }
 
 @media (max-width: 768px) {
@@ -146,7 +169,7 @@
   }
 
   .modal-extraitemprice{
-    padding-left: 4vw;
+    /* padding-left: 4vw; */
   }
 
   .modal-finalcost{
