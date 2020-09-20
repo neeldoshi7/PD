@@ -37,6 +37,7 @@
 .itemDiv{
   margin: 1vw 0px;
   border: 1px solid black;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .itemFirstDiv{
