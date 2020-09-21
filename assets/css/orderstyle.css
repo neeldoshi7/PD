@@ -17,6 +17,10 @@
   border-radius: 5px;
 }
 
+.inline {
+  display: inline;
+}
+
 .dropdownTitle{
     font-size: 2.5vw;
 }
