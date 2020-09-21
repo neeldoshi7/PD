@@ -14,7 +14,7 @@
   color: white;
   padding: 0.8vh 0.3vh;
   border: none;
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .dropdownTitle{
@@ -124,6 +124,18 @@
 
 .modal-totalcost{
   float: right;
+}
+
+.cartButton{
+  margin-left: 1vw;
+  background-color: #ffb03b;
+  color: white;
+}
+
+.cartButton:hover {
+  margin-left: 1vw;
+  background-color: #ffb03b;
+  color: white;
 }
 
 @media (max-width: 768px) {
