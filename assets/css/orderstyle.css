@@ -178,65 +178,31 @@
     font-size: 6vw;
   }
 }
-
-/* New Order page */
-/*
-.orderContainer{
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  height: 50vh;
+/*--------------------------------------------------------------
+# Cart button
+--------------------------------------------------------------*/
+.cart-button {
+  position: fixed;
+  /* display: none; */
+  right: 15px;
+  bottom: 60px;
+  z-index: 99999;
 }
 
-.sidebar{
-  border: 1px solid black;
-  height: 50vh;
-  width: 20vw;
-  position: relative;
+.cart-button i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: black;
+  color: #fff;
+  transition: all 0.4s;
 }
 
-.itemDisplayDiv{
-  border: 1px solid black;
-  height: 50vh;
-  width: 50vw;
+.cart-button i:hover {
+  background: black;
+  color: #fff;
 }
-
-.sidebarItem{
-  margin-left: 1vw;
-  margin-top: 1vw;
-}
-
-.itemtoDisplay{
-  margin-left: 1vw;
-  margin-top: 1vw;
-  width: 100%;
-}
-
-.itemInfo{
-  width: 40vw;
-}
-
-.itemDescription{
-  font-size: 0.8vw;
-}
-
-@media (max-width: 1000px) {
-  .orderContainer{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    height: 60vh;
-  }
-
-  .sidebar{
-    height: 60vh;
-    width: 35vw;
-  }
-
-  .itemDisplayDiv{
-    height: 60vh;
-    width: 55vw;
-  }
-
-  .itemDescription{
-    font-size: 3vw;
-  }
-} */
