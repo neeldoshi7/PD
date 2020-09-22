@@ -8,6 +8,7 @@ let title = [];
 let description = [];
 let price = [];
 let total = 0;
+let cost = 0;
 
 const getPages = json => {
     pages = json.feed.entry;
@@ -157,10 +158,15 @@ $(document).on('click', '.buttonAddToCart', function() {
     console.log(title[id]);
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
+    cost = price[id];
     total = price[id];
     changeTotal();
 })
 
+$(document).on('click', '.icofont-minus-circle', function() {
+    total = cost * $('.count').text;
+    changeTotal();
+})
 
 changeTotal = () => {
     $('.modal-totalcost').text(`$${total}`);
