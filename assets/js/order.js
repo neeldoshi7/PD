@@ -164,10 +164,12 @@ $(document).on('click', '.buttonAddToCart', function() {
 })
 
 $(document).on('click', '.icofont-minus-circle', function() {
-    total = cost * $('.count').text;
+    console.log($('.count').text());
+    total = cost * $('.count').text();
     changeTotal();
 })
 
 changeTotal = () => {
+    console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
