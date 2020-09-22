@@ -218,3 +218,59 @@
 .go-to-cartbuttondiv {
   padding-left: 50vw;
 }
+
+/*--------------------------------------------------------------
+# Quantity
+--------------------------------------------------------------*/
+
+.count {
+    color: #000;
+    font-size: 2vw;
+    text-align: center;
+    width: 3vw;
+    border: 0;
+}
+.qty .plus {
+    cursor: pointer;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+    cursor: pointer;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+
+.minus:hover{
+    color: #ffb03b !important;
+}
+.plus:hover{
+    color: #ffb03b !important;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+
+@media (max-width: 768px) {
+
+  .count {
+      font-size: 6vw;
+      width: 5vw;
+  }
+
+}
