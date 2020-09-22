@@ -162,12 +162,12 @@ $(document).on('click', '.buttonAddToCart', function() {
 });
 
 $(document).on('click', '.icofont-minus-circle', function() {
-    total -= cost + 0;
+    total -= parseInt(cost, 10);
     changeTotal();
 });
 
 $(document).on('click', '.icofont-plus-circle', function() {
-    total += cost + 0;
+    total += parseInt(cost, 10);
     changeTotal();
 });
 
