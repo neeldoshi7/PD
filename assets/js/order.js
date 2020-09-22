@@ -159,16 +159,17 @@ $(document).on('click', '.buttonAddToCart', function() {
     cost = price[id];
     total = price[id];
     changeTotal();
-})
+});
 
-qtClick = () => {
-    console.log($('.count').val());
-    total = cost * $('.count').val();
+$(document).on('click', '.icofont-minus-circle', function() {
+    total -= cost;
     changeTotal();
-}
+});
 
-$(document).on('click', '.icofont-minus-circle', qtClick);
-$(document).on('click', '.icofont-plus-circle', qtClick);
+$(document).on('click', '.icofont-plus-circle', function() {
+    total += cost;
+    changeTotal();
+});
 
 changeTotal = () => {
     console.log(total);
