@@ -153,9 +153,7 @@ const displayData = c => {
 }
 
 $(document).on('click', '.buttonAddToCart', function() {
-    console.log($(this).data('id'));
     let id = $(this).data('id');
-    console.log(title[id]);
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
     cost = price[id];
@@ -163,11 +161,14 @@ $(document).on('click', '.buttonAddToCart', function() {
     changeTotal();
 })
 
-$(document).on('click', '.icofont-minus-circle', function() {
+qtClick = () => {
     console.log($('.count').text());
     total = cost * $('.count').text();
     changeTotal();
-})
+}
+
+$(document).on('click', '.icofont-minus-circle', qtClick);
+$(document).on('click', '.icofont-plus-circle', qtClick);
 
 changeTotal = () => {
     console.log(total);
