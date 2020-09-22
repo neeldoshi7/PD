@@ -156,7 +156,7 @@ $(document).on('click', '.buttonAddToCart', function() {
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
-    cost = parseFloast(price[id]);
+    cost = parseFloat(price[id]);
     total = parseFloat(price[id]);
     console.log(typeof price[id])
     console.log(typeof cost)
