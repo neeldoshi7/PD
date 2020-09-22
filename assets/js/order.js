@@ -162,9 +162,8 @@ $(document).on('click', '.buttonAddToCart', function() {
 })
 
 qtClick = () => {
-    console.log($('.count').text());
     console.log($('.count').val());
-    total = cost * $('.count').text();
+    total = cost * $('.count').val();
     changeTotal();
 }
 
