@@ -158,16 +158,19 @@ $(document).on('click', '.buttonAddToCart', function() {
     $('.modal-itemprice').text(`$${price[id]}`);
     cost = price[id];
     total = price[id];
+    console.log(typeof price[id])
+    console.log(typeof cost)
+    console.log(typeof total)
     changeTotal();
 });
 
 $(document).on('click', '.icofont-minus-circle', function() {
-    total -= parseInt(cost, 10);
+    total -= parseFloat(cost);
     changeTotal();
 });
 
 $(document).on('click', '.icofont-plus-circle', function() {
-    total += parseInt(cost, 10);
+    total += parseFloat(cost);
     changeTotal();
 });
 
