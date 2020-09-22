@@ -156,8 +156,8 @@ $(document).on('click', '.buttonAddToCart', function() {
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
-    cost = price[id];
-    total = price[id];
+    cost = parseFloast(price[id]);
+    total = parseFloat(price[id]);
     console.log(typeof price[id])
     console.log(typeof cost)
     console.log(typeof total)
@@ -165,12 +165,12 @@ $(document).on('click', '.buttonAddToCart', function() {
 });
 
 $(document).on('click', '.icofont-minus-circle', function() {
-    total -= parseFloat(cost);
+    total -= cost;
     changeTotal();
 });
 
 $(document).on('click', '.icofont-plus-circle', function() {
-    total += parseFloat(cost);
+    total += cost;
     changeTotal();
 });
 
