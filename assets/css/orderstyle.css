@@ -103,7 +103,7 @@
 }
 
 .modal-addtocart{
-    background-color: #ffb03b;
+    background-color: #c5c41c;
 }
 
 .modal-extraitemprice{
@@ -124,13 +124,13 @@
 
 .cartButton{
   margin-left: 1vw;
-  background-color: #ffb03b;
+  background-color:#c5c41c;
   color: white;
 }
 
 .cartButton:hover {
   margin-left: 1vw;
-  background-color: #ffb03b;
+  background-color: #c5c41c;
   color: white;
 }
 
@@ -245,10 +245,10 @@
 }
 
 .minus:hover{
-    color: #ffb03b !important;
+    color: #c5c41c !important;
 }
 .plus:hover{
-    color: #ffb03b !important;
+    color: #c5c41c !important;
 }
 /*Prevent text selection*/
 span{
