@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #ffb03b;
+  color: #c5c41c;
 }
 
 .nav-menu .drop-down > a:after {
@@ -938,18 +938,18 @@ section {
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid #c5c41c;
   border-radius: 50px;
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #fff;
-  background: #ffb03b;
+  background: #c5c41c;
 }
 
 .menu #menu-flters-sub li:hover, .menu #menu-flters-sub li.filter-active {
   color: #fff;
-  background: #ffb03b;
+  background: #c5c41c;
 }
 
 .menu #menu-flters li:last-child {
@@ -1034,12 +1034,12 @@ section {
 }
 
 .specials .nav-link:hover {
-  color: #ffb03b;
+  color: #c5c41c;
 }
 
 .specials .nav-link.active {
-  color: #ffb03b;
-  border-color: #ffb03b;
+  color: #c5c41c;
+  border-color: #c5c41c;
 }
 
 .specials .tab-pane.active {
@@ -1069,7 +1069,7 @@ section {
   }
   .specials .nav-link.active {
     color: #fff;
-    background: #ffb03b;
+    background: #c5c41c;
   }
 }
 
@@ -1118,7 +1118,7 @@ section {
 .events .event-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #ffb03b;
+  color: #c5c41c;
 }
 
 .events .event-item .price {
@@ -1129,7 +1129,7 @@ section {
 }
 
 .events .event-item .price  {
-  border-bottom: 2px solid #ffb03b;
+  border-bottom: 2px solid #c5c41c;
 }
 
 .events .event-item ul {
@@ -1144,7 +1144,7 @@ section {
 .events .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #ffb03b;
+  color: #c5c41c;
 }
 
 .events .event-item p:last-child {
@@ -1166,7 +1166,7 @@ section {
 }
 
 .events .owl-dot.active {
-  background-color: #ffb03b !important;
+  background-color: #c5c41c !important;
 }
 
 @media (min-width: 992px) {
@@ -1254,7 +1254,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background: #c5c41c;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1374,7 +1374,7 @@ section {
 }
 
 .chefs .member .social a:hover {
-  color: #ffb03b;
+  color: #c5c41c;
 }
 
 .chefs .member .social i {
@@ -1447,7 +1447,7 @@ section {
 }
 
 .testimonials .testimonial-item .stars {
-  color: #ffb03b;
+  color: #c5c41c;
   margin-bottom: 10px;
 }
 
@@ -1490,7 +1490,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #ffb03b !important;
+  background-color: #c5c41c !important;
 }
 
 @media (min-width: 1024px) {
@@ -1519,7 +1519,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #c5c41c;
   float: left;
   width: 44px;
   height: 44px;
@@ -1548,7 +1548,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #ffb03b;
+  background: #c5c41c;
   color: #fff;
 }
 
@@ -1624,7 +1624,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background: #c5c41c;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1668,7 +1668,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #ffb03b;
+  color: #c5c41c;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1701,7 +1701,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ffb03b;
+  background: #c5c41c;
 }
 
 #footer .copyright {
