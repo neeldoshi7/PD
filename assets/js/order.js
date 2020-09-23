@@ -177,7 +177,7 @@ $(document).on('click', '.icofont-plus-circle', function() {
 });
 
 changeTotal = () => {
-    total = total.toFixed(2);
+    total = Number(total).toFixed(2);
     console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
