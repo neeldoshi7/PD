@@ -191,7 +191,7 @@
 --------------------------------------------------------------*/
 .cart-button {
   position: fixed;
-  /* display: none; */
+  display: none;
   right: 15px;
   bottom: 60px;
   z-index: 99999;
