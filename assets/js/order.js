@@ -179,6 +179,10 @@ $(document).on('click', '.icofont-plus-circle', function() {
     changeTotal();
 });
 
+$(document).on('click', 'form-check-input', function() {
+    console.log($('.extraitemprice').text())
+});
+
 changeTotal = () => {
     console.log(typeof total)
 
