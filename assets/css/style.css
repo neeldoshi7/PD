@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .book-a-table a:hover {
-  background: #ffa012;
+  background: #c5c41c;
   color: #fff;
 }
 
@@ -742,7 +742,7 @@ section {
 
 .about .content ul i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #c5c41c;
   position: absolute;
   left: 0;
   top: 2px;
@@ -763,7 +763,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+  background: radial-gradient(#c5c41c 50%, rgba(255, 176, 59, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -811,7 +811,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #ffb03b;
+  border-left: 15px solid #c5c41c;
   transform: scale(20);
 }
 
