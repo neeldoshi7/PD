@@ -165,8 +165,10 @@ $(document).on('click', '.buttonAddToCart', function() {
 });
 
 $(document).on('click', '.icofont-minus-circle', function() {
-    total -= cost;
-    changeTotal();
+    if($('.count').val() > 1) {
+        total -= cost;
+        changeTotal();
+    }
 });
 
 $(document).on('click', '.icofont-plus-circle', function() {
