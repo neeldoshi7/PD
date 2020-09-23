@@ -156,11 +156,14 @@ $(document).on('click', '.buttonAddToCart', function() {
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
-    cost = parseFloat(price[id]);
-    total = parseFloat(price[id]);
+    cost = parseFloat(parseFloat(price[id]).toFixed(2));
+    total = parseFloat(parseFloat(price[id]).toFixed(2));
     console.log(typeof price[id])
     console.log(typeof cost)
     console.log(typeof total)
+    console.log(price[id])
+    console.log(cost)
+    console.log(total)
     changeTotal();
 });
 
@@ -176,8 +179,14 @@ $(document).on('click', '.icofont-plus-circle', function() {
     changeTotal();
 });
 
+$(document).on('click', 'form-check-input', function() {
+    console.log($('.extraitemprice').text())
+});
+
 changeTotal = () => {
-    total.toFixed(2);
+    console.log(typeof total)
+
+    total = parseFloat(parseFloat(total).toFixed(2));
     console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
