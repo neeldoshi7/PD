@@ -156,8 +156,8 @@ $(document).on('click', '.buttonAddToCart', function() {
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
-    cost = parseFloat(price[id]).toFixed(2);
-    total = parseFloat(price[id]).toFixed(2);
+    cost = parseFloat(parseFloat(price[id]).toFixed(2));
+    total = parseFloat(parseFloat(price[id]).toFixed(2));
     console.log(typeof price[id])
     console.log(typeof cost)
     console.log(typeof total)
@@ -182,7 +182,7 @@ $(document).on('click', '.icofont-plus-circle', function() {
 changeTotal = () => {
     console.log(typeof total)
 
-    total = parseFloat(total).toFixed(2);
+    total = parseFloat(parseFloat(total).toFixed(2));
     console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
