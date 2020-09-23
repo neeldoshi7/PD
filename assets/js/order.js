@@ -161,6 +161,9 @@ $(document).on('click', '.buttonAddToCart', function() {
     console.log(typeof price[id])
     console.log(typeof cost)
     console.log(typeof total)
+    console.log(price[id])
+    console.log(cost)
+    console.log(total)
     changeTotal();
 });
 
