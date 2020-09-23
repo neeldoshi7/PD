@@ -4,13 +4,13 @@
 
 .buttonOrder{
     /* border: 1px black solid; */
-    /* background-color: #ffb03b; */
+    /* background-color: #c5c41c; */
     color: white;
 }
 
 .categoriesButton{
   margin-left: 1vw;
-  background-color: #ffb03b;
+  background-color: #c5c41c;
   color: white;
   padding: 0.8vh 0.3vh;
   border: none;
@@ -66,7 +66,7 @@
 }
 
 .buttonAddToCart{
-  background-color: #ffb03b;
+  background-color: #c5c41c;
   color: white;
   float: right;
   margin-right: 2vw;
@@ -74,7 +74,7 @@
 }
 
 .modal-header{
-    background-color: #ffb03b !important;
+    background-color: #c5c41c !important;
     height: 7vh !important;
     text-align: center;
 }
