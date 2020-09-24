@@ -179,18 +179,26 @@ $(document).on('click', '.icofont-plus-circle', function() {
     changeTotal();
 });
 
-$(document).on('click', '.form-check', function() {
-    console.log("clicked");
-    if ($('.form-check-input').is(':checked')) {
-        console.log("checked");
-        let extracost = $(this).children('.modal-extraitemprice').text();
-        extracost = extracost.replace('$', '');    
-        console.log(extracost);
-        console.log(typeof extracost);
-        extracost = parseFloat(extracost);
-        total 
+// $(document).on('click', '.form-check', function() {
+//     console.log("clicked");
+//     if ($('.form-check-input').is(':checked')) {
+//         console.log("checked");
+//         let extracost = $(this).children('.modal-extraitemprice').text();
+//         extracost = extracost.replace('$', '');    
+//         console.log(extracost);
+//         console.log(typeof extracost);
+//         extracost = parseFloat(extracost);
+//         total 
+//     }
+// });
+
+$('.form-check-input').change(function() {
+    if ($(this).is(':checked')) {
+        console.log('checked');
+    } else {
+        console.log('unchecked');
     }
-});
+})
 
 changeTotal = () => {
     console.log(typeof total)
