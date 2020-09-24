@@ -179,18 +179,26 @@ $(document).on('click', '.icofont-plus-circle', function() {
     changeTotal();
 });
 
-$(document).on('click', '.form-check', function() {
-    console.log("clicked");
-    if ($('.form-check-input').is(':checked')) {
-        console.log("checked");
-        let extracost = $(this).children('.modal-extraitemprice').text();
-        extracost = extracost.replace('$', '');    
-        console.log(extracost);
-        console.log(typeof extracost);
-        extracost = parseFloat(extracost);
-        total 
+// $(document).on('click', '.form-check', function() {
+//     console.log("clicked");
+//     if ($('.form-check-input').is(':checked')) {
+//         console.log("checked");
+//         let extracost = $(this).children('.modal-extraitemprice').text();
+//         extracost = extracost.replace('$', '');    
+//         console.log(extracost);
+//         console.log(typeof extracost);
+//         extracost = parseFloat(extracost);
+//         total 
+//     }
+// });
+
+$(document).on('change', '.form-check-input', function() {
+    if ($(this).is(':checked')) {
+        console.log('checked');
+    } else {
+        console.log('unchecked');
     }
-});
+})
 
 changeTotal = () => {
     console.log(typeof total)
@@ -203,8 +211,6 @@ changeTotal = () => {
 //cart-button
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-        console.log('scrolled more');
-        console.log($('.cart-button'));
       $('.cart-button').fadeIn('slow');
     } else {
       $('.cart-button').fadeOut('slow');
