@@ -158,12 +158,6 @@ $(document).on('click', '.buttonAddToCart', function() {
     $('.modal-itemprice').text(`$${price[id]}`);
     cost = parseFloat(parseFloat(price[id]).toFixed(2));
     total = parseFloat(parseFloat(price[id]).toFixed(2));
-    console.log(typeof price[id])
-    console.log(typeof cost)
-    console.log(typeof total)
-    console.log(price[id])
-    console.log(cost)
-    console.log(total)
     changeTotal();
 });
 
@@ -193,8 +187,16 @@ $(document).on('click', '.icofont-plus-circle', function() {
 // });
 
 $(document).on('change', '.form-check-input', function() {
+    let extracost = $(this).children('.modal-extraitemprice').text();
+        extracost = extracost.replace('$', '');    
+        console.log(extracost);
+        console.log(typeof extracost);
+        extracost = parseFloat(extracost);
+        console.log(extracost);
+        console.log(typeof extracost);
     if ($(this).is(':checked')) {
         console.log('checked');
+
     } else {
         console.log('unchecked');
     }
