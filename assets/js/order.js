@@ -206,7 +206,7 @@ changeTotal = () => {
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
         console.log('scrolled more');
-        console.log($('.cart-button'));
+        console.log(typeof $('.cart-button'));
       $('.cart-button').fadeIn('slow');
     } else {
       $('.cart-button').fadeOut('slow');
