@@ -21,6 +21,10 @@
   margin-left: 52vw;
 }
 
+.cart-item-number{
+  margin-left: 1vw;
+}
+
 .inline {
   display: inline;
 }
