@@ -987,6 +987,10 @@ section {
   z-index: 1;
 }
 
+.menu-item {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
 .menu .menu-content a {
   padding-right: 10px;
   background: #ffff67;
