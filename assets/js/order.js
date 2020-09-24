@@ -204,9 +204,11 @@ changeTotal = () => {
 
 //cart-button
 $(window).scroll(function() {
+    console.log('scrolled');
     if ($(this).scrollTop() > 100) {
+        console.log('scrolled more');
       $('.cart-button').fadeIn('slow');
     } else {
       $('.cart-button').fadeOut('slow');
     }
-  });
+});
