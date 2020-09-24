@@ -94,7 +94,6 @@ const addScript = number => {
 
 const populateData = json => {
     data = json.feed.entry;
-    console.log(data);
     $('#menu-list').empty();
     code = [];
     title = [];
@@ -125,10 +124,6 @@ const populateData = json => {
             }
         }
     })
-    console.log(code);
-    console.log(title);
-    console.log(description);
-    console.log(price);
     displayData(c);
 }
 
