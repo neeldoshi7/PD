@@ -143,7 +143,7 @@ const displayData = c => {
         for (let i = 0; i < title.length; i++) {
             const markup2 = `<div class="col-lg-5 menu-item">
                                 <div class="menu-content">
-                                    <span>${code[i]}</span><a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
+                                    <span>${code[i]}<a href="#">${title[i]}</a></span><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
                                 <div class="menu-ingredients">${description[i]}</div>
                                 </hr>
