@@ -187,13 +187,14 @@ $(document).on('click', '.icofont-plus-circle', function() {
 // });
 
 $(document).on('change', '.form-check-input', function() {
-    let extracost = $(this).children('.modal-extraitemprice').text();
-        extracost = extracost.replace('$', '');    
-        console.log(extracost);
-        console.log(typeof extracost);
-        extracost = parseFloat(extracost);
-        console.log(extracost);
-        console.log(typeof extracost);
+    console.log($(this));
+    // let extracost = $(this).children('.modal-extraitemprice').text();
+    //     extracost = extracost.replace('$', '');    
+    //     console.log(extracost);
+    //     console.log(typeof extracost);
+    //     extracost = parseFloat(extracost);
+    //     console.log(extracost);
+    //     console.log(typeof extracost);
     if ($(this).is(':checked')) {
         console.log('checked');
 
