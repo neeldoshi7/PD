@@ -192,7 +192,7 @@ $(document).on('click', '.icofont-plus-circle', function() {
 //     }
 // });
 
-$('.form-check-input').on('change', function() {
+$(document).on('change', '.form-check-input', function() {
     if ($(this).is(':checked')) {
         console.log('checked');
     } else {
