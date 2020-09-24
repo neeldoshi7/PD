@@ -17,6 +17,14 @@
   border-radius: 5px;
 }
 
+.go-to-cartbuttondiv{
+  margin-left: 52vw;
+}
+
+.cart-item-number{
+  margin-left: 1vw;
+}
+
 .inline {
   display: inline;
 }
@@ -143,6 +151,10 @@
       font-size: 6vw;
   }
 
+  .go-to-cartbuttondiv{
+    margin-left: 20vw;
+  }
+
 
   .itemSection{
     width: 90vw;
@@ -215,9 +227,6 @@
   color: #fff;
 }
 
-.go-to-cartbuttondiv {
-  padding-left: 50vw;
-}
 
 /*--------------------------------------------------------------
 # Quantity
