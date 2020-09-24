@@ -183,7 +183,6 @@ $(document).on('click', '.form-check', function() {
     console.log("clicked");
     if ($('.form-check-input').is(':checked')) {
         console.log("checked");
-        // console.log($(this).children('.modal-extraitemprice').text());
         let extracost = $(this).children('.modal-extraitemprice').text();
         extracost = extracost.replace('$', '');    
         console.log(extracost);
@@ -206,7 +205,7 @@ changeTotal = () => {
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
         console.log('scrolled more');
-        console.log(typeof $('.cart-button'));
+        console.log($('.cart-button'));
       $('.cart-button').fadeIn('slow');
     } else {
       $('.cart-button').fadeOut('slow');
