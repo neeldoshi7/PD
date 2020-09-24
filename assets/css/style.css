@@ -989,7 +989,9 @@ section {
 
 .menu-item {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  margin: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .menu .menu-content a {
