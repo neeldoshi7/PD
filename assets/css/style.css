@@ -989,12 +989,13 @@ section {
 
 .menu-item {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 5 5 5 5;
 }
 
 .menu .menu-content a {
   /* padding-right: 10px; */
   background: #ffff67;
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   font-weight: 700;
   color: black;
