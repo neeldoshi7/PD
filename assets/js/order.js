@@ -180,7 +180,6 @@ $(document).on('click', '.icofont-plus-circle', function() {
 });
 
 $(document).on('click', '.form-check', function() {
-    console.log($('.extraitemprice').text())
     console.log("clicked");
     if ($('.form-check-input').is(':checked')) {
         console.log("checked");
