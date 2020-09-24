@@ -992,7 +992,7 @@ section {
 }
 
 .menu .menu-content a {
-  padding-right: 10px;
+  /* padding-right: 10px; */
   background: #ffff67;
   position: relative;
   z-index: 3;
