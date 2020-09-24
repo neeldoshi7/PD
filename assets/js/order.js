@@ -1,3 +1,6 @@
+!(function($) {
+    "use strict";
+
 let data;
 let pages;
 const category = new Map();
@@ -211,3 +214,5 @@ $(window).scroll(function() {
       $('.cart-button').fadeOut('slow');
     }
 });
+
+})(jQuery);
