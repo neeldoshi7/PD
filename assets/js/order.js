@@ -183,6 +183,7 @@ $(document).on('click', '.form-check', function() {
     console.log("clicked");
     if ($('.form-check-input').is(':checked')) {
         console.log("checked");
+        console.log($(this).children())
     }
 });
 
