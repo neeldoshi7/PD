@@ -188,6 +188,8 @@ $(document).on('click', '.form-check', function() {
         extracost = extracost.replace('$', '');    
         console.log(extracost);
         console.log(typeof extracost);
+        extracost = parseFloat(extracost);
+        total 
     }
 });
 
@@ -198,3 +200,13 @@ changeTotal = () => {
     console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
+
+
+//cart-button
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.cart-button').fadeIn('slow');
+    } else {
+      $('.cart-button').fadeOut('slow');
+    }
+  });
