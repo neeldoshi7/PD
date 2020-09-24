@@ -184,9 +184,9 @@ $(document).on('click', '.form-check', function() {
     if ($('.form-check-input').is(':checked')) {
         console.log("checked");
         console.log($(this).children('.modal-extraitemprice').text());
-        // let extracost = parseFloat($(this).children().innerHTML());
-        // console.log(extracost);
-        // console.log(typeof extracost);
+        let extracost = $(this).children('.modal-extraitemprice').text();
+        console.log(extracost);
+        console.log(typeof extracost);
     }
 });
 
