@@ -187,7 +187,7 @@ $(document).on('click', '.icofont-plus-circle', function() {
 // });
 
 $(document).on('change', '.form-check-input', function() {
-    console.log($(this).prevObject().parent());
+    console.log($(this).prevObject());
     // let extracost = $(this).children('.modal-extraitemprice').text();
     //     extracost = extracost.replace('$', '');    
     //     console.log(extracost);
