@@ -197,10 +197,12 @@ $(document).on('change', '.form-check-input', function() {
         console.log(typeof extracost);
     if ($(this).is(':checked')) {
         console.log('checked');
-
+        total += extracost;
     } else {
         console.log('unchecked');
+        total -= extracost;
     }
+    changeTotal();
 })
 
 changeTotal = () => {
