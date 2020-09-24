@@ -185,7 +185,7 @@ $(document).on('click', '.form-check', function() {
         console.log("checked");
         // console.log($(this).children('.modal-extraitemprice').text());
         let extracost = $(this).children('.modal-extraitemprice').text();
-        extracost.splice(1);
+        extracost = extracost.replace('$', '');    
         console.log(extracost);
         console.log(typeof extracost);
     }
