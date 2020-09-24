@@ -1,6 +1,3 @@
-!(function($) {
-    "use strict";
-
 let data;
 let pages;
 const category = new Map();
@@ -204,15 +201,3 @@ changeTotal = () => {
 }
 
 
-//cart-button
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-        console.log('scrolled more');
-        console.log($('.cart-button'));
-      $('.cart-button').fadeIn('slow');
-    } else {
-      $('.cart-button').fadeOut('slow');
-    }
-});
-
-})(jQuery);
