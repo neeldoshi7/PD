@@ -8,6 +8,11 @@
     color: white;
 }
 
+.buttonDiv{
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
 .categoriesButton{
   margin-left: 1vw;
   background-color: #c5c41c;
@@ -18,7 +23,11 @@
 }
 
 .go-to-cartbuttondiv{
-  margin-left: 54vw;
+  /* position: absolute; */
+  /* display: inline-block; */
+  /* right: 0px; */
+  /* border: 1px solid red; */
+  margin-right: 1vw;
 }
 
 .cart-item-number{
