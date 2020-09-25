@@ -1,0 +1,12 @@
+#cart{
+  margin-top: 6vw;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  #cart{
+    margin-top: 25vw;
+  }
+
+}
