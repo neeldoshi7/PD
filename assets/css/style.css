@@ -104,6 +104,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 0px;
   background: rgba(26, 24, 22, 0.85);
 }
 
