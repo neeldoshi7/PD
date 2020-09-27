@@ -3,6 +3,11 @@
   width: 100%;
 }
 
+.cart-header{
+  font-size: 3vw;
+  margin-bottom: 2vh;
+}
+
 .cart-item-div{
   width: 100%;
   border: 1px solid black;
@@ -32,6 +37,14 @@
   margin-left: 1vw;
 }
 
+.cart-item-extra-item{
+  margin-left: 0.5vw;
+}
+
+.cart-item-extra-comma{
+  margin-left: 0.5vw;
+}
+
 .cart-item-finaldiv{
   margin-left: 1vw;
   margin-bottom: 1vh;
@@ -53,6 +66,10 @@
 
   #cart{
     margin-top: 12vw;
+  }
+
+  .cart-header{
+    font-size: 8vw;
   }
 
   .cart-item-info{
