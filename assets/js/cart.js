@@ -33,7 +33,7 @@ state.cart.items.forEach(el => {
                         <div class="cart-item-extra-item">Cheese</div>
                         </div>`;
         } else if (el.extras.cheese === 1 && el.extras.meat === 0) {
-            markjup += `<div class="cart-item-extra-item">Cheese</div>
+            markup += `<div class="cart-item-extra-item">Cheese</div>
                         </div>`;
         }
     }
