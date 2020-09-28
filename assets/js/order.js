@@ -264,4 +264,15 @@ $(document).on('click', '.modal-addtocart', function() {
     console.log(meat);
     console.log(cheese);
     console.log(instructions);
+    totalcost = totalcost.replace('$', '');
+    totalcost = parseFloat(totalcost);
+    quantity = parseInt(quantity);
+    console.log(typeof name);
+    console.log(typeof totalcost);
+    console.log(typeof quantity);
+    console.log(typeof meat);
+    console.log(typeof cheese);
+    console.log(typeof instructions);
+    state.cart.addItem(name, totalcost, quantity, meat, cheese, instructions);
+    console.log(state.cart);
 })
