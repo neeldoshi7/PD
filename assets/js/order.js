@@ -253,7 +253,7 @@ $(window).scroll(function() {
 $(document).on('click', '.modal-addtocart', function() {
     let name = $('.modal-itemName').text();
     let totalcost = $('.modal-totalcost').text();
-    let quantity = $('.count').text();
+    let quantity = $('.count').val();
     let meat = $('#check-1').is(':checked')? 1: 0;
     let cheese = $('#check-2').is(':checked')? 1: 0;
     let instructions = $('#instructions').text();
