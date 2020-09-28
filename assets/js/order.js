@@ -9,6 +9,47 @@ let description = [];
 let price = [];
 let total = 0;
 let cost = 0;
+const state = {};
+
+class Cart {
+    constructor() {
+        this.items = [];
+    }
+
+    // item = {
+    //     name: '',
+    //     totalcost: '',
+    //     quantity: 1,
+    //     extras: {
+    //         meat: 0,
+    //         cheese: 0,
+    //     },
+    //     instructions: '',
+    // }
+
+    addItem(name, totalcost, quantity, meat, cheese, instructions) {
+        const item = {
+            name,
+            totalcost,
+            quantity,
+            extras: {
+                meat,
+                cheese,
+            },
+            instructions,
+        }
+        this.items.push(item);
+    }
+
+    deleteItem(name) {
+        const index = this.items.findIndex(el => el.name === name);
+        this.items.splice(index, 1);
+    }
+}
+
+$(document).ready(function() {
+    if (!state.cart) state.cart = new Cart()
+})
 
 const getPages = json => {
     pages = json.feed.entry;
@@ -173,19 +214,6 @@ $(document).on('click', '.icofont-plus-circle', function() {
     changeTotal();
 });
 
-// $(document).on('click', '.form-check', function() {
-//     console.log("clicked");
-//     if ($('.form-check-input').is(':checked')) {
-//         console.log("checked");
-//         let extracost = $(this).children('.modal-extraitemprice').text();
-//         extracost = extracost.replace('$', '');    
-//         console.log(extracost);
-//         console.log(typeof extracost);
-//         extracost = parseFloat(extracost);
-//         total 
-//     }
-// });
-
 $(document).on('change', '.form-check-input', function() {
     let extracost = $(this).parent().next().text();
     // let extracost = $(this).children('.modal-extraitemprice').text();
@@ -221,3 +249,19 @@ $(window).scroll(function() {
       $('.cart-button').fadeOut('slow');
     }
   });
+
+$(document).on('click', 'btn modal-addtocart', function() {
+    let name = $('.modal-itemName').text();
+    let totalcost = $('.modal-totalcost').text();
+    let quantity = $('.count').text();
+    let meat = $('#check-1').is(':checked')? 1: 0;
+    let cheese = $('#check-2').is(':checked')? 1: 0;
+    let instructions = $('#instructions').text();
+    console.log(state.cart);
+    console.log(name);
+    console.log(totalcost);
+    console.log(quantity);
+    console.log(meat);
+    console.log(cheese);
+    console.log(instructions);
+})
