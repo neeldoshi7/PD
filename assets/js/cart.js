@@ -7,9 +7,9 @@ if (!state.cart) {
         state.cart.items = JSON.parse(storage);
     }
 }
-// state.cart.items = localStorage.getItem('cart')
 
 state.cart.items.forEach(el => {
+    let cart = document.querySelector('.cart-div');
     markup = `<div class="cart-item">
                 <div class="cart-item-div d-flex flex-column">
 
@@ -45,6 +45,7 @@ state.cart.items.forEach(el => {
                 </div>
             </div>
             </div>`;
+    cart.insertAdjacentHTML('beforeend', markup);
 });
 
 $(document).on('click', '.cart-item-delete-button', function() {
