@@ -55,8 +55,8 @@ $(document).ready(function() {
         console.log(localStorage.getItem('cart'));
         const storage = localStorage.getItem('cart');
         console.log(storage);
-        console.log(storage === undefined);
-        console.log(storage == null);
+        console.log(typeof storage === 'undefined');
+        console.log(storage === null);
         console.log(storage);
         if (storage !== undefined || storage !== null) {
             state.cart.items = JSON.parse(storage);
