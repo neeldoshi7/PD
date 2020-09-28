@@ -49,11 +49,7 @@ class Cart {
 }
 
 $(document).ready(function() {
-    if (!state.cart) {
-        state.cart = new Cart();
-    } else {
-        state.cart.readStorage();
-    }
+    state.cart.readStorage();
 })
 
 const getPages = json => {
