@@ -39,7 +39,7 @@ class Cart {
             instructions,
         }
         this.items.push(item);
-        this.persistData();
+        localStorage.setItem('cart', JSON.stringify(this.likes));
     }
 
     deleteItem(name) {
