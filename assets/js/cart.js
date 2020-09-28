@@ -38,7 +38,7 @@ state.cart.items.forEach(el => {
         }
     }
     markup += `<div class="cart-item-finaldiv d-flex flex-row justify-content-between">`;
-    if (instructions !== '') {
+    if (el.instructions !== '') {
         markup += `<div class="cart-item-instructions-div"><div class="cart-item-instructions">${el.instructions}</div></div>`;
     }
     markup += `<div class="cart-item-delete"><button class="btn cart-item-delete-button">Delete</button></div>
