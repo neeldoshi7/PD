@@ -1,5 +1,7 @@
 console.log(state);
 console.log(Cart);
+console.log(state.cart);
+console.log(state.cart.items);
 
 state.cart.items.forEach(el => {
     markup = `<div class="cart-item">
