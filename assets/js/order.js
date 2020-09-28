@@ -263,5 +263,5 @@ $(document).on('click', '.modal-addtocart', function() {
     quantity = parseInt(quantity);
     state.cart.addItem(name, totalcost, quantity, meat, cheese, instructions);
     console.log(state.cart.items);
-    $('#myModal').modal('hide');
+    // $('#myModal').modal('hide');
 })
