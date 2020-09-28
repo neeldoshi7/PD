@@ -39,7 +39,7 @@ class Cart {
             instructions,
         }
         this.items.push(item);
-        localStorage.setItem('cart', JSON.stringify(this.likes));
+        localStorage.setItem('cart', JSON.stringify(this.items));
     }
 
     deleteItem(name) {
@@ -52,7 +52,7 @@ $(document).ready(function() {
     if (!state.cart) {
         state.cart = new Cart();
         const storage = JSON.parse(localStorage.getItem('cart'));
-        if (storage) state.cart = storage;
+        if (storage) state.cart.items = storage;
     }
 })
 
