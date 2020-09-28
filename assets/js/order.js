@@ -55,6 +55,7 @@ $(document).ready(function() {
         console.log(localStorage.getItem('cart'));
         const storage = localStorage.getItem('cart');
         console.log(storage);
+        console.log(typeof storage);
         console.log(typeof storage === 'undefined');
         console.log(storage === null);
         console.log(storage);
