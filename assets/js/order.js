@@ -59,7 +59,7 @@ $(document).ready(function() {
         console.log(typeof storage === 'undefined');
         console.log(storage === null);
         console.log(storage);
-        if (storage !== undefined || storage !== null) {
+        if (storage !== 'undefined' || storage !== null) {
             state.cart.items = JSON.parse(storage);
         }
     }
