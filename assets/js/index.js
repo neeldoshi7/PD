@@ -29,3 +29,8 @@ var scrolltoOffset = $('#header').outerHeight() - 1;
       }
     }
   });
+
+  // Initiate venobox lightbox
+  $(document).ready(function() {
+    $('.venobox').venobox();
+  });
