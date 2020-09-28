@@ -256,7 +256,7 @@ $(document).on('click', '.modal-addtocart', function() {
     let quantity = $('.count').get();
     let meat = $('#check-1').is(':checked')? 1: 0;
     let cheese = $('#check-2').is(':checked')? 1: 0;
-    let instructions = $('#instructions')val();
+    let instructions = $('#instructions').val();
     console.log(state.cart);
     console.log(name);
     console.log(totalcost);
