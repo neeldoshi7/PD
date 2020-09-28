@@ -39,6 +39,7 @@ class Cart {
             instructions,
         }
         this.items.push(item);
+        this.persistData();
     }
 
     deleteItem(name) {
@@ -48,7 +49,11 @@ class Cart {
 }
 
 $(document).ready(function() {
-    if (!state.cart) state.cart = new Cart()
+    if (!state.cart) {
+        state.cart = new Cart();
+    } else {
+        state.cart.readStorage();
+    }
 })
 
 const getPages = json => {
