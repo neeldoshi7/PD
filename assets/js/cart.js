@@ -48,4 +48,5 @@ $(document).on('click', '.cart-item-delete-button', function() {
     let name = $(this).parent().parent().parent().children('.cart-item-info').children('.flex-row').children('.cart-item-name').text();
     state.cart.deleteItem(name);
     console.log(state.cart.items);
+    location.reload();
 })
