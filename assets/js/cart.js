@@ -49,5 +49,6 @@ $(document).on('click', '.cart-item-delete-button', function() {
     console.log($(this).parent());
     console.log($(this).parent().parent());
     console.log($(this).parent().parent().parent());
-    console.log($(this).parent().parent().parent().children());
+    console.log($(this).parent().parent().parent().children('.cart-item-info').children('.flex-row').children('.cart-item-name'));
+    console.log($(this).parent().parent().parent().children('.cart-item-info').children('.flex-row').children('.cart-item-name').text());
 })
