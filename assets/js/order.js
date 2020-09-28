@@ -9,7 +9,7 @@ let description = [];
 let price = [];
 let total = 0;
 let cost = 0;
-const state = {};
+export const state = {};
 
 class Cart {
     constructor() {
