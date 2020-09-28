@@ -52,6 +52,7 @@ class Cart {
 $(document).ready(function() {
     if (!state.cart) {
         state.cart = new Cart();
+        console.log(localStorage.getItem('cart'));
         const storage = localStorage.getItem('cart');
         console.log(storage);
         if (storage) state.cart.items = JSON.parse(storage);
