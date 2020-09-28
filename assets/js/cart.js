@@ -1,5 +1,3 @@
-console.log(state);
-console.log(Cart);
 if (!state.cart) {
     state.cart = new Cart();
     const storage = localStorage.getItem('cart');
@@ -50,5 +48,6 @@ $(document).on('click', '.cart-item-delete-button', function() {
     console.log($(this));
     console.log($(this).parent());
     console.log($(this).parent().parent());
-    console.log($(this).parent().parent().children());
+    console.log($(this).parent().parent().parent());
+    console.log($(this).parent().parent().parent().children());
 })
