@@ -1,7 +1,13 @@
 console.log(state);
 console.log(Cart);
-console.log(state.cart);
-console.log(state.cart.items);
+if (!state.cart) {
+    state.cart = new Cart();
+    const storage = localStorage.getItem('cart');
+    if (storage !== 'undefined' && storage !== null) {
+        state.cart.items = JSON.parse(storage);
+    }
+}
+// state.cart.items = localStorage.getItem('cart')
 
 state.cart.items.forEach(el => {
     markup = `<div class="cart-item">

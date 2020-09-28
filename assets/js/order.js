@@ -52,7 +52,6 @@ class Cart {
 $(document).ready(function() {
     if (!state.cart) {
         state.cart = new Cart();
-        console.log(localStorage.getItem('cart'));
         const storage = localStorage.getItem('cart');
         if (storage !== 'undefined' && storage !== null) {
             state.cart.items = JSON.parse(storage);
