@@ -7,11 +7,11 @@ state.cart.items.forEach(el => {
 
                 <div class="cart-item-info d-flex flex-row justify-content-between">
                     <div class="d-flex flex-row">
-                    <div class="cart-item-name">Item 1</div>
+                    <div class="cart-item-name">${el.name}</div>
                     <div class="cart-item-x">x</div>
-                    <div class="cart-item-quantity">3</div>
+                    <div class="cart-item-quantity">${el.quantity}</div>
                     </div>
-                    <div class="cart-item-totalcost">Price</div>
+                    <div class="cart-item-totalcost">$${el.totalcost}</div>
                 </div>`;
     if (el.extras.meat === 1 || el.extras.cheese === 1) {
         markup += `<div class="cart-item-extra-div d-flex flex-row">
@@ -31,6 +31,17 @@ state.cart.items.forEach(el => {
     }
     markup += `<div class="cart-item-finaldiv d-flex flex-row justify-content-between">`;
     if (instructions !== '') {
-        markup += 
+        markup += `<div class="cart-item-instructions-div"><div class="cart-item-instructions">${el.instructions}</div></div>`;
     }
+    markup += `<div class="cart-item-delete"><button class="btn cart-item-delete-button">Delete</button></div>
+                </div>
+            </div>
+            </div>`;
 });
+
+$(document).on('click', '.cart-item-delete-button', function() {
+    console.log($(this));
+    console.log($(this).parent());
+    console.log($(this).parent().parent());
+    console.log($(this).parent().parent().children());
+})
