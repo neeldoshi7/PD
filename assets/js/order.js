@@ -54,15 +54,11 @@ $(document).ready(function() {
         state.cart = new Cart();
         console.log(localStorage.getItem('cart'));
         const storage = localStorage.getItem('cart');
-        console.log(storage);
-        console.log(typeof storage);
-        console.log(typeof storage === 'undefined');
-        console.log(storage === null);
-        console.log(storage);
         if (storage !== 'undefined' && storage !== null) {
             state.cart.items = JSON.parse(storage);
         }
     }
+    $('.cart-item-number').text(state.cart.items.length);
 })
 
 const getPages = json => {
@@ -261,10 +257,11 @@ $(document).on('click', '.modal-addtocart', function() {
     let meat = $('#check-1').is(':checked')? 1: 0;
     let cheese = $('#check-2').is(':checked')? 1: 0;
     let instructions = $('#instructions').val();
-    console.log(state.cart);
+    console.log(state.cart.items);
     totalcost = totalcost.replace('$', '');
     totalcost = parseFloat(totalcost);
     quantity = parseInt(quantity);
     state.cart.addItem(name, totalcost, quantity, meat, cheese, instructions);
-    console.log(state.cart);
+    console.log(state.cart.items);
+
 })
