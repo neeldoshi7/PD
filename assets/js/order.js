@@ -217,28 +217,18 @@ $(document).on('click', '.icofont-plus-circle', function() {
 
 $(document).on('change', '.form-check-input', function() {
     let extracost = $(this).parent().next().text();
-    // let extracost = $(this).children('.modal-extraitemprice').text();
-        extracost = extracost.replace('$', '');    
-        console.log(extracost);
-        console.log(typeof extracost);
+        extracost = extracost.replace('$', '');
         extracost = parseFloat(extracost);
-        console.log(extracost);
-        console.log(typeof extracost);
     if ($(this).is(':checked')) {
-        console.log('checked');
         total += extracost;
     } else {
-        console.log('unchecked');
         total -= extracost;
     }
     changeTotal();
 })
 
 changeTotal = () => {
-    console.log(typeof total)
-
     total = parseFloat(parseFloat(total).toFixed(2));
-    console.log(total);
     $('.modal-totalcost').text(`$${total}`);
 }
 
@@ -259,21 +249,9 @@ $(document).on('click', '.modal-addtocart', function() {
     let cheese = $('#check-2').is(':checked')? 1: 0;
     let instructions = $('#instructions').val();
     console.log(state.cart);
-    console.log(name);
-    console.log(totalcost);
-    console.log(quantity);
-    console.log(meat);
-    console.log(cheese);
-    console.log(instructions);
     totalcost = totalcost.replace('$', '');
     totalcost = parseFloat(totalcost);
     quantity = parseInt(quantity);
-    console.log(typeof name);
-    console.log(typeof totalcost);
-    console.log(typeof quantity);
-    console.log(typeof meat);
-    console.log(typeof cheese);
-    console.log(typeof instructions);
     state.cart.addItem(name, totalcost, quantity, meat, cheese, instructions);
     console.log(state.cart);
 })
