@@ -250,7 +250,7 @@ $(window).scroll(function() {
     }
   });
 
-$(document).on('click', '.btn modal-addtocart', function() {
+$(document).on('click', '.modal-addtocart', function() {
     let name = $('.modal-itemName').text();
     let totalcost = $('.modal-totalcost').text();
     let quantity = $('.count').text();
