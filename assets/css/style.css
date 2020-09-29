@@ -974,10 +974,11 @@ section {
 
 .menu .menu-content {
   margin-top: 10px;
+  margin-bottom: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
 }
 
 /* .menu .menu-content::after {
