@@ -8,6 +8,12 @@
   margin-bottom: 2vh;
 }
 
+.cart-header-empty{
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+  display: none;
+}
+
 .cart-item-div{
   width: 100%;
   /* border: 1px solid black; */
@@ -71,6 +77,10 @@
   }
 
   .cart-header{
+    font-size: 7vw;
+  }
+
+  .cart-header-empty{
     font-size: 7vw;
   }
 
