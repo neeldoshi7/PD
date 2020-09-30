@@ -80,7 +80,19 @@
 }
 
 .modal-active{
-  color: #c5c41c;  
+  color: #c5c41c;
+}
+
+.nav-link:hover{
+  color: #c5c41c;
+}
+
+.modal-extras-body section{
+  padding: 0px !important;
+}
+
+#Beverages{
+  display: none;
 }
 
 .addtocart-button{
