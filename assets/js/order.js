@@ -203,6 +203,7 @@ const displayData = c => {
 }
 
 $(document).on('click', '.buttonAddToCart', function() {
+    $('.count').val(1);
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
