@@ -204,6 +204,9 @@ const displayData = c => {
 
 $(document).on('click', '.buttonAddToCart', function() {
     $('.count').val(1);
+    $('#check-1').prop("checked", false);
+    $('#check-2').prop("checked", false);
+    $('#instructions').val("");
     let id = $(this).data('id');
     $('.modal-itemName').text(title[id]);
     $('.modal-itemprice').text(`$${price[id]}`);
