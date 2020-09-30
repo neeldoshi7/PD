@@ -6,6 +6,10 @@ if (!state.cart) {
     }
 }
 
+if (state.cart.items.length == 0) {
+    $('.cart-div').empty();
+}
+
 state.cart.items.forEach(el => {
     let cart = document.querySelector('.cart-div');
     markup = `<div class="cart-item">
