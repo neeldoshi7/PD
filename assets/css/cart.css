@@ -91,12 +91,27 @@
   padding: 0px !important;
 }
 
+.modal-extras-itemdiv{
+  margin: 1vh;
+}
+
 #Beverages{
   display: none;
 }
 
-.addtocart-button{
+.modal-extra-addtocart-button{
   background-color: #c5c41c;
+}
+
+.cart-message{
+  opacity: 0.5;
+  bottom: 100px;
+  background-color: white;
+  /* width: 50vw; */
+  border: 1px solid black;
+  height: 5vh;
+  z-index: 99999;
+  position: absolute;
 }
 
 @media (max-width: 768px) {
