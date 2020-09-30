@@ -79,12 +79,20 @@
   background-color: #c5c41c;
 }
 
+.modal-title{
+  font-size: 2vw;
+}
+
 .modal-active{
   color: #c5c41c;
 }
 
 .nav-link:hover{
   color: #c5c41c;
+}
+
+.modal-body{
+  font-size: 1.5vw;
 }
 
 .modal-extras-body section{
@@ -95,6 +103,11 @@
   margin: 1vh;
 }
 
+.modal-extra-itemadded{
+  display: none;
+  font-size: 1.5vw;
+}
+
 #Beverages{
   display: none;
 }
@@ -103,16 +116,24 @@
   background-color: #c5c41c;
 }
 
-.cart-message{
-  opacity: 0.5;
+
+
+/* .cart-message-div{
+  width: 100%;
+} */
+
+/* .cart-message{
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
   bottom: 100px;
-  background-color: white;
-  /* width: 50vw; */
+  background-color: #c5c41c;
+  width: 100%;
   border: 1px solid black;
   height: 5vh;
   z-index: 99999;
   position: absolute;
-}
+} */
 
 @media (max-width: 768px) {
 
@@ -133,6 +154,18 @@
   }
 
   .cart-header-extras{
+    font-size: 6vw;
+  }
+
+  .modal-title{
+    font-size: 7vw;
+  }
+
+  .modal-body{
+    font-size: 6vw;
+  }
+
+  .modal-extra-itemadded{
     font-size: 6vw;
   }
 
