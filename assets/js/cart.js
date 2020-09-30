@@ -50,3 +50,7 @@ $(document).on('click', '.cart-item-delete-button', function() {
     console.log(state.cart.items);
     location.reload();
 })
+
+if ($('.cart-div').is(':empty')) {
+    $('.cart-header-empty').css('display', 'block');
+}
