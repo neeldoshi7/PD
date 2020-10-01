@@ -1082,6 +1082,11 @@ section {
 }
 
 @media (max-width: 992px) {
+
+  .menu{
+    margin-top: 20vw;
+  }
+
   .specials .nav-link {
     border: 0;
     padding: 15px;
