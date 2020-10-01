@@ -4,5 +4,17 @@
 }
 
 .admin-pdf-input{
-  margin-left: 1vw;
+  margin-top: 1.5vh;
+}
+
+.admin-photo-div{
+  margin-top: 4vh;
+}
+
+@media (max-width: 992px) {
+
+  .admin-div{
+    margin-top: 15vh;
+  }
+
 }
