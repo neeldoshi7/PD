@@ -1,3 +1,5 @@
+let extras;
+
 if (!state.cart) {
     state.cart = new Cart();
     const storage = localStorage.getItem('cart');
@@ -60,4 +62,21 @@ $(document).on('click', '.cart-item-delete-button', function() {
 
 if ($('.cart-div').is(':empty')) {
     $('.cart-header-empty').css('display', 'block');
+}
+
+const addScript = number => {
+    const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=getExtras`;
+    var s = document.createElement('script');
+    s.setAttribute('src', src);
+    document.body.appendChild(s);
+}
+
+for (var i = 1; i <= 4; i++) {
+    addScript(i);
+}
+
+const getExtras = json => {
+    extras = json.feed.entry;
+    console.log(extras);
 }
