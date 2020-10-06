@@ -85,4 +85,5 @@ $(document).on('click', '.tabs li a', function() {
     console.log($(this));
     $('.tabs li a').removeClass('modal-active');
     $(this).addClass('modal-active');
+    console.log($(this).data());
 })
