@@ -72,18 +72,19 @@ const addExtrasScript = number => {
     document.body.appendChild(s);
 }
 
-for (var i = 1; i <= 4; i++) {
-    addExtrasScript(i);
-}
-
 const getExtras = json => {
     extras = json.feed.entry;
-    console.log(extras);
+    displayExtras(extras);
 }
 
 $(document).on('click', '.tabs li a', function() {
     console.log($(this));
     $('.tabs li a').removeClass('modal-active');
     $(this).addClass('modal-active');
-    console.log($(this).data());
+    console.log($(this).data().value);
+    addExtrasScript($(this).data().value);
 })
+
+const displayExtras = extras => {
+    console.log(extras);
+}
