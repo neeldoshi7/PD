@@ -88,3 +88,7 @@ $(document).on('click', '.tabs li a', function() {
 const displayExtras = extras => {
     console.log(extras);
 }
+
+$('.extras-button').on('click', function() {
+    
+})
