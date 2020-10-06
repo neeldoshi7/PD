@@ -66,13 +66,17 @@ if ($('.cart-div').is(':empty')) {
 
 const addExtrasScript = number => {
     const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
-    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=getExtras`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=getExtras${number}`;
     var s = document.createElement('script');
     s.setAttribute('src', src);
     document.body.appendChild(s);
 }
 
-const getExtras = json => {
+for (var i = 1; i <= 4; i++) {
+    addExtrasScript(i);
+}
+
+const getExtras2 = json => {
     extras = json.feed.entry;
     displayExtras(extras);
 }
@@ -90,5 +94,5 @@ const displayExtras = extras => {
 }
 
 $('.extras-button').on('click', function() {
-    
+    addExtrasScript
 })
