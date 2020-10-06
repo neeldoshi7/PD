@@ -1,4 +1,8 @@
 let extras;
+let extras1;
+let extras2;
+let extras3;
+let extras4;
 
 if (!state.cart) {
     state.cart = new Cart();
@@ -76,17 +80,38 @@ for (var i = 1; i <= 4; i++) {
     addExtrasScript(i);
 }
 
+const getExtras1 = json => {
+    extras1 = json.feed.entry;
+}
+
 const getExtras2 = json => {
-    extras = json.feed.entry;
-    displayExtras(extras);
+    extras2 = json.feed.entry;
+}
+
+const getExtras3 = json => {
+    extras3 = json.feed.entry;
+}
+
+const getExtras4 = json => {
+    extras4 = json.feed.entry;
 }
 
 $(document).on('click', '.tabs li a', function() {
-    console.log($(this));
     $('.tabs li a').removeClass('modal-active');
     $(this).addClass('modal-active');
     console.log($(this).data().value);
-    addExtrasScript($(this).data().value);
+    var val = $(this).data().value;
+    switch(val) {
+        case 1:
+            extras = extras1;
+        case 2:
+            extras = extras2;
+        case 3:
+            extras = extras3;
+        case 4:
+            extras = extras4;
+    } 
+    displayExtras(extras);
 })
 
 const displayExtras = extras => {
@@ -94,5 +119,6 @@ const displayExtras = extras => {
 }
 
 $('.extras-button').on('click', function() {
-    addExtrasScript
+    extras = extras1;
+    displayExtras(extras);
 })
