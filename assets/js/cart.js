@@ -82,6 +82,7 @@ const getExtras = json => {
 }
 
 $(document).on('click', '.tabs li', function() {
+    console.log($(this));
     $('.tabs li').removeClass('modal-active');
     $(this).addClass('modal-active');
 })
