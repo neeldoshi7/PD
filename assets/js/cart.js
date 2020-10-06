@@ -105,12 +105,16 @@ $(document).on('click', '.tabs li a', function() {
     switch(val) {
         case 1:
             extras = extras1;
+            break;
         case 2:
             extras = extras2;
+            break;
         case 3:
             extras = extras3;
+            break;
         case 4:
             extras = extras4;
+            break;
     } 
     displayExtras(extras);
 })
