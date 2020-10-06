@@ -101,6 +101,7 @@ $(document).on('click', '.tabs li a', function() {
     $(this).addClass('modal-active');
     console.log($(this).data().value);
     var val = $(this).data().value;
+    console.log(typeof val);
     switch(val) {
         case 1:
             extras = extras1;
