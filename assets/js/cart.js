@@ -3,6 +3,8 @@ let extras1;
 let extras2;
 let extras3;
 let extras4;
+let item;
+let cost;
 
 if (!state.cart) {
     state.cart = new Cart();
@@ -99,9 +101,7 @@ const getExtras4 = json => {
 $(document).on('click', '.tabs li a', function() {
     $('.tabs li a').removeClass('modal-active');
     $(this).addClass('modal-active');
-    console.log($(this).data().value);
     var val = $(this).data().value;
-    console.log(typeof val);
     switch(val) {
         case 1:
             extras = extras1;
@@ -116,14 +116,25 @@ $(document).on('click', '.tabs li a', function() {
             extras = extras4;
             break;
     } 
-    displayExtras(extras);
+    getExtras(extras);
 })
 
 const displayExtras = extras => {
-    console.log(extras);
+    var section = document.querySelector('#ExtraItems');
+    extras.forEach(el => {
+        const markup = `<div class="modal-extras-itemdiv d-flex flex-row justify-content-between">
+                            <div class="modal-extra-itemname"><span class="modal-extra-itemprice">$2.00</span></div>
+                            <div class="btn modal-extra-addtocart-button">Add</div>
+                        </div>` ;
+
+    })
 }
 
 $('.extras-button').on('click', function() {
     extras = extras1;
-    displayExtras(extras);
+    getExtras(extras);
 })
+
+const getExtras = extras => {
+
+}
