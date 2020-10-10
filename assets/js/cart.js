@@ -139,12 +139,12 @@ const getExtras = extras => {
     item = [];
     cost = [];
     extras.forEach(el => {
-        if (el.gs$cell.row == 1) {
-            continue;
-        } else if (el.gs$cell.col == 1) {
-            item.push(el.gs$cell.$t);
-        } else if (el.gs$cell.col == 2) {
-            cost.push(el.gs$cell.$t);
+        if (el.gs$cell.row != 1) {
+            if (el.gs$cell.col == 1) {
+                item.push(el.gs$cell.$t);
+            } else if(el.gs$cell.col == 2) {
+                cost.push(el.gs$cell.$t);
+            }
         }
     })
     displayExtras(item, cost);
