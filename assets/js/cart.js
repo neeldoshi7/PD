@@ -121,11 +121,26 @@ $(document).on('click', '.tabs li a', function() {
 
 const displayExtras = (item, cost) => {
     var section = document.querySelector('#ExtraItems');
-  //  $('#ExtraItems').empty();
+   $('#ExtraItems').empty();
     for (let i = 0; i < item.length; i++) {
-        const markup = `<div class="modal-extras-itemdiv d-flex flex-row justify-content-between">
-                            <div class="modal-extra-itemname">${item[i]}<span class="modal-extra-itemprice">$${cost[i]}</span></div>
-                            <div class="btn modal-extra-addtocart-button">Add</div>
+        const markup = `div class="modal-extras-itemdiv d-flex flex-column justify-content-between">
+                            <div class="d-flex flex-row justify-content-between model-extra-row">
+                                <div class="modal-extra-itemname">${item[i]}</div>
+                                <div><span class="modal-extra-itemprice">$${cost[i]}</span></div>
+                            </div>
+                            <div class="quantity-row">
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div class="d-flex flex-row">
+                                        <div class="modal-quantity-label">Quantity :</div>
+                                        <div class="modal-quantity-div">
+                                            <i class="icofont-minus-circle minus"></i>
+                                            <input type="number" class="count" name="qty" value="1">
+                                            <i class="icofont-plus-circle plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="btn modal-extra-addtocart-button">Add</div>
+                                </div>
+                            </div>
                         </div>` ;
         section.insertAdjacentHTML('beforeend', markup);
     }
