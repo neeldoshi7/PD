@@ -119,15 +119,15 @@ $(document).on('click', '.tabs li a', function() {
     getExtras(extras);
 })
 
-const displayExtras = extras => {
+const displayExtras = (item, cost) => {
     var section = document.querySelector('#ExtraItems');
-    extras.forEach(el => {
+    for (let i = 0; i < item.length; i++) {
         const markup = `<div class="modal-extras-itemdiv d-flex flex-row justify-content-between">
-                            <div class="modal-extra-itemname"><span class="modal-extra-itemprice">$2.00</span></div>
+                            <div class="modal-extra-itemname">${item[i]}<span class="modal-extra-itemprice">$${cost[i]}</span></div>
                             <div class="btn modal-extra-addtocart-button">Add</div>
                         </div>` ;
-
-    })
+        section.insertAdjacentHTML('beforeend', markup);
+    }
 }
 
 $('.extras-button').on('click', function() {
@@ -136,5 +136,16 @@ $('.extras-button').on('click', function() {
 })
 
 const getExtras = extras => {
-
+    item = [];
+    cost = [];
+    extras.forEach(el => {
+        if (el.gs$cell.row == 1) {
+            continue;
+        } else if (el.gs$cell.col == 1) {
+            item.push(el.gs$cell.$t);
+        } else if (el.gs$cell.col == 2) {
+            cost.push(el.gs$cell.$t);
+        }
+    })
+    displayExtras(item, cost);
 }
