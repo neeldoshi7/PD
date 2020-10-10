@@ -134,7 +134,7 @@ const displayExtras = (item, cost) => {
                                         <div class="modal-quantity-label">Qty :</div>
                                         <div class="modal-quantity-div">
                                             <i class="icofont-minus-circle minus-extra" data-value="${i}"></i>
-                                            <input type="number" class="count-${i}" name="qty" value="1">
+                                            <input type="number" class="count ${i}" name="qty" value="1">
                                             <i class="icofont-plus-circle plus-extra" data-value="${i}"></i>
                                         </div>
                                     </div>
