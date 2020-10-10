@@ -168,5 +168,5 @@ const getExtras = extras => {
 
 $(document).on('click', '.plus-extra', function() {
     let i = $(this).data().value;
-    $(`${i}`).val(parseInt($(`${i}`).val()) + 1);
+    // $(`${i}`).val(parseInt($(`${i}`).val()) + 1);
 })
