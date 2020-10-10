@@ -131,7 +131,7 @@ const displayExtras = (item, cost) => {
                             <div class="quantity-row">
                                 <div class="d-flex flex-row justify-content-between">
                                     <div class="d-flex flex-row">
-                                        <div class="modal-quantity-label">Quantity :</div>
+                                        <div class="modal-quantity-label">Qty :</div>
                                         <div class="modal-quantity-div">
                                             <i class="icofont-minus-circle minus"></i>
                                             <input type="number" class="count" name="qty" value="1">
