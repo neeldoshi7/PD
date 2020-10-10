@@ -121,6 +121,7 @@ $(document).on('click', '.tabs li a', function() {
 
 const displayExtras = (item, cost) => {
     var section = document.querySelector('#ExtraItems');
+    $('#ExtraItems').empty();
     for (let i = 0; i < item.length; i++) {
         const markup = `<div class="modal-extras-itemdiv d-flex flex-row justify-content-between">
                             <div class="modal-extra-itemname">${item[i]}<span class="modal-extra-itemprice">$${cost[i]}</span></div>
