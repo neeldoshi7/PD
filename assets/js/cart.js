@@ -3,8 +3,8 @@ let extras1;
 let extras2;
 let extras3;
 let extras4;
-let item;
-let cost;
+let extraitem;
+let extracost;
 
 if (!state.cart) {
     state.cart = new Cart();
@@ -136,16 +136,16 @@ $('.extras-button').on('click', function() {
 })
 
 const getExtras = extras => {
-    item = [];
-    cost = [];
+    extraitem = [];
+    extracost = [];
     extras.forEach(el => {
         if (el.gs$cell.row != 1) {
             if (el.gs$cell.col == 1) {
-                item.push(el.gs$cell.$t);
+                extraitem.push(el.gs$cell.$t);
             } else if(el.gs$cell.col == 2) {
-                cost.push(el.gs$cell.$t);
+                extracost.push(el.gs$cell.$t);
             }
         }
     })
-    displayExtras(item, cost);
+    displayExtras(extraitem, extracost);
 }
