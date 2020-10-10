@@ -315,18 +315,7 @@
   <a href="cart.html" class="cart-button"><i class="icofont-shopping-cart"></i></a>
 
   <script type="text/javascript">
-  $(document).ready(function(){
-  $('.count').prop('disabled', true);
-  $(document).on('click','.plus',function(){
-  $('.count').val(parseInt($('.count').val()) + 1 );
-  });
-    $(document).on('click','.minus',function(){
-    $('.count').val(parseInt($('.count').val()) - 1 );
-      if ($('.count').val() == 0) {
-      $('.count').val(1);
-    }
-      });
-});
+  
   </script>
 
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
