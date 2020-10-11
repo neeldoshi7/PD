@@ -269,3 +269,14 @@ $(document).on('click', '.modal-addtocart', function() {
     $('.cart-item-number').text(state.cart.items.length);
 })
 
+$(document).ready(function(){
+    $('.count').prop('disabled', true);
+    $(document).on('click', '.plus', function() {
+        $('.count').val(parseInt($('.count').val()) + 1);
+    });
+    $(document).on('click', '.minus', function(){
+        if ($('.count').val() != 1) {
+            $('.count').val(parseInt($('.count').val()) - 1);
+        }
+    });
+});
