@@ -138,7 +138,7 @@ const displayExtras = (item, cost) => {
                                             <i class="icofont-plus-circle plus-extra" data-value="${i}"></i>
                                         </div>
                                     </div>
-                                    <div class="btn modal-extra-addtocart-button">Add</div>
+                                    <div class="btn modal-extra-addtocart-button" data-value="${i}">Add</div>
                                 </div>
                             </div>
                         </div>` ;
@@ -177,4 +177,9 @@ $(document).on('click', '.minus-extra', function() {
     if ($("#" + i).val() != 1) {
         $("#" + i).val(parseInt($("#" + i).val()) - 1);
     }
+})
+
+$(document).on('click', '.modal-extra-addtocart-button', function() {
+    let i = $(this).data().value;
+    
 })

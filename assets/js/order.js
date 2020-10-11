@@ -14,6 +14,9 @@ const state = {};
 class Cart {
     constructor() {
         this.items = [];
+        this.extraitems = [];
+        this.cost = 0;
+        this.extracost = 0;
     }
 
     // item = {
@@ -39,13 +42,21 @@ class Cart {
             instructions,
         }
         this.items.push(item);
+        this.cost += totalcost;
         localStorage.setItem('cart', JSON.stringify(this.items));
+        console.log(this.cost);
     }
 
     deleteItem(name) {
-        const index = this.items.findIndex(el => el.name === name);
+        let c;
+        const index = this.items.findIndex(el => {
+            el.name === name;
+            c = el.totalcost;
+        });
+        this.cost -= c;
         this.items.splice(index, 1);
         localStorage.setItem('cart', JSON.stringify(this.items));
+        console.log(this.cost);
     }
 }
 
