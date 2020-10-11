@@ -133,9 +133,9 @@ const displayExtras = (item, cost) => {
                                     <div class="d-flex flex-row">
                                         <div class="modal-quantity-label">Qty :</div>
                                         <div class="modal-quantity-div">
-                                            <i class="icofont-minus-circle minus-extra"></i>
-                                            <input type="number" class="count" name="qty" value="1">
-                                            <i class="icofont-plus-circle plus-extra"></i>
+                                            <i class="icofont-minus-circle minus-extra" data-value="${i}"></i>
+                                            <input type="number" class="count" name="qty" value="1" id="${i}>
+                                            <i class="icofont-plus-circle plus-extra" data-value="${i}"></i>
                                         </div>
                                     </div>
                                     <div class="btn modal-extra-addtocart-button">Add</div>
@@ -169,5 +169,5 @@ const getExtras = extras => {
 
 $(document).on('click', '.plus-extra', function() {
     let i = $(this).data().value;
-    // $(`${i}`).val(parseInt($(`${i}`).val()) + 1);
+    $(`#${i}`).val(parseInt($(`#${i}`).val()) + 1);
 })
