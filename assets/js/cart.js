@@ -174,5 +174,7 @@ $(document).on('click', '.plus-extra', function() {
 
 $(document).on('click', '.minus-extra', function() {
     let i = $(this).data().value;
-    $("#" + i).val(parseInt($("#" + i).val()) - 1);
+    if ($("#" + i).val() != 1) {
+        $("#" + i).val(parseInt($("#" + i).val()) - 1);
+    }
 })
