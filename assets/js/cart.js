@@ -171,3 +171,8 @@ $(document).on('click', '.plus-extra', function() {
     let i = $(this).data().value;
     $("#" + i).val(parseInt($("#" + i).val()) + 1);
 })
+
+$(document).on('click', '.minus-extra', function() {
+    let i = $(this).data().value;
+    $("#" + i).val(parseInt($("#" + i).val()) - 1);
+})
