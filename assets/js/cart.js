@@ -143,6 +143,7 @@ const displayExtras = (item, cost) => {
                             </div>
                         </div>` ;
         section.insertAdjacentHTML('beforeend', markup);
+        $('.count').prop('disabled', true);
     }
 }
 
