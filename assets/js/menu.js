@@ -131,7 +131,7 @@ const displayData = c => {
     let menulist = document.getElementById('menu-list');
     if (c === 2) {
         for (let i = 0; i < title.length; i++) {
-            const markup1 = `<div class="menu top"></div>
+            const markup1 = `<div class="col-lg-6 menu top"></div>
                             <div class="col-lg-6 menu-item">
                                 <div class="menu-content">
                                     <a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
@@ -142,7 +142,7 @@ const displayData = c => {
         }
     } else if (c === 4) {
         for (let i = 0; i < title.length; i++) {
-            const markup2 = `<div class="menu top"></div>
+            const markup2 = `<div class="col-lg-6 menu top"></div>
                             <div class="col-lg-6 menu-item">
                                 <div class="menu-content">
                                     <span>${code[i]}<a href="#">${title[i]}</a></span><span class="dots"></span><span>$${price[i]}</span>
