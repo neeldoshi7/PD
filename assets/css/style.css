@@ -1008,6 +1008,8 @@ section {
 
 .menu-top {
   background: url("oneRoof_box3.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
 }
 
 .menu-item {
