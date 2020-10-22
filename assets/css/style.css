@@ -1025,6 +1025,8 @@ background-size: cover;
   */
   /* border-color: #000000; */
   /* margin: auto; */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .menu .menu-content a {
