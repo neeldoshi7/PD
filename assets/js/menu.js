@@ -131,25 +131,28 @@ const displayData = c => {
     let menulist = document.getElementById('menu-list');
     if (c === 2) {
         for (let i = 0; i < title.length; i++) {
-            const markup1 = `<div class="row menu-top">
-                            </div>
+            const markup1 = `<div class="row">
+            <div class="menu-top"></div>
                             <div class="col-lg-6 menu-item">
                                 <div class="menu-content">
                                     <a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
                                 </hr>
+                            </div>
                             </div>`;
             menulist.insertAdjacentHTML('beforeend', markup1);
         }
     } else if (c === 4) {
         for (let i = 0; i < title.length; i++) {
-            const markup2 = `<div class="col-lg-6 menu-top"></div>
+            const markup2 = `<div class="row">
+            <div class="col-lg-6 menu-top"></div>
                             <div class="col-lg-6 menu-item">
                                 <div class="menu-content">
                                     <span>${code[i]}<a href="#">${title[i]}</a></span><span class="dots"></span><span>$${price[i]}</span>
                                 </div>
                                 <div class="menu-ingredients">${description[i]}</div>
                                 </hr>
+                            </div>
                             </div>`;
             menulist.insertAdjacentHTML('beforeend', markup2);
         }

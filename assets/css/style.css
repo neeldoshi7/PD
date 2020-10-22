@@ -1007,6 +1007,7 @@ section {
 } */
 
 .menu-top {
+  height: 10px;
   background: url("oneRoof_box3.jpg");
   background-repeat: no-repeat;
 background-size: cover;
