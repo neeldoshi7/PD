@@ -1006,6 +1006,10 @@ section {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 } */
 
+.menu-top {
+  background: url("oneRoof_box3.jpg");
+}
+
 .menu-item {
   background: url("oneRoof_box3.jpg");
 background-position: center;
