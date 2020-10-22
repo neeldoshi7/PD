@@ -1013,10 +1013,10 @@ background-size: cover;
 }
 
 .menu-item {
-  background: url("oneRoof_box3.jpg");
+  /* background: url("oneRoof_box3.jpg");
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; */
   /*
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1)
   border: 2px solid #000000;
@@ -1026,6 +1026,7 @@ background-size: cover;
 }
 
 .menu .menu-content a {
+  
   /* padding-right: 10px; */
   margin-left: 1vw;
   /* position: relative; */
@@ -1035,6 +1036,10 @@ background-size: cover;
 }
 
 .menu .menu-content  {
+  background: url("oneRoof_box3.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
   position: relative;
   z-index: 3;
   /* padding: 0 10px; */
