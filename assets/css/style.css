@@ -1016,7 +1016,7 @@ background-size: cover;
   border: 2px solid #000000;
   */
   border-color: #000000;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .menu .menu-content a {
