@@ -131,7 +131,7 @@ const displayData = c => {
     let menulist = document.getElementById('menu-list');
     if (c === 2) {
         for (let i = 0; i < title.length; i++) {
-            const markup1 = `<div class="col-lg-6 menu">
+            const markup1 = `<div class="col-lg-6">
                                 <div class="menu-top"></div>
                                 <div class="menu-item">
                                     <div class="menu-content">
@@ -145,7 +145,7 @@ const displayData = c => {
         }
     } else if (c === 4) {
         for (let i = 0; i < title.length; i++) {
-            const markup2 = `<div class="col-lg-6 menu">
+            const markup2 = `<div class="col-lg-6">
                                 <div class="menu-top"></div>
                                 <div class="menu-item">
                                     <div class="menu-content">
