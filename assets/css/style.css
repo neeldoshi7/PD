@@ -595,11 +595,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #ec0404;
+  border: 2px solid #000000;
 }
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
-  background: #000000;
+  background: #ec0404;
   color: #fff;
 }
 
