@@ -83,9 +83,9 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
 } */
 
-/* #topbar.topbar-scrolled {
+#topbar.topbar-scrolled {
   top: -50px;
-} */
+}
 
 #topbar i {
   color: #ec0404;
@@ -119,10 +119,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   background: transparent;
 } */
 
-#header.header-scrolled {
+/* #header.header-scrolled {
   top: 0;
   background: rgba(26, 24, 22, 0.85);
-}
+} */
 
 #header .logo h1 {
   font-family: cooper-black-std,serif;
