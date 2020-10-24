@@ -83,9 +83,9 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
 } */
 
-#topbar.topbar-scrolled {
+/* #topbar.topbar-scrolled {
   top: -50px;
-}
+} */
 
 #topbar i {
   color: #ec0404;
