@@ -10,12 +10,12 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Poppins", sans-serif;
-  color: #444444;
+  color: white;
   background-color: #ec0404;
 }
 
 a {
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
   font-size: 3vw;
-  color: #ec0404;
+  color: #fff;
   margin: auto;
   line-height: 1;
   letter-spacing: 3px;
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
   font-size: 1.3vw;
-  color: #ec0404;
+  color: white;
   margin: auto;
   line-height: 1;
   letter-spacing: 2px;
@@ -511,7 +511,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2  {
-  color: #ec0404;
+  color: white;
 }
 
 #hero p {
@@ -632,11 +632,11 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  color: black;
+  color: white;
 }
 
 .section-title h2  {
-  color: black;
+  color: white;
 }
 
 .section-title p {
@@ -719,7 +719,8 @@ section {
 }
 
 .index-special-button{
-  background-color: #000000;
+  background-color:  #ec0404;
+  border: 2px solid white;
 }
 
 /*--------------------------------------------------------------
@@ -908,7 +909,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #000000;
+  color: white;
 }
 
 .why-us .box h4 {
@@ -916,11 +917,11 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: white;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: white;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -1586,7 +1587,7 @@ background-size: cover;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #433f39;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1594,7 +1595,7 @@ background-size: cover;
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #7a7368;
+  color: white;
 }
 
 .contact .info:hover i {
@@ -1718,7 +1719,7 @@ background-size: cover;
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #000000;
+  color: white;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
