@@ -961,6 +961,9 @@ section {
   list-style: none;
   text-align: center;
   border-radius: 50px;
+  font-family: Bradley Hand ITC;
+  color: black;
+  font-weight: bolder;
 }
 
 .menu #menu-flters li, .menu #menu-flters-sub li {
