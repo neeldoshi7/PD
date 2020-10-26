@@ -134,7 +134,7 @@ const displayData = c => {
             const markup1 = `
                                 <div class=" col-lg-6 menu-item">
                                     <div class="menu-content">
-                                        <a href="#">${title[i]}</a><span class="dots"></span><span>$${price[i]}</span>
+                                        <a href="#">${title[i]}</a><span class="dots"></span><span class="menu-black">$${price[i]}</span>
                                     </div>
                                     </hr>
                                 </div>
@@ -146,7 +146,7 @@ const displayData = c => {
             const markup2 = `
                                 <div class="col-lg-6 menu-item">
                                     <div class="menu-content">
-                                        <span>${code[i]}<a href="#">${title[i]}</a></span><span class="dots"></span><span>$${price[i]}</span>
+                                        <span class="menu-black">${code[i]}<a href="#">${title[i]}</a></span><span class="dots"></span><span class="menu-black">$${price[i]}</span>
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
                                     </hr>

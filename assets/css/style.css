@@ -23,6 +23,10 @@ a:hover {
   text-decoration: none;
 }
 
+.menu-black{
+  color: black;
+}
+
 @font-face {
     font-family: 'Monotype Corsiva';
     src: url('./MonotypeCorsiva.woff2') format('woff2'),
