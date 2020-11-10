@@ -5,20 +5,26 @@ include 'conn.php';
 $username = "neelpatel";
 $password = "12345678";
 
-$query = "SELECT password FROM authentication WHERE username like $username";
+$query = "SELECT * FROM authentication where username = '{$username}'";
 
-$result = $conn->query($query);
+$result = mysqli_query($conn, $query);
 
-print($result);
+if($result === false) {
+    print("false");
+}
 
-if($result->num_rows === 1) {
+if(mysqli_num_rows($result) === 1) {
     while($row = $result->fetch_assoc()) {
         if ($row["password"] === $password) {
             print("Login");
+            print(ROOT_PATH);
+            header('Location: .\..\..\admin.html');
+            exit;
         }
 	}
 } else {
     print("Unsuccessful");
+    exit;
 }
 
 $conn->close();
