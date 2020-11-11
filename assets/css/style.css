@@ -1746,6 +1746,19 @@ background-size: cover;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.icon-img{
+  height: 5vh;
+  width: 3vw;
+  margin: 1vw;
+}
+
+@media (max-width: 992px) {
+  .icon-img{
+    height: 16vh;
+    width: 10vw;
+  }
+}
+
 #footer {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,474747+0,666666+0,595959+12,111111+97,2c2c2c+97,111111+97,000000+98,131313+100 */
   background: #4c4c4c; /* Old browsers */
