@@ -28,10 +28,7 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'Monotype Corsiva';
-    src: url('./MonotypeCorsiva.woff2') format('woff2'),
-         url('./MonotypeCorsiva.woff') format('woff'),
-         url('./MTCORSVA.TTF') format('truetype');
+    font-family: 'BioRhyme Expanded';
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -39,7 +36,7 @@ a:hover {
 
 
 h1, h2, h3, h4, h5, h6 {
-      font-family: 'Monotype Corsiva';
+      font-family: 'BioRhyme Expanded';
 }
 
 /*--------------------------------------------------------------
