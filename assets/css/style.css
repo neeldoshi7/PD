@@ -28,9 +28,9 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'BioRhyme Expanded';
-    src: url('../Font-Bio/BioRhymeExpanded-Regular.woff2') format('woff2'),
-        url('../Font-Bio/BioRhymeExpanded-Regular.woff') format('woff');
+    font-family: 'Sansita Swashed';
+    src: url('../Font-SS/SansitaSwashed-Regular.woff2') format('woff2'),
+        url('../Font-SS/SansitaSwashed-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,7 +38,7 @@ a:hover {
 
 
 h1, h2, h3, h4, h5, h6 {
-      font-family: 'BioRhyme Expanded';
+      font-family: 'Sansita Swashed';
 }
 
 /*--------------------------------------------------------------

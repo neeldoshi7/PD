@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('SansitaSwashed-Regular.woff2') format('woff2'),
+        url('SansitaSwashed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
