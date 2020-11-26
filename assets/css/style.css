@@ -730,6 +730,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.aboutus-top{
+  margin-top: 22vh;
+}
+
 .aboutus-background{
     width: 100%;
     height: 100vh;
@@ -738,8 +742,12 @@ section {
     padding: 0;
 }
 
-.about {
-  background: #ec0404;
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 37, 34, 0.8);
+    overflow: hidden;
+    padding: 0;
 }
 
 .about .content {
