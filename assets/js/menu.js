@@ -173,6 +173,8 @@ const displayData = c => {
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
     } else if (c === 6) {
+        const markup = `<div>Onlu available in New Brunswick</div>`;
+        menulist.insertAdjacentElement('afterbegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
