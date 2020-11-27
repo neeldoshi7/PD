@@ -177,7 +177,7 @@ const displayData = c => {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
                                     <div class="menu-content">
-                                        <a href="#">${title[i]}</a><span class="dots"></span><span class="menu-black">$${price[i]}</span>
+                                        <a href="#">${title[i]}</a><span class="dots"></span>
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
                                     <div class="menu-ingredients">SLICE : $${p1[i]}</div>
