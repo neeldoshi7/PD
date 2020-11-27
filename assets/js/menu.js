@@ -184,9 +184,9 @@ const displayData = c => {
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
                                     <div class="menu-ingredients">SLICE : $${p1[i]}</div>
-                                    <div class="menu-ingredients">MEDIUM : $${p1[i]}</div>
-                                    <div class="menu-ingredients">LARGE : $${p1[i]}</div>
-                                    <div class="menu-ingredients">X-LARGE : $${p1[i]}</div>
+                                    <div class="menu-ingredients">MEDIUM : $${p2[i]}</div>
+                                    <div class="menu-ingredients">LARGE : $${p3[i]}</div>
+                                    <div class="menu-ingredients">X-LARGE : $${p4[i]}</div>
                                     </hr>
                                 </div>
                             `;
