@@ -180,10 +180,10 @@ const displayData = c => {
                                         <a href="#">${title[i]}</a><span class="dots"></span><span class="menu-black">$${price[i]}</span>
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
-                                    <div>SLICE : $${p1[i]}</div>
-                                    <div>MEDIUM : $${p1[i]}</div>
-                                    <div>LARGE : $${p1[i]}</div>
-                                    <div>X-LARGE : $${p1[i]}</div>
+                                    <div class="menu-ingredients">SLICE : $${p1[i]}</div>
+                                    <div class="menu-ingredients">MEDIUM : $${p1[i]}</div>
+                                    <div class="menu-ingredients">LARGE : $${p1[i]}</div>
+                                    <div class="menu-ingredients">X-LARGE : $${p1[i]}</div>
                                     </hr>
                                 </div>
                             `;
