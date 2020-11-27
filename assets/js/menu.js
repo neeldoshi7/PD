@@ -173,7 +173,6 @@ const displayData = c => {
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
     } else if (c === 6) {
-        // let pizzamsg = document.getElementById   ('pizza-msg');
         const markup = `<div>Only available in New Brunswick</div>`;
         menulist.insertAdjacentHTML('beforebegin', markup);
         for (let i = 0; i < title.length; i++) {
