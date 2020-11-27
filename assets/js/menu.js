@@ -7,6 +7,10 @@ let code = [];
 let title = [];
 let description = [];
 let price = [];
+let p1 = [];
+let p2 = [];
+let p3 = [];
+let p4 = [];
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -121,6 +125,20 @@ const populateData = json => {
                 } else if (el.gs$cell.col == 4) {
                     price.push(el.gs$cell.$t);
                 }
+            } else if (c === 6) {
+                if (el.gs$cell.col == 1) {
+                    title.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 2) {
+                    description.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 3) {
+                    p1.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 4) {
+                    p2.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 5) {
+                    p3.push(el.gs$cell.$t);
+                } else if (el.gs$cell.col == 6) {
+                    p4.push(el.gs$cell.$t);
+                }
             }
         }
     })
@@ -154,6 +172,22 @@ const displayData = c => {
                             `;
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
+    } else if (c === 6) {
+        for (let i = 0; i < title.length; i++) {
+            const markup3 = `
+                                <div class="col-lg-6 menu-item">
+                                    <div class="menu-content">
+                                        <a href="#">${title[i]}</a><span class="dots"></span><span class="menu-black">$${price[i]}</span>
+                                    </div>
+                                    <div class="menu-ingredients">${description[i]}</div>
+                                    <div>SLICE : ${p1[i]}</div>
+                                    <div>MEDIUM : ${p1[i]}</div>
+                                    <div>LARGE : ${p1[i]}</div>
+                                    <div>X-LARGE : ${p1[i]}</div>
+                                    </hr>
+                                </div>
+                            `;
+            menulist.insertAdjacentHTML('beforeend', markup3);
     }
 
 }
