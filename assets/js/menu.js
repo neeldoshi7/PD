@@ -174,7 +174,7 @@ const displayData = c => {
         }
     } else if (c === 6) {
         const markup = `<div>Only available in New Brunswick</div>`;
-        menulist.insertAdjacentElement('afterbegin', markup);
+        menulist.insertAdjacentElement('beforebegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
