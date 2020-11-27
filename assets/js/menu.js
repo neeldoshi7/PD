@@ -175,7 +175,7 @@ const displayData = c => {
     } else if (c === 6) {
         // let pizzamsg = document.getElementById   ('pizza-msg');
         const markup = `<div>Only available in New Brunswick</div>`;
-        menulist.insertAdjacentElement('beforebegin', markup);
+        menulist.insertAdjacentHTML('beforebegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
