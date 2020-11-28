@@ -4,7 +4,7 @@ include 'conn.php';
 
 if(isset($_FILES['uploaded_file'])) {
     // Make sure the file was sent without errors
-    if($_FILES['uploaded_file']['error'] == 0 && $_FILES['uploaded_file']['type']) {
+    if($_FILES['uploaded_file']['error'] == 0 && $_FILES['uploaded_file']['type'] == "application/pdf") {
         // Connect to the database
  
         // Gather all required data
