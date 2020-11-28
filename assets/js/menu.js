@@ -182,10 +182,10 @@ const displayData = c => {
                                         <a href="#">${title[i]}</a><span class="dots"></span>
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
-                                    <div class="menu-ingredients">SLICE : $${p1[i]}</div>
-                                    <div class="menu-ingredients">MEDIUM : $${p2[i]}</div>
-                                    <div class="menu-ingredients">LARGE : $${p3[i]}</div>
-                                    <div class="menu-ingredients">X-LARGE : $${p4[i]}</div>
+                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>SLICE : </div><div>$${p1[i]}</div></div>
+                                    <div class="menu-ingredients"><div>MEDIUM : </div><div>$${p2[i]}</div></div>
+                                    <div class="menu-ingredients"><div>LARGE : </div><div>$${p3[i]}</div></div>
+                                    <div class="menu-ingredients"><div>X-LARGE : </div><div>$${p4[i]}</div></div>
                                     </hr>
                                 </div>
                             `;
