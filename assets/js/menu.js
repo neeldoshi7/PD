@@ -191,6 +191,13 @@ const displayData = c => {
                             `;
             menulist.insertAdjacentHTML('beforeend', markup3);
         }
+        pizzatoppings();
     }
 
+}
+
+const pizzatoppings = () => {
+    const toppings = document.getElementById('toppings');
+    const html1 = `<p>Toppings</p>`;
+    toppings.insertAdjacentHTML('beforebegin', html1);
 }
