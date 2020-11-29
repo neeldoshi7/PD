@@ -1,4 +1,3 @@
-console.log("HEREEEEEEEEEEEEEEE");
 let data;
 let pages;
 const category = new Map();
@@ -14,9 +13,6 @@ let p3 = [];
 let p4 = [];
 const pizzatoppings = 18;
 const toppings = 19;
-
-$('#pizza-msg').hide();
-$('#toppings').hide();
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -104,7 +100,9 @@ const addScript = number => {
 
 const populateData = json => {
     data = json.feed.entry;
+    $('#pizza-msg').empty();
     $('#menu-list').empty();
+    $('#toppings-section').empty();
     $('#toppings').empty();
     code = [];
     title = [];
@@ -184,8 +182,9 @@ const displayData = c => {
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
     } else if (c === 6) {
-        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div></br>`;
-        menulist.insertAdjacentHTML('afterbegin', markup);
+        const pizzamsg = document.getElementById('pizza-msg');
+        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div>`;
+        pizzamsg.insertAdjacentHTML('afterbegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
@@ -208,11 +207,9 @@ const displayData = c => {
 }
 
 const pizzaToppingsSection = () => {
-    $('#pizza-msg').show();
-    $('#toppings').show();
-    // const toppings = document.getElementById('toppings');
-    // const html1 = `<p>Toppings</p>`;
-    // toppings.insertAdjacentHTML('afterbegin', html1);
+    const toppingssection = document.getElementById('toppings-section');
+    const html1 = `<div>Toppings</div>`;
+    toppingssection.insertAdjacentHTML('afterbegin', html1);
     addPizzaToppingsScript(pizzatoppings);
 }
 
