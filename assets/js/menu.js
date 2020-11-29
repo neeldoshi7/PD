@@ -305,7 +305,7 @@ const displayToppingsList = () => {
     const toppingsList = document.getElementById('toppings-list');
     for (let i = 0; i < title.length / 3; i++) {
         const html3 = `
-                            <div class="col-lg-6 menu-item">
+                            <div class="col-lg-4 menu-item">
                                 <div class="menu-content">
                                     <a href="#">${title[(i * 6) + 0]}</a><span class="dots"></span>
                                     <a href="#">${title[(i * 6) + 1]}</a><span class="dots"></span>
