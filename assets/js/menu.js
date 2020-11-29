@@ -106,6 +106,10 @@ const populateData = json => {
     title = [];
     description = [];
     price = [];
+    p1 = [];
+    p2 = [];
+    p3 = [];
+    p4 = [];
     let c = 0;
     data.forEach(el => {
         if (el.gs$cell.row == 1) {
@@ -216,4 +220,48 @@ const addPizzaToppingsScript = number => {
 
 const getPizzaToppings = json => {
     data = json.feed.entry;
+    $('#toppings').empty();
+    code = [];
+    title = [];
+    description = [];
+    price = [];
+    p1 = [];
+    p2 = [];
+    p3 = [];
+    p4 = [];
+    data.forEach(el => {
+        if (el.gs$cell.row != 1) {
+            if (el.gs$cell.col == 1) {
+                title.push(el.gs$cell.$t);
+            } else if (el.gs$cell.col == 2) {
+                p1.push(el.gs$cell.$t);
+            } else if (el.gs$cell.col == 3) {
+                p2.push(el.gs$cell.$t);
+            } else if (el.gs$cell.col == 4) {
+                p3.push(el.gs$cell.$t);
+            } else if (el.gs$cell.col == 5) {
+                p4.push(el.gs$cell.$t);
+            }
+        }
+    })
+    displayPizzaToppings();
+}
+
+const displayPizzaToppings = () => {
+    const toppings = document.getElementById('toppings');
+    for (let i = 0; i < title.length; i++) {
+        const html2 = `
+                            <div class="col-lg-6 menu-item">
+                                <div class="menu-content">
+                                    <a href="#">${title[i]}</a><span class="dots"></span>
+                                </div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>SLICE : </div><div class="menu-pizza-prices">$${p1[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>MEDIUM : </div><div class="menu-pizza-prices">$${p2[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>LARGE : </div><div class="menu-pizza-prices">$${p3[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>X-LARGE : </div><div class="menu-pizza-prices">$${p4[i]}</div></div>
+                                </hr>
+                            </div>
+                        `;
+        toppings.insertAdjacentHTML('beforeend', html2);
+    }
 }
