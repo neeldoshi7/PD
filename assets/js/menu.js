@@ -15,6 +15,9 @@ let p4 = [];
 const pizzatoppings = 18;
 const toppings = 19;
 
+$('#pizza-msg').hide();
+$('#toppings').hide();
+
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
     $(this).addClass('filter-active');
@@ -190,10 +193,10 @@ const displayData = c => {
                                         <a href="#">${title[i]}</a><span class="dots"></span>
                                     </div>
                                     <div class="menu-ingredients">${description[i]}</div>
-                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>SLICE : </div><div class="menu-pizza-prices">$${p1[i]}</div></div>
-                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>MEDIUM : </div><div class="menu-pizza-prices">$${p2[i]}</div></div>
-                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>LARGE : </div><div class="menu-pizza-prices">$${p3[i]}</div></div>
-                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>X-LARGE : </div><div class="menu-pizza-prices">$${p4[i]}</div></div>
+                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Slice : </div><div class="menu-pizza-prices">$${p1[i]}</div></div>
+                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Medium : </div><div class="menu-pizza-prices">$${p2[i]}</div></div>
+                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Large : </div><div class="menu-pizza-prices">$${p3[i]}</div></div>
+                                    <div class="menu-ingredients d-flex flex-row justify-content-between"><div>X-Large : </div><div class="menu-pizza-prices">$${p4[i]}</div></div>
                                     </hr>
                                 </div>
                             `;
@@ -205,9 +208,11 @@ const displayData = c => {
 }
 
 const pizzaToppingsSection = () => {
-    const toppings = document.getElementById('toppings');
-    const html1 = `<p>Toppings</p>`;
-    toppings.insertAdjacentHTML('afterbegin', html1);
+    $('#pizza-msg').show();
+    $('#toppings').show();
+    // const toppings = document.getElementById('toppings');
+    // const html1 = `<p>Toppings</p>`;
+    // toppings.insertAdjacentHTML('afterbegin', html1);
     addPizzaToppingsScript(pizzatoppings);
 }
 
@@ -221,7 +226,7 @@ const addPizzaToppingsScript = number => {
 
 const getPizzaToppings = json => {
     data = json.feed.entry;
-    $('#toppings').empty();
+    // $('#toppings').empty();
     code = [];
     title = [];
     description = [];
