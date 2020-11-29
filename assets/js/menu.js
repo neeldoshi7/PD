@@ -303,7 +303,7 @@ const getToppingsList = json => {
 
 const displayToppingsList = () => {
     const toppingsList = document.getElementById('toppings-list');
-    for (let i = 0; i < title.length / 3; i++) {
+    for (let i = 0; i < title.length / 6; i++) {
         const html3 = `
                             <div class="col-lg-4 menu-item">
                                 <div class="menu-content">
