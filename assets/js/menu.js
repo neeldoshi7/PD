@@ -11,6 +11,8 @@ let p1 = [];
 let p2 = [];
 let p3 = [];
 let p4 = [];
+const pizzatoppings = 18;
+const toppings = 19;
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
@@ -99,6 +101,7 @@ const addScript = number => {
 const populateData = json => {
     data = json.feed.entry;
     $('#menu-list').empty();
+    $('#toppings').empty();
     code = [];
     title = [];
     description = [];
@@ -173,8 +176,8 @@ const displayData = c => {
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
     } else if (c === 6) {
-        const markup = `<div>Only available in New Brunswick</div>`;
-        menulist.insertAdjacentHTML('beforebegin', markup);
+        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div>`;
+        menulist.insertAdjacentHTML('afterbegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
                                 <div class="col-lg-6 menu-item">
@@ -199,5 +202,18 @@ const displayData = c => {
 const pizzatoppings = () => {
     const toppings = document.getElementById('toppings');
     const html1 = `<p>Toppings</p>`;
-    toppings.insertAdjacentHTML('beforebegin', html1);
+    toppings.insertAdjacentHTML('afterbegin', html1);
+    addPizzaToppingsScript(pizzatoppings);
+}
+
+const addPizzaToppingsScript = number => {
+    const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=getPizzaToppings`;
+    var s = document.createElement('script');
+    s.setAttribute('src', src);
+    document.body.appendChild(s);
+}
+
+const getPizzaToppings = json => {
+    data = json.feed.entry;
 }
