@@ -181,7 +181,7 @@ const displayData = c => {
             menulist.insertAdjacentHTML('beforeend', markup2);
         }
     } else if (c === 6) {
-        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div>`;
+        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div><br>`;
         menulist.insertAdjacentHTML('afterbegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
