@@ -15,8 +15,8 @@ let p4 = [];
 const pizzatoppings = 18;
 const toppings = 19;
 
-$('#pizza-msg').hide();
-$('#toppings').hide();
+$('.pizza-msg').hide();
+$('.toppings').hide();
 
 $(document).on('click', '#menu-flters li', function() {
     $('#menu-flters li').removeClass('filter-active');
