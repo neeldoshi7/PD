@@ -1,3 +1,4 @@
+console.log("HEREEEEEEEEEEEEEEE");
 let data;
 let pages;
 const category = new Map();
