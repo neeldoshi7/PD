@@ -307,12 +307,12 @@ const displayToppingsList = () => {
         const html3 = `
                             <div class="col-lg-4 menu-item">
                                 <div class="menu-content">
-                                    <div><a href="#">${title[(i * 6) + 0]}</a></div>
-                                    <div><a href="#">${title[(i * 6) + 1]}</a></div>
-                                    <div><a href="#">${title[(i * 6) + 2]}</a></div>
-                                    <div><a href="#">${title[(i * 6) + 3]}</a></div>
-                                    <div><a href="#">${title[(i * 6) + 4]}</a></div>
-                                    <div><a href="#">${title[(i * 6) + 5]}</a></div>
+                                    <div><a href="#">${title[(i * 6) + 0]}</a></div><br>
+                                    <div><a href="#">${title[(i * 6) + 1]}</a></div><br>
+                                    <div><a href="#">${title[(i * 6) + 2]}</a></div><br>
+                                    <div><a href="#">${title[(i * 6) + 3]}</a></div><br>
+                                    <div><a href="#">${title[(i * 6) + 4]}</a></div><br>
+                                    <div><a href="#">${title[(i * 6) + 5]}</a></div><br>
                                 </div>
                             </div>
                         `;
