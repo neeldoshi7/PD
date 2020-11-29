@@ -104,6 +104,7 @@ const populateData = json => {
     $('#menu-list').empty();
     $('#toppings-section').empty();
     $('#toppings').empty();
+    $('#toppings-list').empty();
     code = [];
     title = [];
     description = [];
@@ -203,7 +204,6 @@ const displayData = c => {
         }
         pizzaToppingsSection();
     }
-
 }
 
 const pizzaToppingsSection = () => {
@@ -223,7 +223,6 @@ const addPizzaToppingsScript = number => {
 
 const getPizzaToppings = json => {
     data = json.feed.entry;
-    // $('#toppings').empty();
     code = [];
     title = [];
     description = [];
@@ -266,5 +265,57 @@ const displayPizzaToppings = () => {
                             </div>
                         `;
         toppings.insertAdjacentHTML('beforeend', html2);
+    }
+    toppingsList();
+}
+
+const toppingsList = () => {
+    addToppingsListScript(toppings);
+}
+
+const addToppingsListScript = number => {
+    const id = `1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI`;
+    const src = `https://spreadsheets.google.com/feeds/cells/${id}/${number}/public/values?alt=json-in-script&callback=getToppingsList`;
+    var s = document.createElement('script');
+    s.setAttribute('src', src);
+    document.body.appendChild(s);
+}
+
+const getToppingsList = json => {
+    data = json.feed.entry
+    code = [];
+    title = [];
+    description = [];
+    price = [];
+    p1 = [];
+    p2 = [];
+    p3 = [];
+    p4 = [];
+    data.forEach(el => {
+        if (el.gs$cell.row != 1) {
+            if (el.gs$cell.col == 1) {
+                title.push(el.gs$cell.$t);
+            }
+        }
+    })
+    displayToppingsList();
+}
+
+const displayToppingsList = () => {
+    const toppingsList = document.getElementById('toppings-list');
+    for (let i = 0; i < title.length / 3; i++) {
+        const html3 = `
+                            <div class="col-lg-6 menu-item">
+                                <div class="menu-content">
+                                    <a href="#">${title[(i * 6) + 0]}</a><span class="dots"></span>
+                                    <a href="#">${title[(i * 6) + 1]}</a><span class="dots"></span>
+                                    <a href="#">${title[(i * 6) + 2]}</a><span class="dots"></span>
+                                    <a href="#">${title[(i * 6) + 3]}</a><span class="dots"></span>
+                                    <a href="#">${title[(i * 6) + 4]}</a><span class="dots"></span>
+                                    <a href="#">${title[(i * 6) + 5]}</a><span class="dots"></span>
+                                </div>
+                            </div>
+                        `;
+        toppings.insertAdjacentHTML('beforeend', html3);
     }
 }
