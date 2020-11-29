@@ -316,6 +316,6 @@ const displayToppingsList = () => {
                                 </div>
                             </div>
                         `;
-        toppings.insertAdjacentHTML('beforeend', html3);
+        toppingsList.insertAdjacentHTML('beforeend', html3);
     }
 }
