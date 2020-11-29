@@ -199,12 +199,12 @@ const displayData = c => {
                             `;
             menulist.insertAdjacentHTML('beforeend', markup3);
         }
-        pizzatoppings();
+        pizzaToppingsSection();
     }
 
 }
 
-const pizzatoppings = () => {
+const pizzaToppingsSection = () => {
     const toppings = document.getElementById('toppings');
     const html1 = `<p>Toppings</p>`;
     toppings.insertAdjacentHTML('afterbegin', html1);
