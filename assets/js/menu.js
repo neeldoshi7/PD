@@ -257,10 +257,10 @@ const displayPizzaToppings = () => {
                                 <div class="menu-content">
                                     <a href="#">${title[i]}</a><span class="dots"></span>
                                 </div>
-                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>SLICE : </div><div class="menu-pizza-prices">$${p1[i]}</div></div>
-                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>MEDIUM : </div><div class="menu-pizza-prices">$${p2[i]}</div></div>
-                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>LARGE : </div><div class="menu-pizza-prices">$${p3[i]}</div></div>
-                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>X-LARGE : </div><div class="menu-pizza-prices">$${p4[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Slice : </div><div class="menu-pizza-prices">$${p1[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Medium : </div><div class="menu-pizza-prices">$${p2[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>Large : </div><div class="menu-pizza-prices">$${p3[i]}</div></div>
+                                <div class="menu-ingredients d-flex flex-row justify-content-between"><div>X-Large : </div><div class="menu-pizza-prices">$${p4[i]}</div></div>
                                 </hr>
                             </div>
                         `;
