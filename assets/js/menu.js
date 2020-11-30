@@ -303,16 +303,11 @@ const getToppingsList = json => {
 
 const displayToppingsList = () => {
     const toppingsList = document.getElementById('toppings-list');
-    for (let i = 0; i < title.length / 6; i++) {
+    for (let i = 0; i < title.length; i++) {
         const html3 = `
                             <div class="col-lg-4 menu-item">
                                 <div class="menu-content">
-                                    <div><a href="#">${title[(i * 6) + 0]}</a></div><br>
-                                    <div><a href="#">${title[(i * 6) + 1]}</a></div><br>
-                                    <div><a href="#">${title[(i * 6) + 2]}</a></div><br>
-                                    <div><a href="#">${title[(i * 6) + 3]}</a></div><br>
-                                    <div><a href="#">${title[(i * 6) + 4]}</a></div><br>
-                                    <div><a href="#">${title[(i * 6) + 5]}</a></div><br>
+                                    <div><a href="#">${title[i]}</a></div>
                                 </div>
                             </div>
                         `;
