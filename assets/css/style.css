@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #ec0404;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .nav-menu .book-a-table a {
