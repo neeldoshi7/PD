@@ -184,7 +184,7 @@ const displayData = c => {
         }
     } else if (c === 6) {
         const pizzamsg = document.getElementById('pizza-msg');
-        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK</div>`;
+        const markup = `<div>ONLY AVAILABLE IN NEW BRUNSWICK LOCATION</div>`;
         pizzamsg.insertAdjacentHTML('afterbegin', markup);
         for (let i = 0; i < title.length; i++) {
             const markup3 = `
