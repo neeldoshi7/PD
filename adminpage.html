@@ -68,13 +68,28 @@
     <div class="admin-div container">
 
         <div class="admin-pdf-div d-flex flex-column">
-          <div>Upload Specials:</div>
+          <div><h3>Upload Specials:</h3></div>
           <div class="admin-pdf-input">
             <form action="/PD/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="uploaded_file"><br>
             <input type="submit" value="Upload PDF" name="submit">
             </form>
           </div>
+        </div>
+          <br><br>
+        <div class="admin-today-specials">
+          <div><h3>Today's specials</h3></div>
+          <div>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <br><br>
+        <div class="admin-today-specials">
+          <div><h3>Spreadsheet</h3></div>
+          <div><button class="btn btn-primary">Click Me!</button></div>
         </div>
 
         <!-- <div class="admin-photo-div">
