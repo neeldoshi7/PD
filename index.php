@@ -79,7 +79,14 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <?php 
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
           <li><a href="/PD/assets/php/getpdf.php">Today's Specials</a></li>
+          <?php
+                }
+          ?>
           <li><a href="photogallery.html">Photo Gallery</a></li>
           <li><a href="#about">About us</a></li>
           <li><a href="#contact">Contact us</a></li>
@@ -109,7 +116,14 @@
                 <p class="animate__animated animate__fadeInUp">We are glad to serve you the highest quality food combined with the best service in town.</p>
                 <div>
                   <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php 
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
                   <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
+                }
+          ?>
                 </div>
               </div>
             </div>
@@ -123,7 +137,14 @@
                 <p class="animate__animated animate__fadeInUp">Located at three different easy to access locations</p>
                 <div>
                   <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php 
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
                   <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
+                }
+          ?>
                 </div>
               </div>
             </div>
@@ -138,7 +159,14 @@
                 <p class="animate__animated animate__fadeInUp">With the access to Convenience Store items and products</p>
                 <div>
                   <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php 
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
                   <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
+                }
+          ?>
                 </div>
               </div>
             </div>

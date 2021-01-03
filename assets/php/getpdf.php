@@ -1,14 +1,14 @@
 <?php
 
-include 'conn.php';
+include 'getTS.php';
 
-$query = 'SELECT `todays_special` FROM `specials`';
-$bool = $conn->query($query);
+// $query = 'SELECT `todays_special` FROM `specials`';
+// $bool = $conn->query($query);
 
-if ($bool) {
-    if ($bool->num_rows == 1) {
-        $row = mysqli_fetch_assoc($bool);
-        if ($row['todays_specials'] === 1) {
+// if ($bool) {
+//     if ($bool->num_rows == 1) {
+//         $row = mysqli_fetch_assoc($bool);
+        if ($val === 1) {
             // Query for a list of all existing files
             $sql = 'SELECT `pdf_file` FROM `pdf`';
             $result = $conn->query($sql);
@@ -37,13 +37,6 @@ if ($bool) {
             echo "window.location.pathname = '/PD/index.html'</script>";
             // header('Location: .\..\..\index.html');
         }
-    } else {
-        echo '<p>There are no files in the database</p>';
-    }
-} else {
-    echo 'Error! SQL query failed:';
-                echo "<pre>{$conn->error}</pre>";
-}
 
 
 

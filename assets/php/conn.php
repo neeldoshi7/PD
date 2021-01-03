@@ -1,6 +1,6 @@
 <?php
 
-define('ROOT_PATH', 'localhost\PD');
+// define('ROOT_PATH', 'localhost\PD');
 
 $servername = "localhost";
 $username = "root";
