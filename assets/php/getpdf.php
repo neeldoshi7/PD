@@ -33,8 +33,9 @@ if ($bool) {
                 echo "<pre>{$conn->error}</pre>";
             }
         } else {
-            echo "<script>alert('Not Available');</script>";
-            header('Location: .\..\..\index.html');
+            echo "<script>alert('Not Available');";
+            echo "window.location.pathname = '/PD/index.html'</script>";
+            // header('Location: .\..\..\index.html');
         }
     } else {
         echo '<p>There are no files in the database</p>';
