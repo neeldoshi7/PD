@@ -70,7 +70,7 @@
         <div class="admin-pdf-div d-flex flex-column">
           <div><h3>Upload Specials:</h3></div>
           <div class="admin-pdf-input">
-            <form action="/PD/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
+            <form id="form1" action="/PD/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="uploaded_file"><br>
             <input type="submit" value="Upload PDF" name="submit">
             </form>
@@ -80,10 +80,13 @@
         <div class="admin-today-specials">
           <div><h3>Today's specials</h3></div>
           <div>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider round"></span>
-            </label>
+            <form id="form2">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+              <input type="submit" name="" value="">
+            </form>
           </div>
         </div>
         <br><br>
