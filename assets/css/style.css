@@ -1121,9 +1121,9 @@ background-size: cover;
   font-style: italic;
   font-size: 14px;
   font-family: "Comic Neue", sans-serif;
-  color: #45413b;
+  color: black;
   padding-bottom: 5px;
-    padding-left: 2vw;
+  padding-left: 2vw;
 }
 
 .menu-pizza-prices{
