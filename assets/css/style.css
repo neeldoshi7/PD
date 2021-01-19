@@ -1659,6 +1659,8 @@ background-size: cover;
   box-shadow:inset -11px -12px 10px -7px rgba(0,0,0,1), inset 8px 10px 10px -7px rgba(255,255,255,1), 10px 10px 5px 0px rgba(0,0,0,0.75);
   padding: 30px;
   border: 2px solid white;
+  height: 30vh;
+  width: 20vw;
 }
 
 .contact .info {
@@ -1669,8 +1671,8 @@ background-size: cover;
   font-size: 20px;
   color: #000000;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 2vw;
+  height: 2vw;
   background: #fff6e8;
   display: flex;
   justify-content: center;
@@ -1681,7 +1683,7 @@ background-size: cover;
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 18px;
+  font-size: 1vw;
   font-weight: 600;
   margin-bottom: 5px;
   color: white;
@@ -1691,13 +1693,37 @@ background-size: cover;
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 0.8vw;
   color: white;
 }
 
 .contact .info:hover i {
   background: #000000;
   color: #fff;
+}
+
+
+@media (max-width: 992px) {
+
+  .contact .info-wrap {
+    height: 35vh;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .contact .info i {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .contact .info h4 {
+    font-size: 6vw;
+  }
+
+  .contact .info p {
+    font-size: 3vw;
+  }
+
 }
 
 .contact .php-email-form {
