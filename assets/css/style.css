@@ -1718,7 +1718,7 @@ background-size: cover;
 
   .map-div{
     height: 35vh;
-    width: 90vw;  
+    width: 90vw;
   }
 
   .contact .info i {
@@ -1727,11 +1727,11 @@ background-size: cover;
   }
 
   .contact .info h4 {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
 
   .contact .info p {
-    font-size: 3vw;
+    font-size: 2.75vw;
   }
 
 }
