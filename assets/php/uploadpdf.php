@@ -18,8 +18,9 @@ if(isset($_FILES['uploaded_file'])) {
  
         // Check if it was successfull
         if($result) {
-            echo 'Success! Your file was successfully added!';
-            header('Location: .\..\..\adminpage.html');
+            echo "<script>alert('Success! Your file was successfully added!');";
+            echo "window.location.pathname = '/PD/adminpage.php'</script>";
+            // header('Location: .\..\..\adminpage.php');
         }
         else {
             echo 'Error! Failed to insert the file'
@@ -32,7 +33,7 @@ if(isset($_FILES['uploaded_file'])) {
     }
 }
 else {
-    echo 'Error! A file was not sent!';
+    echo "<script>alert('Error! A file was not sent!');";
 }
 
 $conn->close();

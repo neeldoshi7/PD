@@ -8,7 +8,7 @@ include 'getTS.php';
 // if ($bool) {
 //     if ($bool->num_rows == 1) {
 //         $row = mysqli_fetch_assoc($bool);
-        if ($val === 1) {
+        if ($val) {
             // Query for a list of all existing files
             $sql = 'SELECT `pdf_file` FROM `pdf`';
             $result = $conn->query($sql);

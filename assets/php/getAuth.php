@@ -14,7 +14,7 @@ if(mysqli_num_rows($result) === 1) {
         if ($row["password"] === $password) {
             // print("Login");
             echo "<script>alert('Logged in');";
-            echo "window.location.pathname = '/PD/adminpage.html'</script>";
+            echo "window.location.pathname = '/PD/adminpage.php'</script>";
             // header('Location: .\..\..\adminpage.html');
             exit;
         } else {

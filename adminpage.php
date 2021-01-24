@@ -48,7 +48,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="/PD/assets/php/getpdf.php">Today's Specials</a></li>
           <li><a href="photogallery.html">Photo Gallery</a></li>
@@ -71,8 +71,10 @@
           <div><h3>Upload Specials:</h3></div>
           <div class="admin-pdf-input">
             <form id="form1" action="/PD/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
-            <input type="file" name="uploaded_file"><br>
-            <input type="submit" value="Upload PDF" name="submit">
+            <input type="file" name="uploaded_file" >
+            <br>
+            <br>
+            <input type="submit" value="Upload PDF" name="submit" class="btn btn-primary">
             </form>
           </div>
         </div>
@@ -80,19 +82,37 @@
         <div class="admin-today-specials">
           <div><h3>Today's specials</h3></div>
           <div>
-            <form id="form2">
+
+          
+            <form id="form2" method="POST" action="/PD/assets/php/postTS.php">
               <label class="switch">
-                <input type="checkbox" checked>
+                
+
+                <?php
+                  include ("./assets/php/getTS.php");
+                  if ($val) {
+                  ?>
+                  <input type="checkbox" name="yes" checked>
+                  <?php
+                  } else {
+                    ?>
+                  <input type="checkbox" name="yes" >
+                  <?php
+                  }
+                  ?> 
+          
+
                 <span class="slider round"></span>
               </label>
-              <input type="submit" name="" value="">
+              <input type="submit" name="Confirm" value="Confirm" class="btn btn-primary">
             </form>
+
           </div>
         </div>
         <br><br>
         <div class="admin-today-specials">
           <div><h3>Spreadsheet</h3></div>
-          <div><button class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/edit#gid=78480093">Click Me!</button></div>
+          <a href="https://docs.google.com/spreadsheets/d/1TOS22E6iK6MfoVHkvK4pvNUJXcZZEw8rC_wL-GwouKI/edit#gid=78480093" target="_blank"><button class="btn btn-primary">Click me !</button></a>
         </div>
 
         <!-- <div class="admin-photo-div">
@@ -140,7 +160,7 @@
         <a href="#" class="instagram" style="background-color: purple;"><i class="bx bxl-instagram"></i></a> -->
         <a href="#" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
         <a href="#" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/uber-eats.svg" class="icon-img"/></a>
+        <a href="#" class=""><img src="assets/img/icons/uber-eats-logo-1.png" class="icon-img"/></a>
         <a href="#" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
         <a href="#" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
       </div>

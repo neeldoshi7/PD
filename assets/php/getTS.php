@@ -4,7 +4,7 @@ include 'conn.php';
 
 $query = 'SELECT `todays_special` FROM `specials`';
 $bool = $conn->query($query);
-$val;
+$val = 0;
 
 if ($bool) {
     if ($bool->num_rows == 1) {
