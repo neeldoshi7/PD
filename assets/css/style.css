@@ -1673,7 +1673,7 @@ background-size: cover;
 }
 
 .contact .info i {
-  font-size: 30px;
+  font-size: 20px;
   color: #000000;
   float: left;
   width: 2vw;
@@ -1688,7 +1688,7 @@ background-size: cover;
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-weight: 600;
   margin-bottom: 5px;
   color: white;
