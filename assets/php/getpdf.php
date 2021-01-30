@@ -34,7 +34,7 @@ include 'getTS.php';
             }
         } else {
             echo "<script>alert('Not Available');";
-            echo "window.location.pathname = '/PD/index.html'</script>";
+            echo "window.location.pathname = '/parkdelione/index.php'</script>";
             // header('Location: .\..\..\index.html');
         }
 

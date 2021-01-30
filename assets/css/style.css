@@ -33,9 +33,9 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'Sansita Swashed';
-    src: url('../Font-SS/SansitaSwashed-Regular.woff2') format('woff2'),
-        url('../Font-SS/SansitaSwashed-Regular.woff') format('woff');
+    font-family: 'Cooper';
+    src: url('../Fonts-Cooper/Cooper.woff2') format('woff2'),
+        url('../Fonts-Cooper/Cooper.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -928,7 +928,7 @@ section {
 # Whu Us
 --------------------------------------------------------------*/
 .why-us .box {
-  padding: 35px 30px;
+  padding: 30px 27px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: inset -11px -12px 10px -7px rgba(0,0,0,1), inset 8px 10px 10px -7px rgba(255,255,255,1), 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -942,7 +942,7 @@ section {
   font-size: 28px;
   font-weight: 700;
   color: white;
-  height: 35vh;
+  height: 45vh;
 }
 
 .why-us .box h4 {
@@ -958,6 +958,21 @@ section {
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 992px) {
+  .why-us .box span {
+    font-size: 8vw;
+  }
+  .why-us .box h4 {
+    font-size: 6vw;
+  }
+  .why-us .box p {
+    font-size: 4vw;
+  }
+  .why-us .box  {
+    height: 35vh;
+  }
 }
 
 .why-us .box:hover {

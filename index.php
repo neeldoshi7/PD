@@ -72,22 +72,22 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <a href="index.html"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <!-- <?php
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="menu.php">Menu</a></li>
+          <?php
                 include ("./assets/php/getTS.php");
                 if ($val) {
-          ?> -->
-          <li><a href="/PD/assets/php/getpdf.php">Today's Specials</a></li>
-          <!-- <?php
+          ?>
+          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <?php
                 }
-          ?> -->
-          <li><a href="photogallery.html">Photo Gallery</a></li>
+          ?>
+          <li><a href="photogallery.php">Photo Gallery</a></li>
           <li><a href="#about">About us</a></li>
           <li><a href="#contact">Contact us</a></li>
 
@@ -115,15 +115,15 @@
                 <h2 class="animate__animated animate__fadeInDown"><span>Welcome to Park Deli</h2>
                 <p class="animate__animated animate__fadeInUp">We are glad to serve you the highest quality food combined with the best service in town.</p>
                 <div>
-                  <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <!-- <?php
+                  <a href="menu.php" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php
                 include ("./assets/php/getTS.php");
                 if ($val) {
-          ?> -->
-                  <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
-                  <!-- <?php
+          ?>
+                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
                 }
-          ?> -->
+          ?>
                 </div>
               </div>
             </div>
@@ -136,15 +136,15 @@
                 <h2 class="animate__animated animate__fadeInDown">Best sandwiches in town</h2>
                 <p class="animate__animated animate__fadeInUp">Located at three different easy to access locations</p>
                 <div>
-                  <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <!-- <?php
+                  <a href="menu.php" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php
                 include ("./assets/php/getTS.php");
                 if ($val) {
-          ?> -->
-                  <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
-                  <!-- <?php
+          ?>
+                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
                 }
-          ?> -->
+          ?>
                 </div>
               </div>
             </div>
@@ -158,15 +158,15 @@
                 <h2 class="animate__animated animate__fadeInDown">Gourmet, Deli & Grill</h2>
                 <p class="animate__animated animate__fadeInUp">With the access to Convenience Store items and products</p>
                 <div>
-                  <a href="menu.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <!-- <?php
+                  <a href="menu.php" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <?php
                 include ("./assets/php/getTS.php");
                 if ($val) {
-          ?> -->
-                  <a href="/PD/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
-                  <!-- <?php
+          ?>
+                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <?php
                 }
-          ?> -->
+          ?>
                 </div>
               </div>
             </div>
@@ -189,21 +189,26 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
+  <?php
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
     <!-- ======= Specials Section ======= -->
     <section id="specials" class="specials">
       <div class="container">
 
         <div class="section-title d-flex flex-column justify-content-center">
           <div><h2>Check our <span>Specials</span></h2></div>
-          <div class="index-special-button-div"><button class="btn index-special-button"><a href="/PD/assets/php/getpdf.php" target="_blank" class="aboutus-a">Today's Specials</a></button></div>
+          <div class="index-special-button-div"><button class="btn index-special-button"><a href="/parkdelione/assets/php/getpdf.php" target="_blank" class="aboutus-a">Today's Specials</a></button></div>
         </div>
 
 
 
       </div>
     </section><!-- End Specials Section -->
-
+    <?php
+                }
+          ?>
 <hr>
 
 

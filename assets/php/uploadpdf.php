@@ -19,7 +19,7 @@ if(isset($_FILES['uploaded_file'])) {
         // Check if it was successfull
         if($result) {
             echo "<script>alert('Success! Your file was successfully added!');";
-            echo "window.location.pathname = '/PD/adminpage.php'</script>";
+            echo "window.location.pathname = '/parkdelione/adminpage.php'</script>";
             // header('Location: .\..\..\adminpage.php');
         }
         else {

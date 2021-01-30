@@ -50,17 +50,24 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <a href="index.html"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="/PD/assets/php/getpdf.php">Today's Specials</a></li>
-          <li class="active"><a href="photogallery.html">Photo Gallery</a></li>
-          <li><a href="index.html#about">About us</a></li>
-          <li><a href="index.html#contact">Contact us</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="menu.php">Menu</a></li>
+          <?php
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
+          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <?php
+                }
+          ?>
+          <li class="active"><a href="photogallery.php">Photo Gallery</a></li>
+          <li><a href="index.php#about">About us</a></li>
+          <li><a href="index.php#contact">Contact us</a></li>
 
 
           <!-- <li class="book-a-table text-center"><a href="#book-a-table">Order Online</a></li> -->
@@ -86,112 +93,112 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-1.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-2.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-3.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-4.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-5.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-6.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-7.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-8.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-9.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-9.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-9.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-9.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-10.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-10.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-10.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-10.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-11.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-11.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-11.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-11.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-12.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-12.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-12.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-12.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-13.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-13.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-13.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-13.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <!-- <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-14.jpg" class="venobox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-14.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery-14.JPG" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-14.JPG" alt="" class="img-fluid">
               </a>
             </div>
           </div> -->

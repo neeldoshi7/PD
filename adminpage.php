@@ -43,17 +43,17 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <a href="index.html"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="/PD/assets/php/getpdf.php">Today's Specials</a></li>
-          <li><a href="photogallery.html">Photo Gallery</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#contact">Contact us</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="menu.php">Menu</a></li>
+          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <li><a href="photogallery.php">Photo Gallery</a></li>
+          <li><a href="index.php#about">About us</a></li>
+          <li><a href="index.php#contact">Contact us</a></li>
 
 
           <!-- <li class="book-a-table text-center"><a href="#book-a-table">Order Online</a></li> -->
@@ -70,7 +70,7 @@
         <div class="admin-pdf-div d-flex flex-column">
           <div><h3>Upload Specials:</h3></div>
           <div class="admin-pdf-input">
-            <form id="form1" action="/PD/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
+            <form id="form1" action="/parkdelione/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="uploaded_file" >
             <br>
             <br>
@@ -84,7 +84,7 @@
           <div>
 
           
-            <form id="form2" method="POST" action="/PD/assets/php/postTS.php">
+            <form id="form2" method="POST" action="/parkdelione/assets/php/postTS.php">
               <label class="switch">
                 
 

@@ -53,17 +53,24 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <a href="index.html"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
+        <a href="index.php"><img src="assets/img/logo/pdlogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="menu.html">Menu</a></li>
-          <li><a href="/PD/assets/php/getpdf.php">Today's Special</a></li>
-          <li><a href="photogallery.html">Photo Gallery</a></li>
-          <li><a href="index.html#about">About us</a></li>
-          <li><a href="index.html#contact">Contact us</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li class="active"><a href="menu.php">Menu</a></li>
+          <?php
+                include ("./assets/php/getTS.php");
+                if ($val) {
+          ?>
+          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <?php
+                }
+          ?>
+          <li><a href="photogallery.php">Photo Gallery</a></li>
+          <li><a href="index.php#about">About us</a></li>
+          <li><a href="index.php#contact">Contact us</a></li>
 
 
           <!-- <li class="book-a-table text-center"><a href="#book-a-table">Order Online</a></li> -->
@@ -82,7 +89,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Menu</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li>Menu</li>
           </ol>
         </div>

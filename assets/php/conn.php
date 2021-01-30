@@ -1,11 +1,17 @@
 <?php
 
 // define('ROOT_PATH', 'localhost\PD');
+// ("parkdelione","mysqlv7","parkdelione","Ab123456");
 
-$servername = "localhost";
-$username = "root";
-$password = "12345678";
-$dbname = "parkdeli";
+$servername = "mysqlv7";
+$username = "parkdelione";
+$password = "Ab123456";
+$dbname = "parkdelione";
+
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "parkdeli";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
