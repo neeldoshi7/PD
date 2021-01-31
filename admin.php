@@ -54,7 +54,7 @@
                 include ("./assets/php/getTS.php");
                 if ($val) {
           ?>
-          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <li><a href="/assets/php/getpdf.php">Today's Specials</a></li>
           <?php
                 }
           ?>
@@ -78,7 +78,7 @@
     <div class="admin-login-div container">
 
       <div class="admin-login-form-div">
-        <form class="admin-login-form" action="/parkdelione/assets/php/getAuth.php" method="post">
+        <form class="admin-login-form" action="/assets/php/getAuth.php" method="post">
           <label for="id">Username : </label>
           <input type="text" name="username" value=""><br>
           <br>
@@ -104,11 +104,11 @@
       <div class="d-flex flex-row justify-content-center">
         <!-- <a href="#" class="facebook" style="background-color: blue;"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram" style="background-color: purple;"><i class="bx bxl-instagram"></i></a> -->
-        <a href="#" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/uber-eats-logo-1.png" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
+        <a href="https://www.facebook.com/Park-Deli-Highland-Park-544562909059829" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
+        <a href="https://www.instagram.com/parkdelione/?hl=en" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
+        <a href="https://www.ubereats.com/new-jersey/food-delivery/park-deli-grill-and-pizza/9X8dYfcARp-3ARaETqPJjQ" class=""><img src="assets/img/icons/ubereats.svg" class="icon-img"/></a>
+        <a href="https://www.grubhub.com/restaurant/park-deli-80-raritan-avenue-highland-park/1327171" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
+        <a href="https://eatstreet.com/new-brunswick-nj/restaurants/park-deli-too" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
       </div>
       <!-- <div class="copyright">
         &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved

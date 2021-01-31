@@ -193,7 +193,6 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     top: 0;
     height: 18vw;
-    background: rgba(26, 24, 22, 0.85);
   }
   #header .logo h1 {
     font-size: 8vw;;

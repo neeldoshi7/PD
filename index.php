@@ -83,7 +83,7 @@
                 include ("./assets/php/getTS.php");
                 if ($val) {
           ?>
-          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <li><a href="/assets/php/getpdf.php">Today's Specials</a></li>
           <?php
                 }
           ?>
@@ -120,7 +120,7 @@
                 include ("./assets/php/getTS.php");
                 if ($val) {
           ?>
-                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <a href="/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
                   <?php
                 }
           ?>
@@ -141,7 +141,7 @@
                 include ("./assets/php/getTS.php");
                 if ($val) {
           ?>
-                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <a href="/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
                   <?php
                 }
           ?>
@@ -163,7 +163,7 @@
                 include ("./assets/php/getTS.php");
                 if ($val) {
           ?>
-                  <a href="/parkdelione/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
+                  <a href="/assets/php/getpdf.php" class="btn-book animate__animated animate__fadeInUp scrollto">Today's Special</a>
                   <?php
                 }
           ?>
@@ -199,7 +199,7 @@
 
         <div class="section-title d-flex flex-column justify-content-center">
           <div><h2>Check our <span>Specials</span></h2></div>
-          <div class="index-special-button-div"><button class="btn index-special-button"><a href="/parkdelione/assets/php/getpdf.php" target="_blank" class="aboutus-a">Today's Specials</a></button></div>
+          <div class="index-special-button-div"><button class="btn index-special-button"><a href="/assets/php/getpdf.php" target="_blank" class="aboutus-a">Today's Specials</a></button></div>
         </div>
 
 
@@ -537,7 +537,7 @@
         <a href="#" class="instagram" style="background-color: purple;"><i class="bx bxl-instagram"></i></a> -->
         <a href="https://www.facebook.com/Park-Deli-Highland-Park-544562909059829" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
         <a href="https://www.instagram.com/parkdelione/?hl=en" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
-        <a href="https://www.ubereats.com/new-jersey/food-delivery/park-deli-grill-and-pizza/9X8dYfcARp-3ARaETqPJjQ" class=""><img src="assets/img/icons/uber-eats-logo-1.png" class="icon-img"/></a>
+        <a href="https://www.ubereats.com/new-jersey/food-delivery/park-deli-grill-and-pizza/9X8dYfcARp-3ARaETqPJjQ" class=""><img src="assets/img/icons/ubereats.svg" class="icon-img"/></a>
         <a href="https://www.grubhub.com/restaurant/park-deli-80-raritan-avenue-highland-park/1327171" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
         <a href="https://eatstreet.com/new-brunswick-nj/restaurants/park-deli-too" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
       </div>

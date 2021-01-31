@@ -50,7 +50,7 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="menu.php">Menu</a></li>
-          <li><a href="/parkdelione/assets/php/getpdf.php">Today's Specials</a></li>
+          <li><a href="/assets/php/getpdf.php">Today's Specials</a></li>
           <li><a href="photogallery.php">Photo Gallery</a></li>
           <li><a href="index.php#about">About us</a></li>
           <li><a href="index.php#contact">Contact us</a></li>
@@ -70,7 +70,7 @@
         <div class="admin-pdf-div d-flex flex-column">
           <div><h3>Upload Specials:</h3></div>
           <div class="admin-pdf-input">
-            <form id="form1" action="/parkdelione/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
+            <form id="form1" action="/assets/php/uploadpdf.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="uploaded_file" >
             <br>
             <br>
@@ -84,7 +84,7 @@
           <div>
 
           
-            <form id="form2" method="POST" action="/parkdelione/assets/php/postTS.php">
+            <form id="form2" method="POST" action="/assets/php/postTS.php">
               <label class="switch">
                 
 
@@ -158,11 +158,11 @@
       <div class="d-flex flex-row justify-content-center">
         <!-- <a href="#" class="facebook" style="background-color: blue;"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram" style="background-color: purple;"><i class="bx bxl-instagram"></i></a> -->
-        <a href="#" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/uber-eats-logo-1.png" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
-        <a href="#" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
+        <a href="https://www.facebook.com/Park-Deli-Highland-Park-544562909059829" class=""><img src="assets/img/icons/facebook.svg" class="icon-img"/></a>
+        <a href="https://www.instagram.com/parkdelione/?hl=en" class=""><img src="assets/img/icons/instagram.svg" class="icon-img"/></a>
+        <a href="https://www.ubereats.com/new-jersey/food-delivery/park-deli-grill-and-pizza/9X8dYfcARp-3ARaETqPJjQ" class=""><img src="assets/img/icons/ubereats.svg" class="icon-img"/></a>
+        <a href="https://www.grubhub.com/restaurant/park-deli-80-raritan-avenue-highland-park/1327171" class=""><img src="assets/img/icons/grubhub-1.svg" class="icon-img"/></a>
+        <a href="https://eatstreet.com/new-brunswick-nj/restaurants/park-deli-too" class=""><img src="assets/img/icons/EatStreet_logo.svg" class="icon-img"/></a>
       </div>
       <!-- <div class="copyright">
         &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
