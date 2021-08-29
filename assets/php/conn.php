@@ -9,8 +9,8 @@ $password = "Ab123456";
 $dbname = "parkdelione";
 
 // $servername = "localhost";
-// $username = "root";
-// $password = "";
+// $username = "moksha";
+// $password = "moksha";
 // $dbname = "parkdeli";
 
 // Create connection
